@@ -11,9 +11,7 @@ from keyboard import main_menu_kb, group_choice_kb
 from config import TOKEN
 from lexicon import LEXICON
 from timetable import load_cached_schedule
-from scheduler import update_all_groups, schedule_loop
-
-# Роутер
+from scheduler import schedule_loop
 
 dp = Dispatcher()
 
@@ -60,8 +58,6 @@ async def send_schedule(callback: types.CallbackQuery):
 # 🔁 Запуск бота
 async def main():
     bot = Bot(TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
-
-    await update_all_groups()
     
     # ⏰ Запуск фоновой задачи с проверкой понедельника
     asyncio.create_task(schedule_loop())
