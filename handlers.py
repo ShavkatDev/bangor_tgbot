@@ -23,7 +23,8 @@ async def send_schedule(callback: types.CallbackQuery):
     group_id = int(callback.data.split("_")[1])
     schedule = load_cached_schedule(group_id)
     if schedule == "⚠️ Расписание ещё не загружено.":
-        schedule = await callback.message.answer("Обновляем расписание...")
-        await update_schedule_for_group(group_id)
+        await callback.message.edit_text("Обновляем расписание...")
+        update_schedule_for_group(group_id)
+        schedule = load_cached_schedule(group_id)
 
-    await schedule.edit_text(f"<b>📅 Расписание для группы {group_id}:</b>\n\n{schedule[:4000]}")
+    await callback.message.edit_text(f"<b>📅 Расписание для группы {group_id}:</b>\n\n{schedule[:4000]}")
