@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 
-from datetime import datetime
+from datetime import datetime, timedelta
 
 load_dotenv()
 
@@ -29,4 +29,6 @@ TIMETABLE_HEADERS = {
 
 def get_day_name(date_str):
     dt = datetime.strptime(date_str.split("T")[0], "%Y-%m-%d")
+    dt += timedelta(days=1)
+
     return dt.strftime("%A").capitalize()

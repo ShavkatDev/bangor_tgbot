@@ -8,7 +8,7 @@ from aiogram.client.default import DefaultBotProperties
 
 from config import TOKEN
 from lexicon import LEXICON
-from scheduler import schedule_loop
+from scheduler import schedule_loop, update_all_groups
 from handlers import admin_router
 
 dp = Dispatcher()
@@ -43,6 +43,7 @@ async def main():
     dp.include_router(admin_router)
     
     # ⏰ Запуск фоновой задачи с проверкой понедельника
+    await update_all_groups()
     asyncio.create_task(schedule_loop())
 
     await dp.start_polling(bot)
