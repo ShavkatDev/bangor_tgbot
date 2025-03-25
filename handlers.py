@@ -2,7 +2,7 @@ from aiogram import Dispatcher, types, F, Router
 from aiogram.filters import Command
 from keyboard import main_menu_kb, group_choice_kb
 
-from timetable import load_cached_schedule
+from timetable import load_cached_schedule, update_schedule_for_group
 from admin import AdminMiddleware
 
 admin_router = Router()
@@ -22,9 +22,8 @@ async def choose_schedule(callback: types.CallbackQuery):
 async def send_schedule(callback: types.CallbackQuery):
     group_id = int(callback.data.split("_")[1])
     schedule = load_cached_schedule(group_id)
-    await callback.message.edit_text(f"<b>📅 Расписание для группы {group_id}:</b>\n\n{schedule[:4000]}")
+    if schedule == "⚠️ Расписание ещё не загружено.":
+        schedule = await callback.message.answer("Обновляем расписание...")
+        await update_schedule_for_group(group_id)
 
-@admin_router.message(Command("get_id"))
-async def get_admin_id(message: types.Message):
-    await message.answer(str(message.from_user.id))
-    admin_id = message.from_user.id
+    await schedule.edit_text(f"<b>📅 Расписание для группы {group_id}:</b>\n\n{schedule[:4000]}")

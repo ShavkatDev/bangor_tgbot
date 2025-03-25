@@ -3,7 +3,7 @@ import logging
 from datetime import datetime
 from timetable import update_schedule_for_group
 
-GROUPS=[232]
+GROUPS=[231, 232]
 
 async def update_all_groups():
     for group_id in GROUPS:

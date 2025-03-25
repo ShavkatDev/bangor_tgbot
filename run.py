@@ -2,9 +2,10 @@ import asyncio
 import logging
 from datetime import datetime
 
-from aiogram import Bot, Dispatcher, types, F 
+from aiogram import Bot, Dispatcher, types, F
 from aiogram.enums import ParseMode
 from aiogram.client.default import DefaultBotProperties
+from aiogram.filters import Command
 
 from config import TOKEN
 from lexicon import LEXICON
@@ -36,14 +37,16 @@ async def salutations_process(message: types.Message, bot: Bot):
 async def left_member_process(message: types.Message, bot: Bot):
     await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
 
+@dp.message(Command("get_id"))
+async def get_admin_id(message: types.Message):
+    await message.answer(str(message.from_user.id))
+    print(str(message.from_user.id))
 
 # 🔁 Запуск бота
 async def main():
     bot = Bot(TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
     dp.include_router(admin_router)
     
-    # ⏰ Запуск фоновой задачи с проверкой понедельника
-    await update_all_groups()
     asyncio.create_task(schedule_loop())
 
     await dp.start_polling(bot)

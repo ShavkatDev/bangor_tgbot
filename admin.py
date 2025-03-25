@@ -3,7 +3,9 @@ from aiogram.types import Message
 from typing import Callable, Dict, Any, Awaitable
 
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 ADMINS = os.getenv("ADMIN_IDS").split(",")
 
 class AdminMiddleware(BaseMiddleware):
@@ -15,5 +17,5 @@ class AdminMiddleware(BaseMiddleware):
     ) -> Any:
         if str(event.from_user.id) not in ADMINS:
             await event.answer("❌ У вас нет доступа.")
-            return  # не передаём управление хендлеру
+            return
         return await handler(event, data)
