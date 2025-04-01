@@ -1,7 +1,7 @@
 import asyncio
 import logging
 from datetime import datetime
-from timetable import update_schedule_for_group
+from app.timetable import update_schedule_for_group
 
 GROUPS=[231, 232]
 

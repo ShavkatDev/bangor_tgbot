@@ -5,14 +5,13 @@ from collections import defaultdict
 from datetime import date, timedelta
 from dotenv import load_dotenv
 
-from config import get_day_name, TIMETABLE_HEADERS
+from app.config import get_day_name, TIMETABLE_HEADERS
 
 load_dotenv()
 
 API_URL = "https://inet.mdis.uz/api/v1/education/student/view/schedules"
 
 def get_token_for_group(group_id: int) -> str:
-    """Get access token using login/password from .env."""
     login = os.getenv(f"LOGIN_GROUP_{group_id}")
     password = os.getenv(f"PASSWORD_GROUP_{group_id}")
     if not login or not password:

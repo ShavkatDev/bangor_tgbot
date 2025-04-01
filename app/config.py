@@ -5,7 +5,10 @@ from datetime import datetime, timedelta
 
 load_dotenv()
 
-TOKEN=os.getenv('TOKEN')
+TOKEN = os.getenv("TOKEN")
+FERNET_KEY = os.getenv("FERNET_KEY")
+ADMIN_IDS = list(map(int, os.getenv("ADMINS", "").split(",")))
+
 
 TIMETABLE_HEADERS = {
     'Accept': 'application/json, text/plain, */*',
