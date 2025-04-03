@@ -1,26 +1,19 @@
-from aiogram import Router, types, F
-from aiogram.filters import CommandStart, Command
-from aiogram.fsm.context import FSMContext
-from sqlalchemy import select
-from app.db.models import User, UserSettings
-from app.db.database import async_session_maker
-from app.states import LoginState
-from app.utils.auth import verify_credentials
-from app.utils.encryption import encrypt
+from aiogram import Router, types
+from aiogram.filters import CommandStart
+from app.db.crud.user import get_user_by_telegram_id
+
+from app.keyboards.reply import main_menu_keyboard
+from app.db.crud.user import get_user_language
 
 start_router = Router()
 
 @start_router.message(CommandStart())
 async def start_command(message: types.Message):
     telegram_id = message.from_user.id
-
-    async with async_session_maker() as session:
-        result = await session.execute(
-            select(User).where(User.telegram_id == telegram_id)
-        )
-        user = result.scalars().first()
+    lang = await get_user_language(message.from_user.id)
+    user = await get_user_by_telegram_id(telegram_id)
 
     if user:
-        await message.answer("👋 Привет! Вы уже зарегистрированы.")
+        await message.answer("👋 Привет!", reply_markup=main_menu_keyboard(lang))
     else:
         await message.answer("👋 Привет! Чтобы продолжить, пожалуйста, авторизуйтесь командой /login")

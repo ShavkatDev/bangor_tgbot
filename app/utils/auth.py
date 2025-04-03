@@ -13,6 +13,5 @@ async def verify_credentials(login: str, password: str) -> tuple[bool, str | Non
             }
         )
         if response.status_code == 200:
-            token = response.json().get("access_token")
-            return True, token
-        return False, None
+            return True
+        return False
