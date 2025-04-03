@@ -1,9 +1,12 @@
-from aiogram import Router, types
-from aiogram.filters import CommandStart
+from aiogram import Router, types, F
+from aiogram.filters import CommandStart, Command
+from aiogram.fsm.context import FSMContext
 from sqlalchemy import select
-from app.database import async_session_maker
-from app.models import User
-from app.config import ADMIN_IDS
+from app.db.models import User, UserSettings
+from app.db.database import async_session_maker
+from app.states import LoginState
+from app.utils.auth import verify_credentials
+from app.utils.encryption import encrypt
 
 start_router = Router()
 
@@ -17,13 +20,7 @@ async def start_command(message: types.Message):
         )
         user = result.scalars().first()
 
-    # if telegram_id in ADMIN_IDS:
-    #     await message.answer("👋 Привет, админ! Готов к работе.")
-    #     return
-
     if user:
-        await message.answer("👋 Привет! Вы уже зарегистрированы. Используйте /help для списка команд.")
+        await message.answer("👋 Привет! Вы уже зарегистрированы.")
     else:
-        await message.answer(
-            "👋 Привет! Добро пожаловать. Чтобы продолжить, пожалуйста, авторизуйтесь командой /login"
-        )
+        await message.answer("👋 Привет! Чтобы продолжить, пожалуйста, авторизуйтесь командой /login")

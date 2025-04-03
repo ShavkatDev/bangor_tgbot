@@ -1,9 +1,7 @@
 from cryptography.fernet import Fernet
-import os
-from dotenv import load_dotenv
+from app.config import settings
 
-load_dotenv()
-fernet = Fernet(os.getenv("FERNET_KEY").encode())
+fernet = Fernet(settings.FERNET_KEY.encode())
 
 def encrypt(text: str) -> str:
     return fernet.encrypt(text.encode()).decode()

@@ -1,7 +1,7 @@
 from aiogram import BaseMiddleware
 from aiogram.types import TelegramObject
 from typing import Callable, Dict, Any, Awaitable
-from app.config import ADMIN_IDS
+from app.config import settings
 
 class AdminFilterMiddleware(BaseMiddleware):
     async def __call__(
@@ -12,5 +12,5 @@ class AdminFilterMiddleware(BaseMiddleware):
     ) -> Any:
         user = data.get("event_from_user")
         if user:
-            data["is_admin"] = user.id in ADMIN_IDS
+            data["is_admin"] = user.id in settings.ADMINS
         return await handler(event, data)

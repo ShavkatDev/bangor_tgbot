@@ -1,15 +1,21 @@
-import os
-from dotenv import load_dotenv
+from pydantic_settings import BaseSettings
+from typing import List
 
-from datetime import datetime, timedelta
+class Settings(BaseSettings):
+    TOKEN: str
+    DATABASE_URL: str
+    FERNET_KEY: str
+    ADMINS: List[int] = []
 
-load_dotenv()
-
-TOKEN = os.getenv("TOKEN")
-FERNET_KEY = os.getenv("FERNET_KEY")
-ADMIN_IDS = list(map(int, os.getenv("ADMINS", "").split(",")))
+    class Config:
+        env_file = ".env"
+        env_file_encoding = "utf-8"
 
 
+settings = Settings()
+
+
+# TIMETABLE_HEADERS — отдельно, если не зависит от переменных среды
 TIMETABLE_HEADERS = {
     'Accept': 'application/json, text/plain, */*',
     'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',
@@ -29,9 +35,3 @@ TIMETABLE_HEADERS = {
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
 }
-
-def get_day_name(date_str):
-    dt = datetime.strptime(date_str.split("T")[0], "%Y-%m-%d")
-    dt += timedelta(days=1)
-
-    return dt.strftime("%A").capitalize()
