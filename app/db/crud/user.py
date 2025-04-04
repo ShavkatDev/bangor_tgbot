@@ -1,10 +1,11 @@
+from typing import Optional
 from sqlalchemy import select, update
 from app.db.models import User, UserSettings
 from app.db.database import async_session_maker
 from app.utils.encryption import encrypt, decrypt
     
 
-async def get_user_by_telegram_id(telegram_id: int) -> User | None:
+async def get_user_by_telegram_id(telegram_id: int) -> Optional[User]:
     async with async_session_maker() as session:
         result = await session.execute(
             select(User).where(User.telegram_id == telegram_id)
@@ -71,14 +72,14 @@ async def create_user_with_settings(
         session.add(settings)
         await session.commit()
     
-async def get_user_by_telegram_id(telegram_id: int) -> User | None:
+async def get_user_by_telegram_id(telegram_id: int) -> Optional[User]:
     async with async_session_maker() as session:
         result = await session.execute(
             select(User).where(User.telegram_id == telegram_id)
         )
         return result.scalars().first()
     
-async def get_user_credentials(telegram_id: int) -> tuple[str, str] | None:
+async def get_user_credentials(telegram_id: int) -> Optional[tuple[str, str]]:
     async with async_session_maker() as session:
         result = await session.execute(
             select(User).where(User.telegram_id == telegram_id)
