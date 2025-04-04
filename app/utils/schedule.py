@@ -1,5 +1,6 @@
 from datetime import date
 from collections import defaultdict
+from typing import Optional
 import httpx
 from app.config import TIMETABLE_HEADERS
 from app.lexicon.lexicon import LEXICON_MSG
@@ -7,7 +8,7 @@ from app.utils.date_utils import get_day_name
 from app.db.crud.user import get_attendance_data
 
 
-async def get_token(login: str, password: str) -> str | None:
+async def get_token(login: str, password: str) -> Optional(str):
     async with httpx.AsyncClient() as client:
         response = await client.post(
             "https://inet.mdis.uz/oauth/tocken",
