@@ -30,8 +30,8 @@ class UserSettings(Base):
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey("users.id"), unique=True)
     daily_digest = Column(Boolean, default=True)
-    reminders = Column(Boolean, default=False)
-    language = Column(String, default='ru')
+    today_schedule_digest = Column(Boolean, default=True)
+    language = Column(String, default='en')
     updated_at = Column(TIMESTAMP, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
 
     user = relationship("User", back_populates="settings")

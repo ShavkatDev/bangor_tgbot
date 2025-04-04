@@ -30,23 +30,19 @@ def inet_schedule_keyboard(lang: str) -> ReplyKeyboardMarkup:
 def settings_keyboard(lang: str) -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text=get_button("mailing_settings", lang))],
-            [KeyboardButton(text=get_button("language_settings", lang))],
+            [KeyboardButton(text=get_button("mailing_settings", lang)), KeyboardButton(text=get_button("language_settings", lang))],
             [KeyboardButton(text=get_button("back_to_main", lang))]
         ],
         resize_keyboard=True
 )
 
 
-def mailing_keyboard(lang: str, notifications_enabled: bool) -> ReplyKeyboardMarkup:
+def mailing_keyboard(lang: str) -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(
-                text=get_button(
-                    "disable_notifications" if notifications_enabled else "enable_notifications", lang
-                )
-            )],
-            [KeyboardButton(text=get_button("back_to_settings", lang))]
+            [KeyboardButton(text=get_button("checkin_checkout_mailing", lang))],
+            [KeyboardButton(text=get_button("schedule_today_mailing", lang))],
+            [KeyboardButton(text=get_button("back_to_main", lang))]
         ],
         resize_keyboard=True
     )

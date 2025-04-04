@@ -17,10 +17,10 @@ async def main():
 
     setup_routers(dp)
 
+    dp.message.middleware(IgnoreGroupChatsMiddleware())
     dp.message.middleware(AdminFilterMiddleware())
     dp.message.middleware(RegistrationCheckMiddleware())
-    dp.message.middleware(IgnoreGroupChatsMiddleware())
-    
+
     await dp.start_polling(bot)
 
 if __name__ == "__main__":

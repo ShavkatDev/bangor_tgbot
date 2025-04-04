@@ -143,14 +143,14 @@ LEXICON_MSG = {
         'en': "Teacher"
     },
     'settings_menu': {
-        'ru': "⚙️ Настройки:",
-        'uz': "⚙️ Sozlamalar:",
-        'en': "⚙️ Settings:"
+        'ru': "⚙️ Настройки: ",
+        'uz': "⚙️ Sozlamalar: ",
+        'en': "⚙️ Settings: "
     },
     'choose_mailing': {
-        'ru': "📬 Выберите настройки рассылки:",
-        'uz': "📬 Xabar sozlamalarini tanlang:",
-        'en': "📬 Choose mailing settings:"
+        'ru': "📬 Выберите рассылку:",
+        'uz': "📬 Xabarnoma turini tanlang:",
+        'en': "📬 Choose the mailing type:"
     },
     'choose_language': {
         'ru': "🌐 Выберите язык:",
@@ -161,6 +161,11 @@ LEXICON_MSG = {
         'ru': "✅ Язык изменён на Русский 🇷🇺",
         'uz': "✅ Til O'zbek tiliga o'zgartirildi 🇺🇿",
         'en': "✅ Language changed to English 🇬🇧"
+    },
+    "settings_updated": {
+        "ru": "✅ Настройки обновлены!",
+        "uz": "✅ Sozlamalar yangilandi!",
+        "en": "✅ Settings updated!"
     }
 }
 
@@ -194,6 +199,11 @@ LEXICON_BUTTONS = {
         'ru': "🔙 Назад в главное меню",
         'uz': "🔙 Asosiy menyuga qaytish",
         'en': "🔙 Back to main menu"
+    },
+    "back_to_settings": {
+        "ru": "🔙 Назад в настройки",
+        "uz": "🔙 Sozlamalarga qaytish",
+        "en": "🔙 Back to settings"
     },
     'schedule_tomorrow_view': {
         'ru': "📅 Расписание на завтра",
@@ -230,15 +240,20 @@ LEXICON_BUTTONS = {
         'uz': "📬 Xabarlar",
         'en': "📬 Mailings"
     },
+    'checkin_checkout_mailing': {
+        'ru': "Рассылка входа/выхода",
+        'uz': "Kirish/Chiqish xabarlari",
+        'en': "Check-in/Checkout mailing"
+    },
+    'schedule_today_mailing': {
+        'ru': "Рассылка пар на сегодня",
+        'uz': "Bugungi darslar xabarnomasi",
+        'en': "Today's classes mailing"
+    },
     'language_settings': {
         'ru': "🌐 Язык",
         'uz': "🌐 Til",
         'en': "🌐 Language"
-    },
-    'back_to_settings': {
-        'ru': "🔙 Назад в настройки",
-        'uz': "🔙 Sozlamalarga qaytish",
-        'en': "🔙 Back to settings"
     },
     'contact_support': {
         'ru': "📞 Написать в поддержку",
