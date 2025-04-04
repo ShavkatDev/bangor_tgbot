@@ -4,6 +4,7 @@ from app.db.crud.user import get_user_by_telegram_id
 
 from app.keyboards.reply import main_menu_keyboard
 from app.db.crud.user import get_user_language
+from app.lexicon.lexicon import LEXICON_MSG
 
 start_router = Router()
 
@@ -14,6 +15,6 @@ async def start_command(message: types.Message):
     user = await get_user_by_telegram_id(telegram_id)
 
     if user:
-        await message.answer("👋 Привет!", reply_markup=main_menu_keyboard(lang))
+        await message.answer(text=LEXICON_MSG['greet'][lang], reply_markup=main_menu_keyboard(lang))
     else:
-        await message.answer("👋 Привет! Чтобы продолжить, пожалуйста, авторизуйтесь командой /login")
+        await message.answer(text=LEXICON_MSG['greet_login'][lang])

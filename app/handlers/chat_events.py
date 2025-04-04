@@ -1,7 +1,7 @@
 from aiogram import types, Router, F
 from datetime import datetime
 from aiogram import Bot
-from app.lexicon.lexicon import LEXICON
+from app.lexicon.lexicon import LEXICON_EVENTS
 
 chat_router = Router()
 
@@ -10,10 +10,10 @@ async def salutations_process(message: types.Message, bot: Bot):
     for new_member in message.new_chat_members:
         if new_member.is_bot or new_member.id == message.bot.id:
             continue
-        await message.answer(LEXICON['salutate']['en'].format(str(new_member.first_name)))
+        await message.answer(LEXICON_EVENTS['salutate']['en'].format(str(new_member.first_name)))
         await bot.send_message(
             chat_id=7396564931,
-            text=LEXICON["/new_member"].format(
+            text=LEXICON_EVENTS["/new_member"].format(
                 str(new_member.username),
                 str(new_member.first_name),
                 str(datetime.now()),

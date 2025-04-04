@@ -19,8 +19,8 @@ def main_menu_keyboard(lang: str) -> ReplyKeyboardMarkup:
 def inet_schedule_keyboard(lang: str) -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
         keyboard=[
-            [KeyboardButton(text=get_button("schedule_tomorrow_view", lang))],
-            [KeyboardButton(text=get_button("schedule_week_view", lang))],
+            [KeyboardButton(text=get_button("schedule_tomorrow_view", lang)), KeyboardButton(text=get_button("schedule_week_view", lang))],
+            [KeyboardButton(text=get_button("attendance", lang))],
             [KeyboardButton(text=get_button("back_to_main", lang))]
         ],
         resize_keyboard=True
@@ -35,7 +35,7 @@ def settings_keyboard(lang: str) -> ReplyKeyboardMarkup:
             [KeyboardButton(text=get_button("back_to_main", lang))]
         ],
         resize_keyboard=True
-    )
+)
 
 
 def mailing_keyboard(lang: str, notifications_enabled: bool) -> ReplyKeyboardMarkup:
