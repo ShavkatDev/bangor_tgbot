@@ -65,8 +65,6 @@ async def create_user_with_settings(
 
         settings = UserSettings(
             user_id=new_user.id,
-            daily_digest=True,
-            reminders=False,
             language=lang
         )
         session.add(settings)
