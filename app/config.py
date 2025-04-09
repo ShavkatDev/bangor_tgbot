@@ -14,8 +14,11 @@ class Settings(BaseSettings):
 
 settings = Settings()
 
+async def is_admin(id:int) -> bool:
+    if id in settings.ADMINS:
+        return True
+    return False
 
-# TIMETABLE_HEADERS — отдельно, если не зависит от переменных среды
 TIMETABLE_HEADERS = {
     'Accept': 'application/json, text/plain, */*',
     'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7',

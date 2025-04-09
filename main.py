@@ -6,7 +6,6 @@ from aiogram.client.default import DefaultBotProperties
 
 from app.config import settings
 from app.routers import setup_routers
-from app.middleware.admin_filter import AdminFilterMiddleware
 from app.middleware.registration_check import RegistrationCheckMiddleware
 from app.middleware.ignore_groups import IgnoreGroupChatsMiddleware
 
@@ -18,7 +17,6 @@ async def main():
     setup_routers(dp)
 
     dp.message.middleware(IgnoreGroupChatsMiddleware())
-    dp.message.middleware(AdminFilterMiddleware())
     dp.message.middleware(RegistrationCheckMiddleware())
 
     await dp.start_polling(bot)
