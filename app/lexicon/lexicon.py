@@ -205,6 +205,11 @@ LEXICON_BUTTONS = {
         "uz": "🔙 Sozlamalarga qaytish",
         "en": "🔙 Back to settings"
     },
+    'schedule_today_view': {
+        'ru': "📅 Расписание на сегодня",
+        'uz': "📅 Bugungi dars jadvali",
+        'en': "📅 Today's schedule"
+    },
     'schedule_tomorrow_view': {
         'ru': "📅 Расписание на завтра",
         'uz': "📅 Ertangi dars jadvali",

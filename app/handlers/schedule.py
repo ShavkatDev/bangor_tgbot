@@ -39,12 +39,18 @@ async def get_schedule_text(telegram_id: int, mode: str = "tomorrow") -> str:
         end = sunday
 
     else:
-        start = today + timedelta(days=1)
-        end = start
+        start = today
+        end = today
 
     data = await fetch_schedule_data(token, start, end)
 
     return await format_schedule(data, lang)
+
+@schedule_router.message(TextFromLexicon("schedule_today_view"))
+async def show_today_schedule(message: types.Message):
+    lang = await get_user_language(message.from_user.id)
+    text = await get_schedule_text(message.from_user.id, mode="today")
+    await message.answer(text, reply_markup=inet_schedule_keyboard(lang))
 
 @schedule_router.message(TextFromLexicon("schedule_tomorrow_view"))
 async def show_tomorrow_schedule(message: types.Message):

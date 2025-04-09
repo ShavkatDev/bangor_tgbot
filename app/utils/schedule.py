@@ -62,12 +62,23 @@ async def format_schedule(data: list, lang: str = "en") -> str:
         venue = lesson["venueName"]
         lecturer = lesson["lecturerName"]
         lesson_type = lesson["lessonTypeName"]
+        schedule_status = lesson["scheduleStatus"]
 
-        lesson_text = (
-            f"🕐 {time} — {subject} ({lesson_type})\n"
-            f"🏫 {LEXICON_MSG['classroom'][lang]}: {venue}\n"
-            f"👨‍🏫 {LEXICON_MSG['teacher'][lang]}: {lecturer}\n"
-        )
+        lesson_text = ()
+
+        if schedule_status == "ACTIVE":
+            lesson_text = (
+                f"🕐 {time} — {subject} ({lesson_type})\n"
+                f"🏫 {LEXICON_MSG['classroom'][lang]}: {venue}\n"
+                f"👨‍🏫 {LEXICON_MSG['teacher'][lang]}: {lecturer}\n"
+            )
+        else:
+            lesson_text = (
+                f"🟥 CANCELED 🟥\n"
+                f"<del>🕐 {time} — {subject} ({lesson_type})</del>\n"
+                f"<del>🏫 {LEXICON_MSG['classroom'][lang]}: {venue}</del>\n"
+                f"<del>👨‍🏫 {LEXICON_MSG['teacher'][lang]}: {lecturer}</del>\n"
+            )
         grouped[day_name].append(lesson_text)
 
     final_lines = []
