@@ -1,8 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from app.lexicon.lexicon import LEXICON_BUTTONS
-
-def get_button(key: str, lang: str = "en") -> str:
-    return LEXICON_BUTTONS.get(key, {}).get(lang, f"[{key}]")
+from app.config import get_button
 
 def mailing_settings_keyboard(daily_digest: bool, today_schedule_digest: bool, lang: str) -> InlineKeyboardMarkup:
     def status_text(enabled: bool) -> str:

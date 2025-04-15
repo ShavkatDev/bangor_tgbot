@@ -166,7 +166,22 @@ LEXICON_MSG = {
         "ru": "✅ Настройки обновлены!",
         "uz": "✅ Sozlamalar yangilandi!",
         "en": "✅ Settings updated!"
-    }
+    },
+    "confirm_data_deletion": {
+        "ru": "❗ Подтвердите удаление ваших данных в боте",
+        "uz": "❗ Botdagi maʼlumotlaringizni o‘chirishni tasdiqlang",
+        "en": "❗ Confirm the deletion of your data in the bot"
+    },
+    "data_deleted": {
+        "ru": "✅ Данные удалены!",
+        "uz": "✅ Maʼlumotlar o‘chirildi!",
+        "en": "✅ Data deleted!"
+    },
+    "process_cancelled": {
+        "ru": "❌ Процесс отменен!",
+        "uz": "❌ Jarayon bekor qilindi!",
+        "en": "❌ Process cancelled!"
+    },
 }
 
 LEXICON_BUTTONS = {
@@ -258,7 +273,22 @@ LEXICON_BUTTONS = {
     'language_settings': {
         'ru': "🌐 Язык",
         'uz': "🌐 Til",
-        'en': "🌐 Language"
+            'en': "🌐 Language"
+    },
+    'delete_user':{
+        'ru': "🗑 Удалить данные",
+        'uz': "🗑 Maʼlumotlarni o‘chirish",
+        'en': "🗑 Delete data"
+    },
+    'delete_approve':{
+        'ru': "✅ Подтвердить",
+        'uz': "✅ Tasdiqlash",
+        'en': "✅ Confirm"
+    },
+    'delete_decline':{
+        'ru': "❌ Отклонить",
+        'uz': "❌ Rad etish",
+        'en': "❌ Reject"
     },
     'contact_support': {
         'ru': "📞 Написать в поддержку",

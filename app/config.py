@@ -1,6 +1,8 @@
 from pydantic_settings import BaseSettings
 from typing import List
 
+from app.lexicon.lexicon import LEXICON_BUTTONS
+
 class Settings(BaseSettings):
     TOKEN: str
     DATABASE_URL: str
@@ -18,6 +20,9 @@ async def is_admin(id:int) -> bool:
     if id in settings.ADMINS:
         return True
     return False
+
+def get_button(key: str, lang: str = "en") -> str:
+    return LEXICON_BUTTONS.get(key, {}).get(lang, f"[{key}]")
 
 TIMETABLE_HEADERS = {
     'Accept': 'application/json, text/plain, */*',

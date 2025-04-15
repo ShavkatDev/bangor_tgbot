@@ -32,6 +32,7 @@ def settings_keyboard(lang: str) -> ReplyKeyboardMarkup:
     return ReplyKeyboardMarkup(
         keyboard=[
             [KeyboardButton(text=get_button("mailing_settings", lang)), KeyboardButton(text=get_button("language_settings", lang))],
+            [KeyboardButton(text=get_button("delete_user", lang))],
             [KeyboardButton(text=get_button("back_to_main", lang))]
         ],
         resize_keyboard=True

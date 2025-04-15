@@ -1,5 +1,5 @@
 from typing import Optional
-from sqlalchemy import select, update
+from sqlalchemy import select, update, delete
 from app.db.models import User, UserSettings
 from app.db.database import async_session_maker
 from app.utils.encryption import encrypt, decrypt
@@ -108,3 +108,24 @@ async def update_user_language(telegram_id: int, lang: str) -> None:
         )
 
         await session.commit()
+
+async def delete_user_completely(telegram_id: int) -> bool:
+    async with async_session_maker() as session:
+        result = await session.execute(
+            select(User).where(User.telegram_id == telegram_id)
+        )
+        user = result.scalars().first()
+
+        if not user:
+            return False
+
+        await session.execute(
+            delete(UserSettings).where(UserSettings.user_id == user.id)
+        )
+
+        await session.execute(
+            delete(User).where(User.id == user.id)
+        )
+
+        await session.commit()
+        return True
