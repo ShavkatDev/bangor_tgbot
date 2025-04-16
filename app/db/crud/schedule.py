@@ -6,6 +6,7 @@ from app.db.database import async_session_maker
 from app.db.models import ScheduleCache, User, UserSettings
 from app.utils.schedule import get_week_start
 
+
 async def get_cached_schedule(group_id: str, target_date: datetime.date) -> str | None:
     week_start = get_week_start(target_date)
 
@@ -17,9 +18,10 @@ async def get_cached_schedule(group_id: str, target_date: datetime.date) -> str 
         )
         cache = result.scalars().first()
 
-        if cache and (datetime.utcnow() - cache.updated_at) < timedelta(hours=9):
-            return json.loads(cache.data)
-        return None
+        if not cache:
+            return None
+        
+        return cache
 
 
 async def save_schedule_to_cache(group_id: str, target_date: datetime.date, data: str):
@@ -59,7 +61,16 @@ async def get_user_group_id(telegram_id: int) -> int | None:
             return None
         
         return group_id
-    
+
+async def get_users_with_today_digest() -> list[tuple[int, int, str]]:
+    async with async_session_maker() as session:
+        result = await session.execute(
+            select(User.telegram_id, User.group_id, UserSettings.language)
+            .join(UserSettings, User.id == UserSettings.user_id)
+            .where(UserSettings.today_schedule_digest == True)
+        )
+        return result.all()
+
 async def get_students_by_group_with_digest(group_id: int) -> list[int]:
     async with async_session_maker() as session:
         result = await session.execute(

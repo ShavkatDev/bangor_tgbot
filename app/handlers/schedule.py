@@ -27,7 +27,11 @@ async def get_schedule_text(telegram_id: int, lang: str, mode: str) -> str:
     if group_id is None:
         return LEXICON_MSG["user_not_found"][lang]
 
-    cached = await get_cached_schedule(group_id, monday)
+    cached = None
+    cache = await get_cached_schedule(group_id, monday)
+    if cache and (datetime.utcnow() - cache.updated_at) < timedelta(hours=9):
+        cached = json.loads(cache.data)
+    
     if cached:
         cleaned_data = cached
     else:

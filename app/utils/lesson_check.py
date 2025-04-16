@@ -1,6 +1,8 @@
-import asyncio
 from aiogram import Bot
 from datetime import datetime, timedelta, date, time
+
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from apscheduler.triggers.cron import CronTrigger
 from app.db.crud.schedule import get_students_by_group_with_digest, get_all_group_schedules_today
 
 notified_set: set[tuple[int, str, str]] = set()
@@ -16,7 +18,7 @@ REMINDER_TIMES = [
     (time(15, 25), "exit"),
     (time(15, 35), "entry"),
     (time(16, 55), "exit"),
-    (time(17, 05), "entry"),
+    (time(17, 5), "entry"),
     (time(18, 25), "exit"),
 ]
 
@@ -84,18 +86,24 @@ async def check_lesson_marks(bot: Bot):
                     text = f"⚠️ Не забудьте пробить карту при выходе с пары: {lesson['moduleName']} ({lesson['endTime'][:-3]})"
 
                 try:
+                    #testing
+                    if not user_id not in 845102332:
+                        continue
                     await bot.send_message(user_id, text)
                     notified_set.add(key)
                 except Exception:
                     continue
 
-async def start_lesson_check_task(bot: Bot):
-    while True:
-        now = datetime.now()
+def setup_lesson_check_scheduler(bot: Bot):
+    scheduler = AsyncIOScheduler(timezone="UTC")
 
-        if now.weekday() < 6:
-            for scheduled_time, _ in REMINDER_TIMES:
-                if abs((datetime.combine(now.date(), scheduled_time) - now).total_seconds()) < 60:
-                    await check_lesson_marks(bot)
+    for t, label in REMINDER_TIMES:
+        scheduler.add_job(
+            check_lesson_marks,
+            trigger=CronTrigger(hour=t.hour, minute=t.minute, day_of_week='mon-sat'),
+            args=[bot],
+            id=f"lesson_check_{t.hour}_{t.minute}_{label}",
+            replace_existing=True
+        )
 
-        await asyncio.sleep(30)
+    scheduler.start()
