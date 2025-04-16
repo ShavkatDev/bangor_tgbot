@@ -67,6 +67,7 @@ async def delete_userdata(message: types.Message):
 async def confirm_delete(callback: types.CallbackQuery):
     lang = await get_user_language(callback.from_user.id)
     await callback.answer()
+    await callback.message.delete()
     if callback.data == 'delete_approve':
         delete_user_completely(callback.from_user.id)
         await callback.message.answer(
