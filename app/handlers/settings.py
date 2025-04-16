@@ -1,5 +1,6 @@
 from aiogram import Router, types
 from aiogram import F
+from aiogram.types import ReplyKeyboardRemove
 from app.keyboards.reply import main_menu_keyboard, settings_keyboard, mailing_keyboard
 from app.keyboards.language_keyboard import language_keyboard
 from app.keyboards.mailing_keyboard import mailing_settings_keyboard
@@ -69,10 +70,10 @@ async def confirm_delete(callback: types.CallbackQuery):
     await callback.answer()
     await callback.message.delete()
     if callback.data == 'delete_approve':
-        delete_user_completely(callback.from_user.id)
+        await delete_user_completely(callback.from_user.id)
         await callback.message.answer(
             text=LEXICON_MSG["data_deleted"][lang],
-            reply_markup=main_menu_keyboard(lang)
+            reply_markup=ReplyKeyboardRemove()
         )
     elif callback.data == 'delete_decline':
         await callback.message.answer(
