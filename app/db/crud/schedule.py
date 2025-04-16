@@ -1,13 +1,14 @@
 from collections import defaultdict
 import json
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
+from typing import Optional
 from sqlalchemy import select, update
 from app.db.database import async_session_maker
 from app.db.models import ScheduleCache, User, UserSettings
 from app.utils.schedule import get_week_start
 
 
-async def get_cached_schedule(group_id: str, target_date: datetime.date) -> str | None:
+async def get_cached_schedule(group_id: str, target_date: datetime.date) -> Optional[str]:
     week_start = get_week_start(target_date)
 
     async with async_session_maker() as session:
@@ -51,7 +52,7 @@ async def save_schedule_to_cache(group_id: str, target_date: datetime.date, data
 
         await session.commit()
 
-async def get_user_group_id(telegram_id: int) -> int | None:
+async def get_user_group_id(telegram_id: int) -> Optional[int]:
     async with async_session_maker() as session:
         result = await session.execute(
             select(User.group_id).where(User.telegram_id == telegram_id)
