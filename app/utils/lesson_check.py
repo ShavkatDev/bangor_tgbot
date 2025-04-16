@@ -3,6 +3,23 @@ from aiogram import Bot
 from datetime import datetime, timedelta, date, time
 from app.db.crud.schedule import get_students_by_group_with_digest, get_all_group_schedules_today
 
+notified_set: set[tuple[int, str, str]] = set()
+
+REMINDER_TIMES = [
+    (time(9, 35), "entry"),
+    (time(10, 55), "exit"),
+    (time(10, 55), "entry"),
+    (time(12, 25), "exit"),
+    (time(12, 35), "entry"),
+    (time(13, 55), "exit"),
+    (time(13, 55), "entry"),
+    (time(15, 25), "exit"),
+    (time(15, 35), "entry"),
+    (time(16, 55), "exit"),
+    (time(17, 05), "entry"),
+    (time(18, 25), "exit"),
+]
+
 def parse_time(t: str) -> time:
     return datetime.strptime(t, "%H:%M:%S").time()
 
@@ -13,6 +30,9 @@ async def get_lessons_to_check(schedule_data: list[dict], current_time: datetime
     today_str = current_time.date().isoformat()
 
     for lesson in schedule_data:
+        if lesson.get("scheduleStatus") != "ACTIVE":
+            continue
+        
         if lesson.get("scheduleDate") != today_str:
             continue
 
@@ -54,6 +74,10 @@ async def check_lesson_marks(bot: Bot):
             action_type = entry["type"]
 
             for user_id in students:
+                key = (user_id, lesson["moduleName"], action_type)
+                if key in notified_set:
+                    continue
+
                 if action_type == "entry":
                     text = f"⚠️ Не забудьте пробить карту при входе на пару: {lesson['moduleName']} ({lesson['startTime'][:-3]})"
                 else:
@@ -61,15 +85,17 @@ async def check_lesson_marks(bot: Bot):
 
                 try:
                     await bot.send_message(user_id, text)
+                    notified_set.add(key)
                 except Exception:
                     continue
 
 async def start_lesson_check_task(bot: Bot):
     while True:
         now = datetime.now()
-        weekday = now.weekday()
 
-        if weekday < 6 and time(9, 30) <= now.time() <= time(18, 20):
-            await check_lesson_marks(bot)
+        if now.weekday() < 6:
+            for scheduled_time, _ in REMINDER_TIMES:
+                if abs((datetime.combine(now.date(), scheduled_time) - now).total_seconds()) < 60:
+                    await check_lesson_marks(bot)
 
-        await asyncio.sleep(300)
+        await asyncio.sleep(30)
