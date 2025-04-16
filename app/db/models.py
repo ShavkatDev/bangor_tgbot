@@ -40,8 +40,8 @@ class ScheduleCache(Base):
     __tablename__ = "schedule_cache"
 
     id = Column(Integer, primary_key=True)
-    group_id = Column(Integer, index=True, nullable=False)
-    date = Column(Date, index=True, nullable=False)
+    group_id = Column(Integer, nullable=False, index=True)
+    week_start = Column(Date, nullable=False, index=True)
     data = Column(Text, nullable=False)
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
 

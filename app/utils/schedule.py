@@ -1,5 +1,5 @@
 from typing import Optional
-from datetime import date
+from datetime import date, timedelta
 from collections import defaultdict
 import httpx
 from app.config import TIMETABLE_HEADERS
@@ -133,3 +133,22 @@ def format_attendance(data: list, lang: str = "ru") -> str:
         final_lines.append(line)
 
     return "\n".join(final_lines)
+
+def sanitize_schedule_data(data: list[dict]) -> list[dict]:
+    needed_fields = [
+        "scheduleDate",
+        "startTime",
+        "endTime",
+        "moduleName",
+        "venueName",
+        "lecturerName",
+        "lessonTypeName",
+        "scheduleStatus"
+    ]
+    return [
+        {key: item[key] for key in needed_fields if key in item}
+        for item in data
+    ]
+
+def get_week_start(date_: date) -> date:
+    return date_ - timedelta(days=date_.weekday())

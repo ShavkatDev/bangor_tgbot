@@ -236,6 +236,11 @@ LEXICON_MSG = {
         "ru": "❌ Ошибка при отправке сообщения пользователю.",
         "uz": "❌ Foydalanuvchiga xabar yuborishda xatolik yuz berdi.",
         "en": "❌ Failed to send the message to the user."
+    },
+    "unexpected_error": {
+        "ru": "❌ Произошла непредвиденная ошибка. Обратитесь в поддержку.",
+        "uz": "❌ Kutilmagan xatolik yuz berdi. Yordam xizmatiga murojaat qiling.",
+        "en": "❌ An unexpected error occurred. Please contact support."
     }
 }
 

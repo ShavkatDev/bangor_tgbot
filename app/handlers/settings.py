@@ -21,6 +21,7 @@ async def open_settings(message: types.Message, lang: str):
 
 @settings_router.callback_query(F.data == "back_to_settings_menu")
 async def open_settings(callback: types.CallbackQuery, lang: str):
+    lang = await get_user_language(callback.from_user.id)
 
     await callback.message.delete()
 
@@ -59,7 +60,8 @@ async def delete_userdata(message: types.Message, lang: str):
     )
 
 @settings_router.callback_query(F.data.startswith("delete_"))
-async def confirm_delete(callback: types.CallbackQuery, lang: str):
+async def confirm_delete(callback: types.CallbackQuery):
+    lang = await get_user_language(callback.from_user.id)
     await callback.answer()
     await callback.message.delete()
     if callback.data == 'delete_approve':

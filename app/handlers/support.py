@@ -2,7 +2,6 @@ from aiogram import Router, F, types
 from aiogram.fsm.context import FSMContext
 
 from app.config import settings
-from app.db.crud.user import get_user_language
 from app.db.crud.support import get_open_ticket_by_question_message_id, save_ticket, close_ticket
 from app.lexicon.lexicon import LEXICON_MSG
 from app.keyboards.reply import main_menu_keyboard
@@ -12,15 +11,13 @@ from app.utils.text_from_lexicon import TextFromLexicon
 support_router = Router()
 
 @support_router.message(TextFromLexicon('support'))
-async def support_command(message: types.Message, state: FSMContext):
-    lang = await get_user_language(message.from_user.id)
+async def support_command(message: types.Message, lang: str, state: FSMContext):
     await message.answer(LEXICON_MSG["support_start"][lang], reply_markup=types.ReplyKeyboardRemove())
     await state.set_state(SupportState.waiting_for_question)
 
 @support_router.message(SupportState.waiting_for_question, F.content_type.in_({"text", "photo"}))
-async def handle_question(message: types.Message, state: FSMContext):
+async def handle_question(message: types.Message, lang: str, state: FSMContext):
     await state.clear()
-    lang = await get_user_language(message.from_user.id)
     user_id = message.from_user.id
 
     for admin_id in settings.ADMINS:
@@ -50,13 +47,11 @@ async def handle_question(message: types.Message, state: FSMContext):
     await message.answer(LEXICON_MSG["support_sent"][lang], reply_markup=main_menu_keyboard(lang))
 
 @support_router.message(SupportState.waiting_for_question)
-async def unsupported_type(message: types.Message):
-    lang = await get_user_language(message.from_user.id)
+async def unsupported_type(message: types.Message, lang: str):
     await message.answer(LEXICON_MSG["support_unsupported_type"][lang])
     
 @support_router.message(F.reply_to_message, F.from_user.id.in_(settings.ADMINS))
-async def admin_reply(message: types.Message):
-    lang = await get_user_language(message.from_user.id)
+async def admin_reply(message: types.Message, lang: str):
     replied = message.reply_to_message
     question_message_id = replied.message_id
 
