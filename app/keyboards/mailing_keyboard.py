@@ -1,5 +1,4 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from app.lexicon.lexicon import LEXICON_BUTTONS
 from app.config import get_button
 
 def mailing_settings_keyboard(daily_digest: bool, today_schedule_digest: bool, lang: str) -> InlineKeyboardMarkup:

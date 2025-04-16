@@ -182,6 +182,61 @@ LEXICON_MSG = {
         "uz": "❌ Jarayon bekor qilindi!",
         "en": "❌ Process cancelled!"
     },
+    "support_start": {
+        "ru": "✍️ Напишите свой вопрос — поддержка вам ответит.",
+        "uz": "✍️ Savolingizni yozing — yordam xizmati sizga javob beradi.",
+        "en": "✍️ Please write your question — support will respond."
+    },
+    "support_user_question": {
+        "ru": "📩 Вопрос от {full_name} ({user_id}):\n\n{text}",
+        "uz": "📩 Savol yuboruvchi: {full_name} ({user_id}):\n\n{text}",
+        "en": "📩 Question from {full_name} ({user_id}):\n\n{text}"
+    },
+    "support_sent": {
+        "ru": "✅ Ваш вопрос отправлен. Ожидайте ответа.",
+        "uz": "✅ Savolingiz yuborildi. Javobni kuting.",
+        "en": "✅ Your question has been sent. Please wait for a response."
+    },
+    "support_unsupported_type": {
+        "ru": "❌ Пожалуйста, отправьте только текст или изображение.",
+        "uz": "❌ Iltimos, faqat matn yoki rasm yuboring.",
+        "en": "❌ Please send only text or image."
+    },
+    "support_admin_user_id_error": {
+        "ru": "⚠️ Не удалось извлечь ID пользователя.",
+        "uz": "⚠️ Foydalanuvchi ID sini aniqlab bo‘lmadi.",
+        "en": "⚠️ Failed to extract user ID."
+    },
+    "support_admin_closed": {
+        "ru": "❗Этот вопрос уже закрыт или не найден.",
+        "uz": "❗Bu savol allaqachon yopilgan yoki topilmadi.",
+        "en": "❗This question is already closed or not found."
+    },
+    "support_admin_reply": {
+        "ru": "<b>✉️ Ответ от поддержки:</b>\n\n{text}",
+        "uz": "<b>✉️ Yordam javobi:</b>\n\n{text}",
+        "en": "<b>✉️ Support reply:</b>\n\n{text}"
+    },
+    "support_admin_reply_caption": {
+        "ru": "<b>✉️ Ответ от поддержки</b>",
+        "uz": "<b>✉️ Yordam javobi</b>",
+        "en": "<b>✉️ Support reply</b>"
+    },
+    "support_admin_invalid_type": {
+        "ru": "❌ Только текст и изображения поддерживаются.",
+        "uz": "❌ Faqat matn va rasm qo‘llab-quvvatlanadi.",
+        "en": "❌ Only text and images are supported."
+    },
+    "support_admin_confirm": {
+        "ru": "✅ Ответ отправлен. Тикет закрыт.",
+        "uz": "✅ Javob yuborildi. Murojaat yopildi.",
+        "en": "✅ Response sent. Ticket closed."
+    },
+    "support_admin_send_error": {
+        "ru": "❌ Ошибка при отправке сообщения пользователю.",
+        "uz": "❌ Foydalanuvchiga xabar yuborishda xatolik yuz berdi.",
+        "en": "❌ Failed to send the message to the user."
+    }
 }
 
 LEXICON_BUTTONS = {

@@ -6,6 +6,7 @@ from app.handlers.login import login_router
 from app.handlers.main_menu import main_menu_router
 from app.handlers.schedule import schedule_router
 from app.handlers.settings import settings_router
+from app.handlers.support import support_router
 
 def setup_routers(dp: Dispatcher):
     dp.include_router(chat_router)
@@ -14,3 +15,4 @@ def setup_routers(dp: Dispatcher):
     dp.include_router(main_menu_router)
     dp.include_router(schedule_router)
     dp.include_router(settings_router)
+    dp.include_router(support_router)

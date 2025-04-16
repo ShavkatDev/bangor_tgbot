@@ -44,3 +44,14 @@ class ScheduleCache(Base):
     date = Column(Date, index=True, nullable=False)
     data = Column(Text, nullable=False)
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+
+class SupportRequest(Base):
+    __tablename__ = "support_requests"
+
+    id = Column(Integer, primary_key=True)
+    user_id = Column(BigInteger, nullable=False)
+    admin_id = Column(BigInteger, nullable=True)
+    question_message_id = Column(BigInteger, nullable=False)
+    status = Column(String, default="open")
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
+    closed_at = Column(DateTime, nullable=True)

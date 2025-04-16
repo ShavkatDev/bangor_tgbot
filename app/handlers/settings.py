@@ -1,7 +1,7 @@
 from aiogram import Router, types
 from aiogram import F
 from aiogram.types import ReplyKeyboardRemove
-from app.keyboards.reply import main_menu_keyboard, settings_keyboard, mailing_keyboard
+from app.keyboards.reply import main_menu_keyboard, settings_keyboard
 from app.keyboards.language_keyboard import language_keyboard
 from app.keyboards.mailing_keyboard import mailing_settings_keyboard
 from app.keyboards.delete_keyboard import delete_keyboard
