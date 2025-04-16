@@ -18,6 +18,11 @@ async def main():
     
     setup_routers(dp)
 
+    dp.message.middleware(IgnoreGroupChatsMiddleware())
+    dp.message.middleware(RegistrationCheckMiddleware())
+
+    await dp.start_polling(bot)
+
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     try:
