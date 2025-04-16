@@ -10,7 +10,7 @@ from aiogram import Bot
 import json
 
 async def send_today_schedule_digest(bot: Bot):
-    today = date.today()
+    today = date.today() - timedelta(days=1)
     monday = today - timedelta(days=today.weekday())
     sunday = monday + timedelta(days=6)
 
@@ -43,7 +43,7 @@ async def send_today_schedule_digest(bot: Bot):
 
         today_data = [
             item for item in cleaned
-            if datetime.fromisoformat(item["scheduleDate"]).date() == today
+            if datetime.fromisoformat(item["scheduleDate"].replace('+0000', '+00:00')).date() == today
         ]
         if not today_data:
             continue

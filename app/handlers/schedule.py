@@ -56,7 +56,7 @@ async def get_schedule_text(telegram_id: int, lang: str, mode: str) -> str:
     else:
         filtered = [
             item for item in cleaned_data
-            if datetime.fromisoformat(item["scheduleDate"]).date() == target_day
+            if datetime.fromisoformat(item["scheduleDate"].replace('+0000', '+00:00')).date() == target_day
         ]
         return await format_schedule(filtered, lang)
 
