@@ -9,6 +9,7 @@ from app.config import settings
 from app.routers import setup_routers
 from app.middleware.registration_check import RegistrationCheckMiddleware
 from app.middleware.ignore_groups import IgnoreGroupChatsMiddleware
+from app.middleware.language import LanguageMiddleware
 
 
 async def main():
@@ -20,6 +21,7 @@ async def main():
 
     dp.message.middleware(IgnoreGroupChatsMiddleware())
     dp.message.middleware(RegistrationCheckMiddleware())
+    dp.message.middleware(LanguageMiddleware())
 
     await dp.start_polling(bot)
 

@@ -14,9 +14,7 @@ from app.utils.schedule import fetch_schedule_data, fetch_user_data
 login_router = Router()
 
 @login_router.message(Command("login"))
-async def login_command(message: types.Message, state: FSMContext):
-    lang = await get_user_language(message.from_user.id)
-    
+async def login_command(message: types.Message, state: FSMContext, lang: str):
     msg = await message.answer(
         text=LEXICON_MSG["enter_login"][lang]
     )
@@ -26,7 +24,7 @@ async def login_command(message: types.Message, state: FSMContext):
 
 
 @login_router.message(LoginState.waiting_for_login)
-async def process_login(message: types.Message, state: FSMContext):
+async def process_login(message: types.Message, state: FSMContext, lang: str):
     try:
         await message.delete()
     except:
@@ -34,7 +32,6 @@ async def process_login(message: types.Message, state: FSMContext):
 
     user_data = await state.get_data()
     msg: types.Message = user_data["msg"]
-    lang: str = user_data["lang"]
 
     await state.update_data(student_id=message.text)
     await msg.edit_text(
@@ -43,10 +40,9 @@ async def process_login(message: types.Message, state: FSMContext):
     await state.set_state(LoginState.waiting_for_password)
 
 @login_router.message(LoginState.waiting_for_password)
-async def process_password(message: types.Message, state: FSMContext):
+async def process_password(message: types.Message, state: FSMContext, lang: str):
     user_data = await state.get_data()
     msg: types.Message = user_data["msg"]
-    lang: str = user_data["lang"]
     student_id = user_data["student_id"]
     password = message.text
     telegram_id = message.from_user.id

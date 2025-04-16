@@ -10,14 +10,11 @@ from app.config import is_admin
 start_router = Router()
 
 @start_router.message(CommandStart())
-async def start_command(message: types.Message):
+async def start_command(message: types.Message, lang: str):
     telegram_id = message.from_user.id
-    lang = await get_user_language(message.from_user.id)
     user = await get_user_by_telegram_id(telegram_id)
-    print(type(telegram_id))
 
     if user:
         await message.answer(text=LEXICON_MSG['greet'][lang], reply_markup=main_menu_keyboard(lang))
-    # elif user and is_ad
     else:
         await message.answer(text=LEXICON_MSG['greet_login'][lang])

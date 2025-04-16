@@ -8,10 +8,9 @@ from datetime import date, timedelta
 
 schedule_router = Router()
 
-async def get_schedule_text(telegram_id: int, mode: str = "tomorrow") -> str:
+async def get_schedule_text(telegram_id: int, lang: str, mode: str = "tomorrow") -> str:
     creds = await get_user_credentials(telegram_id)
 
-    lang = await get_user_language(telegram_id)
     if not creds:
         return LEXICON_MSG['user_not_found'][lang]
 
@@ -47,27 +46,23 @@ async def get_schedule_text(telegram_id: int, mode: str = "tomorrow") -> str:
     return await format_schedule(data, lang)
 
 @schedule_router.message(TextFromLexicon("schedule_today_view"))
-async def show_today_schedule(message: types.Message):
-    lang = await get_user_language(message.from_user.id)
-    text = await get_schedule_text(message.from_user.id, mode="today")
+async def show_today_schedule(message: types.Message, lang: str):
+    text = await get_schedule_text(message.from_user.id, lang, mode="today")
     await message.answer(text, reply_markup=inet_schedule_keyboard(lang))
 
 @schedule_router.message(TextFromLexicon("schedule_tomorrow_view"))
-async def show_tomorrow_schedule(message: types.Message):
-    lang = await get_user_language(message.from_user.id)
-    text = await get_schedule_text(message.from_user.id, mode="tomorrow")
+async def show_tomorrow_schedule(message: types.Message, lang: str):
+    text = await get_schedule_text(message.from_user.id, lang, mode="tomorrow")
     await message.answer(text, reply_markup=inet_schedule_keyboard(lang))
 
 @schedule_router.message(TextFromLexicon("schedule_week_view"))
-async def show_week_schedule(message: types.Message):
-    lang = await get_user_language(message.from_user.id)
-    text = await get_schedule_text(message.from_user.id, mode="week")
+async def show_week_schedule(message: types.Message, lang: str):
+    text = await get_schedule_text(message.from_user.id, lang, mode="week")
     await message.answer(text, reply_markup=inet_schedule_keyboard(lang))
 
 @schedule_router.message(TextFromLexicon("attendance"))
-async def show_attendance(message: types.Message):
+async def show_attendance(message: types.Message, lang: str):
     telegram_id = message.from_user.id
-    lang = await get_user_language(telegram_id)
 
     creds = await get_user_credentials(telegram_id)
     login, password = creds
