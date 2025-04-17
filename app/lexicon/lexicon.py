@@ -90,7 +90,7 @@ LEXICON_MSG = {
     },
     'lecture_hours': {
         'ru': "Лекций",
-        'uz': "Ma’ruzalar",
+        'uz': "Ma'ruzalar",
         'en': "Lectures"
     },
     'absences': {
@@ -100,7 +100,7 @@ LEXICON_MSG = {
     },
     'no_classes': {
         'ru': "📭 На указанный период занятий нет.",
-        'uz': "📭 Ko‘rsatilgan davrda darslar yo‘q.",
+        'uz': "📭 Ko'rsatilgan davrda darslar yo'q.",
         'en': "📭 No classes scheduled for the selected period."
     },
     'days': {
@@ -169,12 +169,12 @@ LEXICON_MSG = {
     },
     "confirm_data_deletion": {
         "ru": "❗ Подтвердите удаление ваших данных в боте",
-        "uz": "❗ Botdagi maʼlumotlaringizni o‘chirishni tasdiqlang",
+        "uz": "❗ Botdagi ma'lumotlaringizni o'chirishni tasdiqlang",
         "en": "❗ Confirm the deletion of your data in the bot"
     },
     "data_deleted": {
         "ru": "✅ Данные удалены!",
-        "uz": "✅ Maʼlumotlar o‘chirildi!",
+        "uz": "✅ Ma'lumotlar o'chirildi!",
         "en": "✅ Data deleted!"
     },
     "process_cancelled": {
@@ -204,7 +204,7 @@ LEXICON_MSG = {
     },
     "support_admin_user_id_error": {
         "ru": "⚠️ Не удалось извлечь ID пользователя.",
-        "uz": "⚠️ Foydalanuvchi ID sini aniqlab bo‘lmadi.",
+        "uz": "⚠️ Foydalanuvchi ID sini aniqlab bo'lmadi.",
         "en": "⚠️ Failed to extract user ID."
     },
     "support_admin_closed": {
@@ -224,7 +224,7 @@ LEXICON_MSG = {
     },
     "support_admin_invalid_type": {
         "ru": "❌ Только текст и изображения поддерживаются.",
-        "uz": "❌ Faqat matn va rasm qo‘llab-quvvatlanadi.",
+        "uz": "❌ Faqat matn va rasm qo'llab-quvvatlanadi.",
         "en": "❌ Only text and images are supported."
     },
     "support_admin_confirm": {
@@ -241,6 +241,26 @@ LEXICON_MSG = {
         "ru": "❌ Произошла непредвиденная ошибка. Обратитесь в поддержку.",
         "uz": "❌ Kutilmagan xatolik yuz berdi. Yordam xizmatiga murojaat qiling.",
         "en": "❌ An unexpected error occurred. Please contact support."
+    },
+    "lesson_check_entry": {
+        "ru": "⚠️ Не забудьте пробить карту при входе на пару: {} ({})",
+        "uz": "⚠️ Darsga kirishda kartani urishni unutmang: {} ({})",
+        "en": "⚠️ Don't forget to scan your card when entering the class: {} ({})"
+    },
+    "lesson_check_exit": {
+        "ru": "⚠️ Не забудьте пробить карту при выходе с пары: {} ({})",
+        "uz": "⚠️ Darstan chiqishda kartani urishni unutmang: {} ({})",
+        "en": "⚠️ Don't forget to scan your card when leaving the class: {} ({})"
+    },
+    "lesson_check_test_start": {
+        "ru": "🔍 Тестовая проверка запущена в {}\nСегодня: {}",
+        "uz": "🔍 Test tekshiruvi ishga tushirildi {}\nBugun: {}",
+        "en": "🔍 Test check_lesson_marks run at {}\nToday: {}"
+    },
+    "lesson_check_test_found": {
+        "ru": "📚 Найдено {} уроков для проверки\nID группы: {}",
+        "uz": "📚 {} ta dars tekshirish uchun topildi\nGuruh ID: {}",
+        "en": "📚 Found {} lessons to check\nGroup ID: {}"
     }
 }
 
@@ -333,11 +353,11 @@ LEXICON_BUTTONS = {
     'language_settings': {
         'ru': "🌐 Язык",
         'uz': "🌐 Til",
-            'en': "🌐 Language"
+        'en': "🌐 Language"
     },
     'delete_user':{
         'ru': "🗑 Удалить данные",
-        'uz': "🗑 Maʼlumotlarni o‘chirish",
+        'uz': "🗑 Ma'lumotlarni o'chirish",
         'en': "🗑 Delete data"
     },
     'delete_approve':{

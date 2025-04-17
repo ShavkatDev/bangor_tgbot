@@ -1,0 +1,164 @@
+2025-04-18 00:51:45,719 [INFO] root:39 - Logging system initialized
+2025-04-18 00:51:45,722 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 00:51:45,943 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 00:51:46,334 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 00:51:46,346 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,346 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,346 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,347 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,347 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,347 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,347 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,348 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,348 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,348 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,348 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,348 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,351 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,351 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,352 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,353 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,353 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:51:46,353 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 00:51:46,354 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:51:46,354 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 00:51:46,354 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 00:51:46,354 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 00:51:46,355 [INFO] __main__:39 - Bot is ready to start polling...
+2025-04-18 00:51:46,355 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 00:51:46,448 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 00:52:05,879 [INFO] sqlalchemy.engine.Engine:1843 - select pg_catalog.version()
+2025-04-18 00:52:05,880 [INFO] sqlalchemy.engine.Engine:1843 - [raw sql] ()
+2025-04-18 00:52:05,884 [INFO] sqlalchemy.engine.Engine:1843 - select current_schema()
+2025-04-18 00:52:05,884 [INFO] sqlalchemy.engine.Engine:1843 - [raw sql] ()
+2025-04-18 00:52:05,889 [INFO] sqlalchemy.engine.Engine:1843 - show standard_conforming_strings
+2025-04-18 00:52:05,890 [INFO] sqlalchemy.engine.Engine:1843 - [raw sql] ()
+2025-04-18 00:52:05,892 [INFO] sqlalchemy.engine.Engine:2699 - BEGIN (implicit)
+2025-04-18 00:52:05,903 [INFO] sqlalchemy.engine.Engine:1843 - SELECT user_settings.language 
+FROM user_settings JOIN users ON users.id = user_settings.user_id 
+WHERE users.telegram_id = $1::BIGINT
+2025-04-18 00:52:05,903 [INFO] sqlalchemy.engine.Engine:1843 - [generated in 0.00048s] (845102332,)
+2025-04-18 00:52:05,926 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:52:05,926 [INFO] sqlalchemy.engine.Engine:2702 - ROLLBACK
+2025-04-18 00:52:05,927 [INFO] sqlalchemy.engine.Engine:2699 - BEGIN (implicit)
+2025-04-18 00:52:05,928 [INFO] sqlalchemy.engine.Engine:1843 - SELECT users.id, users.telegram_id, users.university_id, users.group_id, users.inet_id, users.semester_id, users.student_id, users.password_inet, users.created_at 
+FROM users 
+WHERE users.telegram_id = $1::BIGINT
+2025-04-18 00:52:05,928 [INFO] sqlalchemy.engine.Engine:1843 - [generated in 0.00024s] (845102332,)
+2025-04-18 00:52:05,930 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 00:52:05,930 [INFO] sqlalchemy.engine.Engine:2702 - ROLLBACK
+2025-04-18 00:52:05,930 [INFO] sqlalchemy.engine.Engine:2699 - BEGIN (implicit)
+2025-04-18 00:52:05,931 [INFO] sqlalchemy.engine.Engine:1843 - SELECT user_settings.language 
+FROM user_settings JOIN users ON users.id = user_settings.user_id 
+WHERE users.telegram_id = $1::BIGINT
+2025-04-18 00:52:05,931 [INFO] sqlalchemy.engine.Engine:1843 - [cached since 0.0279s ago] (845102332,)
+2025-04-18 00:52:05,932 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:52:05,932 [INFO] sqlalchemy.engine.Engine:2702 - ROLLBACK
+2025-04-18 00:52:05,933 [INFO] app.handlers.settings:21 - User 845102332 (@dcwscr) opened settings menu
+2025-04-18 00:52:06,365 [INFO] aiogram.event:172 - Update id=872171149 is handled. Duration 633 ms by bot id=7299087266
+2025-04-18 00:53:46,954 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-04-18 00:53:47,210 [INFO] __main__:45 - Shutting down bot...
+2025-04-18 00:53:47,213 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 00:53:47,223 [INFO] __main__:53 - Bot stopped by user (KeyboardInterrupt)
+2025-04-18 00:53:50,292 [INFO] root:41 - Logging system initialized
+2025-04-18 00:53:50,293 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 00:53:50,520 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 00:53:50,852 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 00:53:50,856 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,857 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,858 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,859 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,860 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,860 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,861 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,862 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,862 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,862 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,863 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,863 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,864 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,864 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,865 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,865 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,865 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,865 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,865 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,866 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,866 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,866 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,866 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,866 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 00:53:50,867 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 00:53:50,867 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 00:53:50,868 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 00:53:50,868 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 00:53:50,868 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 00:53:50,868 [INFO] __main__:39 - Bot is ready to start polling...
+2025-04-18 00:53:50,869 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 00:53:50,964 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 00:53:54,346 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:53:54,349 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 00:53:54,350 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:53:54,350 [INFO] app.handlers.settings:83 - User 845102332 (@dcwscr) requested account deletion
+2025-04-18 00:53:54,778 [INFO] aiogram.event:172 - Update id=872171150 is handled. Duration 502 ms by bot id=7299087266
+2025-04-18 00:54:06,316 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:06,727 [INFO] app.handlers.settings:106 - User 845102332 (@dcwscr) confirmed account deletion
+2025-04-18 00:54:06,760 [INFO] root:133 - [User] Deleted user and settings for telegram_id=845102332
+2025-04-18 00:54:06,978 [INFO] aiogram.event:172 - Update id=872171151 is handled. Duration 666 ms by bot id=7299087266
+2025-04-18 00:54:12,430 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:12,432 [INFO] app.handlers.start:16 - User 845102332 (@dcwscr) started the bot with language en
+2025-04-18 00:54:12,434 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 00:54:12,435 [INFO] app.handlers.start:25 - User 845102332 (@dcwscr) is not registered, showing login prompt
+2025-04-18 00:54:12,644 [INFO] aiogram.event:172 - Update id=872171152 is handled. Duration 216 ms by bot id=7299087266
+2025-04-18 00:54:14,390 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:14,393 [INFO] app.handlers.login:22 - User 845102332 (@dcwscr) started login process
+2025-04-18 00:54:14,606 [INFO] aiogram.event:172 - Update id=872171153 is handled. Duration 218 ms by bot id=7299087266
+2025-04-18 00:54:23,335 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:23,336 [INFO] app.handlers.login:40 - User 845102332 (@dcwscr) entered login
+2025-04-18 00:54:23,795 [INFO] aiogram.event:172 - Update id=872171154 is handled. Duration 469 ms by bot id=7299087266
+2025-04-18 00:54:26,913 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:26,915 [INFO] app.handlers.login:60 - User 845102332 (@dcwscr) entered password
+2025-04-18 00:54:28,253 [INFO] httpx:1740 - HTTP Request: POST https://inet.mdis.uz/oauth/tocken "HTTP/1.1 200 "
+2025-04-18 00:54:28,557 [INFO] httpx:1740 - HTTP Request: GET https://inet.mdis.uz/api/v1/education/view/students?selfId=59158 "HTTP/1.1 200 "
+2025-04-18 00:54:28,560 [INFO] app.utils.schedule:45 - Successfully fetched user data for inet_id 59158
+2025-04-18 00:54:28,564 [INFO] root:46 - [User] Check registration status for telegram_id=845102332
+2025-04-18 00:54:28,613 [INFO] root:76 - [User] Created user telegram_id=845102332, group_id=232
+2025-04-18 00:54:28,616 [INFO] app.handlers.login:124 - User 845102332 (@dcwscr) successfully registered with group_id=232
+2025-04-18 00:54:29,064 [INFO] aiogram.event:172 - Update id=872171155 is handled. Duration 2159 ms by bot id=7299087266
+2025-04-18 00:54:30,821 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:30,822 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 00:54:30,823 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:30,824 [INFO] app.handlers.main_menu:31 - User 845102332 (@dcwscr) opened inet schedule menu
+2025-04-18 00:54:31,034 [INFO] aiogram.event:172 - Update id=872171156 is handled. Duration 216 ms by bot id=7299087266
+2025-04-18 00:54:32,828 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:32,830 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 00:54:32,833 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:32,833 [INFO] app.handlers.schedule:80 - User 845102332 (@dcwscr) requested today's schedule
+2025-04-18 00:54:32,834 [INFO] app.handlers.schedule:29 - Getting schedule for user 845102332, mode=today, target_day=2025-04-17
+2025-04-18 00:54:32,836 [INFO] root:72 - [User] Found group_id=232 for telegram_id=845102332
+2025-04-18 00:54:32,854 [INFO] root:27 - [Cache] Schedule loaded for group_id=232, updated_at=2025-04-16 23:52:00.753504
+2025-04-18 00:54:32,855 [INFO] app.handlers.schedule:45 - Cache miss for group_id=232, fetching fresh data
+2025-04-18 00:54:32,856 [INFO] root:91 - [User] Credentials decrypted for telegram_id=845102332
+2025-04-18 00:54:33,177 [INFO] httpx:1740 - HTTP Request: POST https://inet.mdis.uz/oauth/tocken "HTTP/1.1 200 "
+2025-04-18 00:54:33,181 [INFO] app.utils.schedule:26 - Successfully obtained token for user b2305078
+2025-04-18 00:54:33,709 [INFO] httpx:1740 - HTTP Request: GET https://inet.mdis.uz/api/v1/education/student/view/schedules?from=2025-04-14&to=2025-04-20 "HTTP/1.1 200 "
+2025-04-18 00:54:33,712 [INFO] app.utils.schedule:64 - Successfully fetched schedule data from 2025-04-14 to 2025-04-20
+2025-04-18 00:54:33,728 [INFO] root:48 - [Cache] Schedule updated for group_id=232, week_start=2025-04-14
+2025-04-18 00:54:33,731 [INFO] app.handlers.schedule:64 - Saved new schedule to cache for group_id=232
+2025-04-18 00:54:33,949 [INFO] aiogram.event:172 - Update id=872171157 is handled. Duration 1126 ms by bot id=7299087266
+2025-04-18 00:54:36,092 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:36,095 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 00:54:36,097 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → en
+2025-04-18 00:54:36,099 [INFO] app.handlers.main_menu:46 - User 845102332 (@dcwscr) returned to main menu
+2025-04-18 00:54:36,309 [INFO] aiogram.event:172 - Update id=872171158 is handled. Duration 223 ms by bot id=7299087266
+2025-04-18 01:01:26,373 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-04-18 01:01:26,637 [INFO] __main__:45 - Shutting down bot...
+2025-04-18 01:01:26,641 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 01:01:26,647 [INFO] __main__:53 - Bot stopped by user (KeyboardInterrupt)

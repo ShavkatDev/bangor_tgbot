@@ -1,3 +1,4 @@
+import logging
 from typing import Optional
 from datetime import date, timedelta
 from collections import defaultdict
@@ -7,44 +8,65 @@ from app.lexicon.lexicon import LEXICON_MSG
 from app.utils.date_utils import get_day_name
 from app.db.crud.user import get_attendance_data
 
+logger = logging.getLogger(__name__)
 
 async def get_token(login: str, password: str) -> Optional[str]:
-    async with httpx.AsyncClient() as client:
-        response = await client.post(
-            "https://inet.mdis.uz/oauth/tocken",
-            headers=TIMETABLE_HEADERS,
-            data={
-                "username": login,
-                "password": password,
-                "grant_type": "password"
-            }
-        )
-        if response.status_code == 200:
-            return response.json().get("access_token")
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.post(
+                "https://inet.mdis.uz/oauth/tocken",
+                headers=TIMETABLE_HEADERS,
+                data={
+                    "username": login,
+                    "password": password,
+                    "grant_type": "password"
+                }
+            )
+            if response.status_code == 200:
+                logger.info(f"Successfully obtained token for user {login}")
+                return response.json().get("access_token")
+            logger.warning(f"Failed to obtain token for user {login}, status code: {response.status_code}")
+            return None
+    except Exception as e:
+        logger.error(f"Error obtaining token for user {login}: {str(e)}", exc_info=True)
         return None
 
 async def fetch_user_data(token: str, inet_id: str) -> list:
-    headers = TIMETABLE_HEADERS.copy()
-    headers["Authorization"] = f"Bearer {token}"
-    async with httpx.AsyncClient() as client:
-        response = await client.get(
-            f"https://inet.mdis.uz/api/v1/education/view/students?selfId={inet_id}",
-            headers=headers
-        )
-        if response.status_code == 200:
-            return response.json().get("data", [])
+    try:
+        headers = TIMETABLE_HEADERS.copy()
+        headers["Authorization"] = f"Bearer {token}"
+        async with httpx.AsyncClient() as client:
+            response = await client.get(
+                f"https://inet.mdis.uz/api/v1/education/view/students?selfId={inet_id}",
+                headers=headers
+            )
+            if response.status_code == 200:
+                data = response.json().get("data", [])
+                logger.info(f"Successfully fetched user data for inet_id {inet_id}")
+                return data
+            logger.warning(f"Failed to fetch user data for inet_id {inet_id}, status code: {response.status_code}")
+            return []
+    except Exception as e:
+        logger.error(f"Error fetching user data for inet_id {inet_id}: {str(e)}", exc_info=True)
         return []
 
 async def fetch_schedule_data(token: str, start: date, end: date) -> list:
-    headers = TIMETABLE_HEADERS.copy()
-    headers["Authorization"] = f"Bearer {token}"
-    async with httpx.AsyncClient() as client:
-        response = await client.get(
-            f"https://inet.mdis.uz/api/v1/education/student/view/schedules?from={start}&to={end}",
-            headers=headers
-        )
-        if response.status_code == 200:
-            return response.json().get("data", [])
+    try:
+        headers = TIMETABLE_HEADERS.copy()
+        headers["Authorization"] = f"Bearer {token}"
+        async with httpx.AsyncClient() as client:
+            response = await client.get(
+                f"https://inet.mdis.uz/api/v1/education/student/view/schedules?from={start}&to={end}",
+                headers=headers
+            )
+            if response.status_code == 200:
+                data = response.json().get("data", [])
+                logger.info(f"Successfully fetched schedule data from {start} to {end}")
+                return data
+            logger.warning(f"Failed to fetch schedule data from {start} to {end}, status code: {response.status_code}")
+            return []
+    except Exception as e:
+        logger.error(f"Error fetching schedule data from {start} to {end}: {str(e)}", exc_info=True)
         return []
 
 
@@ -91,16 +113,23 @@ async def format_schedule(data: list, lang: str = "en") -> str:
     return "\n".join(final_lines)
 
 async def fetch_attendance_data(telegram_id: int, token: str) -> list:
-    inet_id, semester_id = await get_attendance_data(telegram_id)
-    headers = TIMETABLE_HEADERS.copy()
-    headers["Authorization"] = f"Bearer {token}"
-    async with httpx.AsyncClient() as client:
-        response = await client.get(
-            f"https://inet.mdis.uz/api/v1/education/students/attendances?page=0&perPage=10&direction=ASC&sortBy=id&semesterId={semester_id}&studentId={inet_id}",
-            headers=headers
-        )
-        if response.status_code == 200:
-            return response.json().get("data", [])
+    try:
+        inet_id, semester_id = await get_attendance_data(telegram_id)
+        headers = TIMETABLE_HEADERS.copy()
+        headers["Authorization"] = f"Bearer {token}"
+        async with httpx.AsyncClient() as client:
+            response = await client.get(
+                f"https://inet.mdis.uz/api/v1/education/students/attendances?page=0&perPage=10&direction=ASC&sortBy=id&semesterId={semester_id}&studentId={inet_id}",
+                headers=headers
+            )
+            if response.status_code == 200:
+                data = response.json().get("data", [])
+                logger.info(f"Successfully fetched attendance data for user {telegram_id}")
+                return data
+            logger.warning(f"Failed to fetch attendance data for user {telegram_id}, status code: {response.status_code}")
+            return []
+    except Exception as e:
+        logger.error(f"Error fetching attendance data for user {telegram_id}: {str(e)}", exc_info=True)
         return []
 
 def format_attendance(data: list, lang: str = "ru") -> str:

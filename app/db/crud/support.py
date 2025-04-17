@@ -1,4 +1,5 @@
 from datetime import datetime
+import logging
 from sqlalchemy import select, update
 
 from app.db.models import SupportRequest
@@ -13,6 +14,7 @@ async def save_ticket(user_id: int, question_message_id: int):
         )
         session.add(ticket)
         await session.commit()
+        logging.info(f"[Support] New ticket from user_id={user_id}, message_id={question_message_id}")
 
 async def get_open_ticket_by_question_message_id(question_message_id: int):
     async with async_session_maker() as session:
@@ -21,6 +23,7 @@ async def get_open_ticket_by_question_message_id(question_message_id: int):
             .where(SupportRequest.question_message_id == question_message_id)
             .where(SupportRequest.status == "open")
         )
+        logging.info(f"[Support] Fetched open ticket for message_id={question_message_id}")
         return result.scalars().first()
 
 async def close_ticket(user_id: int, admin_id: int):
@@ -35,4 +38,5 @@ async def close_ticket(user_id: int, admin_id: int):
                 closed_at=datetime.utcnow()
             )
         )
+        logging.info(f"[Support] Ticket closed by admin_id={admin_id} for user_id={user_id}")
         await session.commit()

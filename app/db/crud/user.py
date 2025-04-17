@@ -1,3 +1,4 @@
+import logging
 from typing import Optional
 from sqlalchemy import select, update, delete
 from app.db.models import User, UserSettings
@@ -10,6 +11,7 @@ async def get_user_by_telegram_id(telegram_id: int) -> Optional[User]:
         result = await session.execute(
             select(User).where(User.telegram_id == telegram_id)
         )
+        logging.info(f"[User] Fetching user for telegram_id={telegram_id}")
         return result.scalars().first()
 
 async def get_user_language(telegram_id: int) -> str:
@@ -20,6 +22,7 @@ async def get_user_language(telegram_id: int) -> str:
             .where(User.telegram_id == telegram_id)
         )
         lang = result.scalar()
+        logging.info(f"[User] Getting language for telegram_id={telegram_id} → {lang or 'en'}")
         return lang or "en"
 
 async def get_attendance_data(telegram_id: int) -> tuple[int, int]:
@@ -30,6 +33,7 @@ async def get_attendance_data(telegram_id: int) -> tuple[int, int]:
         )
         row = result.one_or_none()
         
+        logging.info(f"[User] Attendance data for telegram_id={telegram_id}: inet_id={inet_id or 0}, semester_id={semester_id or 0}")
         if row:
             inet_id, semester_id = row
             return inet_id or 0, semester_id or 0
@@ -39,6 +43,7 @@ async def get_attendance_data(telegram_id: int) -> tuple[int, int]:
 async def is_user_registered(telegram_id: int) -> bool:
     async with async_session_maker() as session:
         result = await session.execute(select(User).where(User.telegram_id == telegram_id))
+        logging.info(f"[User] Check registration status for telegram_id={telegram_id}")
         return result.scalars().first() is not None
 
 
@@ -68,14 +73,8 @@ async def create_user_with_settings(
             language=lang
         )
         session.add(settings)
+        logging.info(f"[User] Created user telegram_id={telegram_id}, group_id={group_id}")
         await session.commit()
-    
-async def get_user_by_telegram_id(telegram_id: int) -> Optional[User]:
-    async with async_session_maker() as session:
-        result = await session.execute(
-            select(User).where(User.telegram_id == telegram_id)
-        )
-        return result.scalars().first()
     
 async def get_user_credentials(telegram_id: int) -> Optional[tuple[str, str]]:
     async with async_session_maker() as session:
@@ -89,6 +88,7 @@ async def get_user_credentials(telegram_id: int) -> Optional[tuple[str, str]]:
 
         login = decrypt(user.student_id)
         password = decrypt(user.password_inet)
+        logging.info(f"[User] Credentials decrypted for telegram_id={telegram_id}")
         return login, password
     
 async def update_user_language(telegram_id: int, lang: str) -> None:
@@ -107,6 +107,7 @@ async def update_user_language(telegram_id: int, lang: str) -> None:
             .values(language=lang)
         )
 
+        logging.info(f"[User] Updated language to '{lang}' for telegram_id={telegram_id}")
         await session.commit()
 
 async def delete_user_completely(telegram_id: int) -> bool:
@@ -117,6 +118,7 @@ async def delete_user_completely(telegram_id: int) -> bool:
         user = result.scalars().first()
 
         if not user:
+            logging.warning(f"[User] Tried to delete non-existent user telegram_id={telegram_id}")
             return False
 
         await session.execute(
@@ -128,4 +130,5 @@ async def delete_user_completely(telegram_id: int) -> bool:
         )
 
         await session.commit()
+        logging.info(f"[User] Deleted user and settings for telegram_id={telegram_id}")
         return True
