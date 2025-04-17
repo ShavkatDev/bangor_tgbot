@@ -63,7 +63,7 @@ async def get_lessons_to_check(schedule_data: list[dict], current_time: datetime
 
 async def check_lesson_marks(bot: Bot):
     now = datetime.now()
-    today = date.today()
+    today = date.today() - timedelta(days=1)
 
     group_schedules = await get_all_group_schedules_today(today)
 
