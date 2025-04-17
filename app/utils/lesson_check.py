@@ -86,9 +86,6 @@ async def check_lesson_marks(bot: Bot):
                     text = f"⚠️ Не забудьте пробить карту при выходе с пары: {lesson['moduleName']} ({lesson['endTime'][:-3]})"
 
                 try:
-                    #testing
-                    if not user_id not in 845102332:
-                        continue
                     await bot.send_message(user_id, text)
                     notified_set.add(key)
                 except Exception:

@@ -19,7 +19,6 @@ async def send_today_schedule_digest(bot: Bot):
     group_map = {}
     for telegram_id, group_id, lang in users:
         group_map.setdefault(group_id, []).append((telegram_id, lang))
-        
 
     for group_id, student_list in group_map.items():
         cached = await get_cached_schedule(group_id, monday)
@@ -51,9 +50,6 @@ async def send_today_schedule_digest(bot: Bot):
         for telegram_id, lang in student_list:
             try:
                 text = await format_schedule(today_data, lang)
-                #testing
-                if not telegram_id not in 845102332:
-                    continue
                 await bot.send_message(telegram_id, text)
             except Exception:
                 continue
