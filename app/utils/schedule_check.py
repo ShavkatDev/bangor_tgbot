@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta, date
+import logging
 from app.db.crud.user import get_user_credentials
 from app.db.crud.schedule import get_users_with_today_digest, get_cached_schedule, save_schedule_to_cache
 from app.utils.schedule import fetch_schedule_data, get_token, format_schedule, sanitize_schedule_data
@@ -50,6 +51,7 @@ async def send_today_schedule_digest(bot: Bot):
         for telegram_id, lang in student_list:
             try:
                 text = await format_schedule(today_data, lang)
+                logging.info(f"{telegram_id}, {text}")
                 await bot.send_message(telegram_id, text)
             except Exception:
                 continue

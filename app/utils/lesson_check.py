@@ -1,3 +1,4 @@
+import logging
 from aiogram import Bot
 from datetime import datetime, timedelta, date, time
 
@@ -87,6 +88,7 @@ async def check_lesson_marks(bot: Bot):
 
                 try:
                     await bot.send_message(user_id, text)
+                    logging.info(f"{user_id}, {text}")
                     notified_set.add(key)
                 except Exception:
                     continue
