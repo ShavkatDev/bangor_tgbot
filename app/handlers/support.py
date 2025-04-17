@@ -35,31 +35,22 @@ async def handle_question(message: types.Message, lang: str, state: FSMContext):
     try:
         await state.clear()
         user_id = message.from_user.id
+        question_id=message.message_id
+        await save_ticket(user_id=user_id, question_message_id=question_id)
+        logger.info(f"Support ticket created with ID {question_id} for user {telegram_id}")
 
         for admin_id in settings.ADMINS:
             if message.text:
-                sent = await message.bot.send_message(
+                await message.bot.send_message(
                     admin_id,
-                    LEXICON_MSG["support_user_question"][lang].format(
-                        full_name=message.from_user.full_name,
-                        user_id=message.from_user.id,
-                        text=message.text
-                    )
+                    f"📩 Question №{question_id} from {message.from_user.full_name} ({telegram_id}):\n\n{message.text}"
                 )
             else:
-                sent = await message.bot.send_photo(
+                await message.bot.send_photo(
                     admin_id,
                     message.photo[-1].file_id,
-                    caption=LEXICON_MSG["support_user_question"][lang].format(
-                        full_name=message.from_user.full_name,
-                        user_id=message.from_user.id,
-                        text=message.caption
-                    )
+                    caption=f"📩 Question №{question_id} from {message.from_user.full_name} ({telegram_id}):\n\n{message.caption}"
                 )
-
-            if admin_id == settings.ADMINS[0]:
-                await save_ticket(user_id=user_id, question_message_id=sent.message_id)
-                logger.info(f"Support ticket created for user {telegram_id} (@{username})")
 
         await message.answer(LEXICON_MSG["support_sent"][lang], reply_markup=main_menu_keyboard(lang))
     except Exception as e:
@@ -84,15 +75,25 @@ async def admin_reply(message: types.Message, lang: str):
     admin_id = message.from_user.id
     admin_username = message.from_user.username or "No username"
     replied = message.reply_to_message
-    question_message_id = replied.message_id
     content_type = "text" if message.text else "photo" if message.photo else "other"
     
     try:
-        logger.info(f"Admin {admin_id} (@{admin_username}) replied to support ticket with {content_type}")
-        
-        ticket = await get_open_ticket_by_question_message_id(question_message_id)
-        if not ticket or ticket.status == "closed":
-            logger.warning(f"Admin {admin_id} tried to reply to closed/non-existent ticket")
+        # Извлекаем ID вопроса из текста сообщения
+        try:
+            question_id = int(replied.text.split("№")[1].split(" ")[0])
+            logger.info(f"Admin {admin_id} (@{admin_username}) replied to question {question_id} with {content_type}")
+        except (IndexError, ValueError) as e:
+            logger.error(f"Could not extract question_id from message: {replied.text}")
+            await message.answer(LEXICON_MSG["support_admin_closed"][lang])
+            return
+
+        ticket = await get_open_ticket_by_question_message_id(question_id)
+        if not ticket:
+            logger.warning(f"Admin {admin_id} tried to reply to non-existent ticket {question_id}")
+            await message.answer(LEXICON_MSG["support_admin_closed"][lang])
+            return
+        elif ticket.status == "closed":
+            logger.warning(f"Admin {admin_id} tried to reply to already closed ticket {question_id}")
             await message.answer(LEXICON_MSG["support_admin_closed"][lang])
             return
 
@@ -117,7 +118,7 @@ async def admin_reply(message: types.Message, lang: str):
             return
 
         await close_ticket(user_id, admin_id)
-        logger.info(f"Admin {admin_id} closed support ticket for user {user_id}")
+        logger.info(f"Admin {admin_id} closed support ticket {question_id} for user {user_id}")
         await message.answer(LEXICON_MSG["support_admin_confirm"][lang])
 
     except Exception as e:

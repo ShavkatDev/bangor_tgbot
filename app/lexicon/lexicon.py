@@ -15,7 +15,7 @@ LEXICON_MSG = {
     },
     'greet_login': {
         'ru': "👋 Привет! Чтобы продолжить, пожалуйста, авторизуйтесь командой /login",
-        'uz': "👋 Salom! Davom ettirish uchun iltimos, /login buyrug‘i orqali ro‘yxatdan o‘ting",
+        'uz': "👋 Salom! Davom ettirish uchun iltimos, /login buyrug'i orqali ro'yxatdan o'ting",
         'en': "👋 Hello! To continue, please log in using the /login command"
     },
     'enter_login': {
@@ -35,17 +35,17 @@ LEXICON_MSG = {
     },
     'invalid_credentials': {
         'ru': "❌ Неверный логин или пароль. Попробуйте снова через /login",
-        'uz': "❌ Login yoki parol noto‘g‘ri. Qayta urinib ko‘ring: /login",
+        'uz': "❌ Login yoki parol noto'g'ri. Qayta urinib ko'ring: /login",
         'en': "❌ Invalid login or password. Please try again via /login"
     },
     'group_not_found': {
         'ru': "❌ Не удалось определить номер группы.",
-        'uz': "❌ Guruh raqamini aniqlab bo‘lmadi.",
+        'uz': "❌ Guruh raqamini aniqlab bo'lmadi.",
         'en': "❌ Failed to determine the group number."
     },
     'already_registered': {
         'ru': "❗️Вы уже зарегистрированы.",
-        'uz': "❗️Siz allaqachon ro‘yxatdan o‘tgansiz.",
+        'uz': "❗️Siz allaqachon ro'yxatdan o'tgansiz.",
         'en': "❗️You are already registered."
     },
     'user_not_found': {
@@ -75,7 +75,7 @@ LEXICON_MSG = {
     },
     'registration_required': {
         'ru': "❗️Чтобы пользоваться ботом, сначала авторизуйтесь через /login",
-        'uz': "❗️Botdan foydalanish uchun avval /login orqali ro‘yxatdan o‘ting",
+        'uz': "❗️Botdan foydalanish uchun avval /login orqali ro'yxatdan o'ting",
         'en': "❗️To use the bot, please log in first via /login"
     },
     'no_absences': {
@@ -261,6 +261,46 @@ LEXICON_MSG = {
         "ru": "📚 Найдено {} уроков для проверки\nID группы: {}",
         "uz": "📚 {} ta dars tekshirish uchun topildi\nGuruh ID: {}",
         "en": "📚 Found {} lessons to check\nGroup ID: {}"
+    },
+    "privacy_policy_required": {
+        "ru": "Для использования бота необходимо принять <b>политику конфиденциальности</b> и <b>условия использования</b>.",
+        "uz": "Botdan foydalanish uchun <b>maxfiylik siyosatini</b> va <b>foydalanish shartlarini</b> qabul qilishingiz kerak.",
+        "en": "To use the bot, you must accept the <b>privacy policy</b> and <b>terms of service</b>."
+    },
+    "privacy_policy_accept": {
+        "ru": "✅ Принять",
+        "uz": "✅ Qabul qilish",
+        "en": "✅ Accept"
+    },
+    "privacy_policy_decline": {
+        "ru": "❌ Отклонить",
+        "uz": "❌ Rad etish",
+        "en": "❌ Decline"
+    },
+    "privacy_policy_accepted": {
+        "ru": "Спасибо! Теперь вы можете продолжить регистрацию.",
+        "uz": "Rahmat! Endi ro'yxatdan o'tishni davom ettirishingiz mumkin.",
+        "en": "Thank you! You can now continue with registration."
+    },
+    "privacy_policy_declined": {
+        "ru": "К сожалению, без принятия политики конфиденциальности мы не можем предоставить вам доступ к боту.",
+        "uz": "Afsuski, maxfiylik siyosatini qabul qilmasdan, biz sizga botga kirish imkonini bera olmaymiz.",
+        "en": "Unfortunately, without accepting the privacy policy, we cannot provide you access to the bot."
+    },
+    "view_privacy_policy": {
+        "ru": "📄 Политика конфиденциальности",
+        "uz": "📄 Maxfiylik siyosati",
+        "en": "📄 Privacy Policy"
+    },
+    "view_terms": {
+        "ru": "📄 Условия использования",
+        "uz": "📄 Foydalanish shartlari",
+        "en": "📄 Terms of Service"
+    },
+    "error": {
+        "ru": "❌ Произошла ошибка. Пожалуйста, попробуйте позже.",
+        "uz": "❌ Xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring.",
+        "en": "❌ An error occurred. Please try again later."
     }
 }
 

@@ -33,7 +33,8 @@ async def get_attendance_data(telegram_id: int) -> tuple[int, int]:
         )
         row = result.one_or_none()
         
-        logging.info(f"[User] Attendance data for telegram_id={telegram_id}: inet_id={inet_id or 0}, semester_id={semester_id or 0}")
+        
+        logging.info(f"[User] Attendance data for telegram_id={telegram_id}")
         if row:
             inet_id, semester_id = row
             return inet_id or 0, semester_id or 0

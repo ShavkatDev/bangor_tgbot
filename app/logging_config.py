@@ -32,7 +32,6 @@ def setup_logging():
     root_logger.addHandler(file_handler)
     root_logger.addHandler(console_handler)
 
-    # Silence SQLAlchemy logs
     logging.getLogger('sqlalchemy.engine').setLevel(logging.WARNING)
     logging.getLogger('sqlalchemy.pool').setLevel(logging.WARNING)
     logging.getLogger('sqlalchemy.dialects').setLevel(logging.WARNING)

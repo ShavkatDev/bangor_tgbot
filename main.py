@@ -35,6 +35,7 @@ async def main():
         dp.message.middleware(IgnoreGroupChatsMiddleware())
         dp.message.middleware(RegistrationCheckMiddleware())
         dp.message.middleware(LanguageMiddleware())
+        dp.callback_query.middleware(LanguageMiddleware())
         
         logger.info("Bot is ready to start polling...")
         await dp.start_polling(bot)

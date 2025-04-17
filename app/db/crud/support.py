@@ -10,7 +10,7 @@ async def save_ticket(user_id: int, question_message_id: int):
         ticket = SupportRequest(
             user_id=user_id,
             question_message_id=question_message_id,
-            status="open"
+            status="open",
         )
         session.add(ticket)
         await session.commit()
@@ -23,8 +23,14 @@ async def get_open_ticket_by_question_message_id(question_message_id: int):
             .where(SupportRequest.question_message_id == question_message_id)
             .where(SupportRequest.status == "open")
         )
-        logging.info(f"[Support] Fetched open ticket for message_id={question_message_id}")
-        return result.scalars().first()
+        ticket = result.scalars().first()
+        
+        if ticket:
+            logging.info(f"[Support] Found open ticket: id={ticket.id}, status={ticket.status}, user_id={ticket.user_id}")
+        else:
+            logging.warning(f"[Support] No open ticket found for message_id={question_message_id}")
+        
+        return ticket
 
 async def close_ticket(user_id: int, admin_id: int):
     async with async_session_maker() as session:

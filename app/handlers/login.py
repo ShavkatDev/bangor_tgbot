@@ -8,20 +8,28 @@ from app.db.crud.user import is_user_registered, create_user_with_settings
 
 from app.keyboards.reply import main_menu_keyboard
 from app.lexicon.lexicon import LEXICON_MSG
+from app.keyboards.privacy_keyboard import get_privacy_keyboard
 
-from datetime import date
 from app.utils.schedule import fetch_user_data
 
 logger = logging.getLogger(__name__)
 login_router = Router()
 
-@login_router.message(Command("login"))
+@login_router.message(LoginState.waiting_for_privacy)
 async def login_command(message: types.Message, state: FSMContext, lang: str):
     telegram_id = message.from_user.id
     username = message.from_user.username or "No username"
     logger.info(f"User {telegram_id} (@{username}) started login process")
     
     try:
+        user_data = await state.get_data()
+        if not user_data.get("privacy_accepted"):
+            await message.answer(
+                text=LEXICON_MSG["privacy_policy_required"][lang],
+                reply_markup=get_privacy_keyboard(lang)
+            )
+            return
+
         msg = await message.answer(
             text=LEXICON_MSG["enter_login"][lang]
         )
