@@ -2,6 +2,7 @@ from datetime import datetime, timedelta, date
 import logging
 from app.db.crud.user import get_user_credentials
 from app.db.crud.schedule import get_users_with_today_digest, get_cached_schedule, save_schedule_to_cache
+from app.lexicon.lexicon import LEXICON_MSG
 from app.utils.schedule import fetch_schedule_data, get_token, format_schedule, sanitize_schedule_data
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -52,7 +53,8 @@ async def send_today_schedule_digest(bot: Bot):
             try:
                 text = await format_schedule(today_data, lang)
                 logging.info(f"{telegram_id}, {text}")
-                await bot.send_message(telegram_id, text)
+                if text in LEXICON_MSG['no_classes'].values():
+                    await bot.send_message(telegram_id, text)
             except Exception:
                 continue
 

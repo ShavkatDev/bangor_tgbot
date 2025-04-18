@@ -148,9 +148,21 @@ LEXICON_MSG = {
         'en': "⚙️ Settings: "
     },
     'choose_mailing': {
-        'ru': "📬 Выберите рассылку:",
-        'uz': "📬 Xabarnoma turini tanlang:",
-        'en': "📬 Choose the mailing type:"
+        'ru': (
+            "📬 Выберите рассылку:\n\n"
+            "🔔 <b>Рассылка входа/выхода</b> — напоминание, чтобы не забыть пробить карту перед занятием и после него.\n"
+            "🗓️ <b>Рассылка пар на сегодня</b> — каждое утро бот отправляет расписание ваших пар на сегодня."
+        ),
+        'uz': (
+            "📬 Xabarnoma turini tanlang:\n\n"
+            "🔔 <b>Kirish/Chiqish xabarlari</b> — darsga kirishdan va chiqishdan oldin karta bosishni eslatadi.\n"
+            "🗓️ <b>Bugungi darslar xabarnomasi</b> — har kuni ertalab bugungi darslar jadvalini yuboradi."
+        ),
+        'en': (
+            "📬 Choose the mailing type:\n\n"
+            "🔔 <b>Check-in/Checkout mailing</b> — reminders to scan your card before and after each class.\n"
+            "🗓️ <b>Today's classes mailing</b> — every morning you'll receive your class schedule for today."
+        )
     },
     'choose_language': {
         'ru': "🌐 Выберите язык:",
@@ -243,14 +255,44 @@ LEXICON_MSG = {
         "en": "❌ An unexpected error occurred. Please contact support."
     },
     "lesson_check_entry": {
-        "ru": "⚠️ Не забудьте пробить карту при входе на пару: {} ({})",
-        "uz": "⚠️ Darsga kirishda kartani urishni unutmang: {} ({})",
-        "en": "⚠️ Don't forget to scan your card when entering the class: {} ({})"
+        "ru": [
+            "⚠️ Не забудьте пробить карту при входе на пару: {} ({})",
+            "🚪 А карта где? Вход на пару: {} ({})",
+            "🎓 Перед тем как сесть — карта! Занятие: {} ({})",
+            "💳 Карта ждёт прикосновения. Вход в: {} ({})"
+        ],
+        "uz": [
+            "⚠️ Darsga kirishda kartani urishni unutmang: {} ({})",
+            "🚪 Kirishdan oldin kartani unutmang: {} ({})",
+            "🎓 Darsga kirishdan oldin kartani bosdingizmi? {} ({})",
+            "💳 Kartangiz sizni sogʻindi. Dars: {} ({})"
+        ],
+        "en": [
+            "⚠️ Don't forget to scan your card when entering the class: {} ({})",
+            "🚪 Before you enter, tap that card! Class: {} ({})",
+            "🎓 No card, no class! Scan it before {} ({})",
+            "💳 Your card wants attention. Entering: {} ({})"
+        ]
     },
     "lesson_check_exit": {
-        "ru": "⚠️ Не забудьте пробить карту при выходе с пары: {} ({})",
-        "uz": "⚠️ Darstan chiqishda kartani urishni unutmang: {} ({})",
-        "en": "⚠️ Don't forget to scan your card when leaving the class: {} ({})"
+        "ru": [
+            "⚠️ Не забудьте пробить карту при выходе с пары: {} ({})",
+            "🚶‍♂️ Выходишь? Не забудь карту! {} ({})",
+            "📤 Перед тем как уйти — карта! Занятие: {} ({})",
+            "💳 Карта тоже хочет уйти. Выход из: {} ({})"
+        ],
+        "uz": [
+            "⚠️ Darstan chiqishda kartani urishni unutmang: {} ({})",
+            "🚶‍♂️ Chiqyapsizmi? Kartani bosdingizmi? {} ({})",
+            "📤 Darsdan chiqishdan oldin kartani unutmang: {} ({})",
+            "💳 Kartangiz ham chiqmoqchi. Dars: {} ({})"
+        ],
+        "en": [
+            "⚠️ Don't forget to scan your card when leaving the class: {} ({})",
+            "🚶‍♂️ Leaving? Give that card a goodbye tap! {} ({})",
+            "📤 Exit like a pro — scan the card! Class: {} ({})",
+            "💳 Don’t ghost the scanner. Leaving: {} ({})"
+        ]
     },
     "lesson_check_test_start": {
         "ru": "🔍 Тестовая проверка запущена в {}\nСегодня: {}",

@@ -1,4 +1,5 @@
 import logging
+import random
 from aiogram import Bot
 from datetime import datetime, timedelta, date, time
 
@@ -118,15 +119,11 @@ async def check_lesson_marks(bot: Bot):
                     lang = await get_user_language(user_id) or "en"
                     
                     if action_type == "entry":
-                        text = LEXICON_MSG["lesson_check_entry"][lang].format(
-                            lesson['moduleName'],
-                            lesson['startTime'][:-3]
-                        )
+                        text_template = random.choice(LEXICON_MSG["lesson_check_entry"][lang])
+                        text = text_template.format(lesson['moduleName'], lesson['startTime'][:-3])
                     else:
-                        text = LEXICON_MSG["lesson_check_exit"][lang].format(
-                            lesson['moduleName'],
-                            lesson['endTime'][:-3]
-                        )
+                        text_template = random.choice(LEXICON_MSG["lesson_check_exit"][lang])
+                        text = text_template.format(lesson['moduleName'], lesson['endTime'][:-3])
 
                     try:
                         await bot.send_message(user_id, text)
