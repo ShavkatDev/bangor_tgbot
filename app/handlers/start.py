@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 start_router = Router()
 
 @start_router.message(CommandStart())
-async def start_command(message: types.Message, lang: str):
+async def start_command(message: types.Message, lang: str, is_admin: bool):
     telegram_id = message.from_user.id
     username = message.from_user.username or "No username"
     logger.info(f"User {telegram_id} (@{username}) started the bot with language {lang}")
@@ -20,7 +20,7 @@ async def start_command(message: types.Message, lang: str):
 
         if user:
             logger.info(f"User {telegram_id} (@{username}) is registered, showing main menu")
-            await message.answer(text=LEXICON_MSG['greet'][lang], reply_markup=main_menu_keyboard(lang))
+            await message.answer(text=LEXICON_MSG['greet'][lang], reply_markup=main_menu_keyboard(lang, is_admin))
         else:
             logger.info(f"User {telegram_id} (@{username}) is not registered, showing login prompt")
             await message.answer(text=LEXICON_MSG['greet_login'][lang])

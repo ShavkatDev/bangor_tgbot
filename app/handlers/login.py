@@ -62,7 +62,7 @@ async def process_login(message: types.Message, state: FSMContext, lang: str):
     await state.set_state(LoginState.waiting_for_password)
 
 @login_router.message(LoginState.waiting_for_password)
-async def process_password(message: types.Message, state: FSMContext, lang: str):
+async def process_password(message: types.Message, state: FSMContext, lang: str, is_admin: bool):
     telegram_id = message.from_user.id
     username = message.from_user.username or "No username"
     logger.info(f"User {telegram_id} (@{username}) entered password")
@@ -133,7 +133,7 @@ async def process_password(message: types.Message, state: FSMContext, lang: str)
 
             await message.answer(
                 text=LEXICON_MSG["auth_success"][lang],
-                reply_markup=main_menu_keyboard(lang)
+                reply_markup=main_menu_keyboard(lang, is_admin)
             )
             
         await msg.delete()

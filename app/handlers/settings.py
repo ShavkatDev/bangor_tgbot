@@ -62,7 +62,7 @@ async def language_settings(message: types.Message, lang: str):
         await message.answer(text=LEXICON_MSG['error'][lang])
 
 @settings_router.message(TextFromLexicon("back_to_main"))
-async def back_to_main_menu(message: types.Message, lang: str):
+async def back_to_main_menu(message: types.Message, lang: str, is_admin: bool):
     telegram_id = message.from_user.id
     username = message.from_user.username or "No username"
     logger.info(f"User {telegram_id} (@{username}) returned to main menu from settings")
@@ -70,7 +70,7 @@ async def back_to_main_menu(message: types.Message, lang: str):
     try:
         await message.answer(
             text=LEXICON_MSG["main_menu_title"][lang],
-            reply_markup=main_menu_keyboard(lang)
+            reply_markup=main_menu_keyboard(lang, is_admin)
         )
     except Exception as e:
         logger.error(f"Error returning to main menu for user {telegram_id}: {str(e)}", exc_info=True)
@@ -92,7 +92,7 @@ async def delete_userdata(message: types.Message, lang: str):
         await message.answer(text=LEXICON_MSG['error'][lang])
 
 @settings_router.callback_query(F.data.startswith("delete_"))
-async def confirm_delete(callback: types.CallbackQuery):
+async def confirm_delete(callback: types.CallbackQuery, is_admin: bool):
     telegram_id = callback.from_user.id
     username = callback.from_user.username or "No username"
     action = callback.data
@@ -113,14 +113,14 @@ async def confirm_delete(callback: types.CallbackQuery):
             logger.info(f"User {telegram_id} (@{username}) cancelled account deletion")
             await callback.message.answer(
                 text=LEXICON_MSG["process_cancelled"][lang],
-                reply_markup=main_menu_keyboard(lang)
+                reply_markup=main_menu_keyboard(lang, is_admin)
             )
     except Exception as e:
         logger.error(f"Error processing delete action for user {telegram_id}: {str(e)}", exc_info=True)
         await callback.message.answer(text=LEXICON_MSG['error'][lang])
 
 @settings_router.callback_query(F.data.startswith("set_lang_"))
-async def process_language_change(callback: types.CallbackQuery):
+async def process_language_change(callback: types.CallbackQuery, is_admin: bool):
     telegram_id = callback.from_user.id
     username = callback.from_user.username or "No username"
     lang_code = callback.data.split("_")[-1]
@@ -132,7 +132,7 @@ async def process_language_change(callback: types.CallbackQuery):
         await callback.message.delete()
         await callback.message.answer(
             text=LEXICON_MSG["main_menu_title"][lang_code],
-            reply_markup=main_menu_keyboard(lang_code)
+            reply_markup=main_menu_keyboard(lang_code, is_admin)
         )
     except Exception as e:
         logger.error(f"Error changing language for user {telegram_id}: {str(e)}", exc_info=True)

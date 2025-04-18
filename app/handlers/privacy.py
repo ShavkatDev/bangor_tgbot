@@ -8,9 +8,9 @@ from app.keyboards.privacy_keyboard import get_privacy_keyboard
 from app.states import LoginState
 from app.handlers.login import login_command
 
-router = Router()
+privacy_router = Router()
 
-@router.message(Command("login"))
+@privacy_router.message(Command("login"))
 async def show_privacy_policy(message: Message, state: FSMContext):
     user_id = message.from_user.id
     
@@ -19,7 +19,7 @@ async def show_privacy_policy(message: Message, state: FSMContext):
         reply_markup=get_privacy_keyboard("en")
     )
 
-@router.callback_query(F.data == "accept_privacy")
+@privacy_router.callback_query(F.data == "accept_privacy")
 async def accept_privacy(callback: CallbackQuery, state: FSMContext):
     await callback.message.delete()
     
@@ -29,7 +29,7 @@ async def accept_privacy(callback: CallbackQuery, state: FSMContext):
     await login_command(callback.message, state, "en")
     await callback.answer()
 
-@router.callback_query(F.data == "decline_privacy")
+@privacy_router.callback_query(F.data == "decline_privacy")
 async def decline_privacy(callback: CallbackQuery, state: FSMContext):
     await callback.message.delete()
     await state.update_data(privacy_accepted=False)

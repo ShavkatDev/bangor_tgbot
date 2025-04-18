@@ -6,6 +6,14 @@ from app.db.database import async_session_maker
 from app.utils.encryption import encrypt, decrypt
     
 
+async def get_all_users() -> Optional[User]:
+    async with async_session_maker() as session:
+        result = await session.execute(
+            select(User.telegram_id)
+        )
+        logging.info(f"[User] Fetching all users")
+        return result.scalars().all()
+
 async def get_user_by_telegram_id(telegram_id: int) -> Optional[User]:
     async with async_session_maker() as session:
         result = await session.execute(

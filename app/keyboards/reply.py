@@ -4,15 +4,15 @@ from app.lexicon.lexicon import LEXICON_BUTTONS
 def get_button(key: str, lang: str = "en") -> str:
     return LEXICON_BUTTONS.get(key, {}).get(lang, f"[{key}]")
 
+def main_menu_keyboard(lang: str, is_admin: bool = False) -> ReplyKeyboardMarkup:
+    buttons = [
+        [KeyboardButton(text=get_button("inet_schedule", lang))],
+        [KeyboardButton(text=get_button("settings", lang)), KeyboardButton(text=get_button("support", lang))]
+    ]
+    if is_admin:
+        buttons.append([KeyboardButton(text="Админ-панель")])
 
-def main_menu_keyboard(lang: str) -> ReplyKeyboardMarkup:
-    return ReplyKeyboardMarkup(
-        keyboard=[
-            [KeyboardButton(text=get_button("inet_schedule", lang))],
-            [KeyboardButton(text=get_button("settings", lang)), KeyboardButton(text=get_button("support", lang))]
-        ],
-        resize_keyboard=True
-    )
+    return ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
 
 
 def inet_schedule_keyboard(lang: str) -> ReplyKeyboardMarkup:
