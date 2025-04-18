@@ -2555,3 +2555,879 @@ AttributeError: 'NoneType' object has no attribute 'id'
 2025-04-18 03:08:50,166 [INFO] __main__:46 - Shutting down bot...
 2025-04-18 03:08:50,167 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'CIS BOT'
 2025-04-18 03:08:50,168 [INFO] __main__:54 - Bot stopped by user (KeyboardInterrupt)
+2025-04-18 17:53:59,220 [INFO] root:40 - Logging system initialized
+2025-04-18 17:53:59,223 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 17:53:59,439 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 17:53:59,867 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 17:53:59,868 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 17:53:59,876 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,876 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 17:53:59,877 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,877 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 17:53:59,877 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,878 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (entry)
+2025-04-18 17:53:59,878 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,878 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 17:53:59,878 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,878 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 17:53:59,879 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,879 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 17:53:59,879 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,879 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (entry)
+2025-04-18 17:53:59,879 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,880 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 17:53:59,880 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,880 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 17:53:59,880 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,881 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 17:53:59,881 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,881 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 17:53:59,881 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,881 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 17:53:59,885 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,885 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,885 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,885 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,886 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,886 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,886 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,886 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,887 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,887 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,887 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,887 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:53:59,888 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 17:53:59,888 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 17:53:59,888 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:53:59,889 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 17:53:59,889 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 17:53:59,889 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 17:53:59,889 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 17:53:59,890 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 17:54:00,001 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 17:54:22,864 [INFO] aiogram.event:172 - Update id=872171455 is not handled. Duration 16 ms by bot id=7299087266
+2025-04-18 17:54:23,893 [INFO] aiogram.event:172 - Update id=872171456 is not handled. Duration 3 ms by bot id=7299087266
+2025-04-18 17:54:32,062 [INFO] aiogram.event:172 - Update id=872171457 is not handled. Duration 13 ms by bot id=7299087266
+2025-04-18 17:54:51,402 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 17:54:51,406 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 17:54:51,408 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 17:54:51,871 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 17:54:51.870997
+2025-04-18 17:54:51,874 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 17:54:52,141 [INFO] root:122 - [Schedule] Loaded 0 lessons for 2025-04-18
+2025-04-18 17:54:52,142 [WARNING] app.utils.lesson_check:100 - No schedules found for 2025-04-18
+2025-04-18 17:54:52,143 [INFO] aiogram.event:172 - Update id=872171458 is handled. Duration 996 ms by bot id=7299087266
+2025-04-18 17:56:28,586 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-04-18 17:56:28,856 [INFO] __main__:46 - Shutting down bot...
+2025-04-18 17:56:28,859 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 17:56:28,869 [INFO] __main__:54 - Bot stopped by user (KeyboardInterrupt)
+2025-04-18 17:58:01,422 [INFO] root:40 - Logging system initialized
+2025-04-18 17:58:01,426 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 17:58:01,639 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 17:58:02,059 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 17:58:02,060 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 17:58:02,064 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,064 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 17:58:02,064 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,064 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 17:58:02,065 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,065 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 17:58:02,065 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,065 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 17:58:02,066 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,066 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 17:58:02,067 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,068 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 17:58:02,069 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,069 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 17:58:02,070 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,070 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 17:58:02,071 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,071 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 17:58:02,072 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,073 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 17:58:02,073 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,074 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 17:58:02,074 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,075 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 17:58:02,078 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,079 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,079 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,079 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,079 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,080 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,080 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,080 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,080 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,080 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,081 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,081 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 17:58:02,081 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 17:58:02,081 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 17:58:02,082 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 17:58:02,082 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 17:58:02,082 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 17:58:02,083 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 17:58:02,083 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 17:58:02,084 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 17:58:02,200 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 17:58:05,301 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 17:58:05,305 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 17:58:05,308 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 17:59:09,731 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 17:58:39.304049
+2025-04-18 17:59:16,302 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:03:07,384 [INFO] root:122 - [Schedule] Loaded 0 lessons for 2025-04-18
+2025-04-18 18:03:09,050 [WARNING] app.utils.lesson_check:100 - No schedules found for 2025-04-18
+2025-04-18 18:03:12,198 [INFO] aiogram.event:172 - Update id=872171460 is handled. Duration 307137 ms by bot id=7299087266
+2025-04-18 18:03:12,204 [ERROR] aiogram.dispatcher:219 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-04-18 18:03:12,205 [WARNING] aiogram.dispatcher:221 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7299087266)
+2025-04-18 18:03:16,616 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-04-18 18:03:16,874 [INFO] __main__:46 - Shutting down bot...
+2025-04-18 18:03:59,278 [INFO] root:40 - Logging system initialized
+2025-04-18 18:03:59,280 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:03:59,496 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:03:59,903 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:03:59,904 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:03:59,911 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,912 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:03:59,915 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,916 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:03:59,917 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,917 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:03:59,918 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,918 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:03:59,919 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,919 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:03:59,920 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,920 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:03:59,920 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,920 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:03:59,920 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,920 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:03:59,921 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,922 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:03:59,923 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,923 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:03:59,924 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,924 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:03:59,928 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,929 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:03:59,932 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,934 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,935 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,935 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,937 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,937 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,938 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,939 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,939 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,940 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,941 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,942 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:03:59,943 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:03:59,944 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:03:59,944 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:03:59,945 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:03:59,945 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:03:59,946 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:03:59,947 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:03:59,948 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:04:00,053 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:04:11,228 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:04:11,230 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:04:11,231 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:04:11,231 [INFO] app.handlers.main_menu:31 - User 845102332 (@dcwscr) opened inet schedule menu
+2025-04-18 18:04:11,669 [INFO] aiogram.event:172 - Update id=872171461 is handled. Duration 630 ms by bot id=7299087266
+2025-04-18 18:04:13,652 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:04:13,659 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:04:13,664 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:04:13,664 [INFO] app.handlers.schedule:80 - User 845102332 (@dcwscr) requested today's schedule
+2025-04-18 18:04:13,664 [INFO] app.handlers.schedule:29 - Getting schedule for user 845102332, mode=today, target_day=2025-04-17
+2025-04-18 18:04:13,667 [INFO] root:72 - [User] Found group_id=232 for telegram_id=845102332
+2025-04-18 18:04:13,674 [INFO] root:27 - [Cache] Schedule loaded for group_id=232, updated_at=2025-04-17 19:54:33.718108
+2025-04-18 18:04:13,675 [INFO] app.handlers.schedule:45 - Cache miss for group_id=232, fetching fresh data
+2025-04-18 18:04:13,697 [INFO] root:92 - [User] Credentials decrypted for telegram_id=845102332
+2025-04-18 18:04:14,309 [INFO] httpx:1740 - HTTP Request: POST https://inet.mdis.uz/oauth/tocken "HTTP/1.1 200 "
+2025-04-18 18:04:14,310 [INFO] app.utils.schedule:26 - Successfully obtained token for user b2305078
+2025-04-18 18:04:14,770 [INFO] httpx:1740 - HTTP Request: GET https://inet.mdis.uz/api/v1/education/student/view/schedules?from=2025-04-14&to=2025-04-20 "HTTP/1.1 200 "
+2025-04-18 18:04:14,774 [INFO] app.utils.schedule:64 - Successfully fetched schedule data from 2025-04-14 to 2025-04-20
+2025-04-18 18:04:14,795 [INFO] root:48 - [Cache] Schedule updated for group_id=232, week_start=2025-04-14
+2025-04-18 18:04:14,798 [INFO] app.handlers.schedule:64 - Saved new schedule to cache for group_id=232
+2025-04-18 18:04:15,026 [INFO] aiogram.event:172 - Update id=872171462 is handled. Duration 1376 ms by bot id=7299087266
+2025-04-18 18:04:20,736 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:04:20,738 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:04:20,741 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:04:20,742 [INFO] app.handlers.main_menu:46 - User 845102332 (@dcwscr) returned to main menu
+2025-04-18 18:04:20,957 [INFO] aiogram.event:172 - Update id=872171463 is handled. Duration 224 ms by bot id=7299087266
+2025-04-18 18:04:24,042 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-04-18 18:04:24,295 [INFO] __main__:46 - Shutting down bot...
+2025-04-18 18:04:24,297 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:04:24,302 [INFO] __main__:54 - Bot stopped by user (KeyboardInterrupt)
+2025-04-18 18:04:57,691 [INFO] root:40 - Logging system initialized
+2025-04-18 18:04:57,701 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:04:57,918 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:04:58,264 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:04:58,265 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:04:58,268 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,268 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:04:58,268 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,269 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:04:58,269 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,269 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:04:58,269 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,270 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:04:58,271 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,271 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:04:58,271 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,271 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:04:58,272 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,273 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:04:58,274 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,275 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:04:58,276 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,276 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:04:58,278 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,278 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:04:58,279 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,279 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:04:58,280 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,280 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:04:58,284 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,284 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,284 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,284 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,285 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,286 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,286 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,287 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,287 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,287 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,288 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,288 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:04:58,288 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:04:58,289 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:04:58,289 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:04:58,289 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:04:58,290 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:04:58,290 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:04:58,290 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:04:58,293 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:04:58,404 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:05:02,248 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:05:02,253 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:05:02,255 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:05:08,724 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:05:07.371084
+2025-04-18 18:05:15,819 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:06:46,663 [INFO] root:40 - Logging system initialized
+2025-04-18 18:06:46,668 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:06:46,868 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:06:47,319 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:06:47,322 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:06:47,329 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,329 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:06:47,330 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,330 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:06:47,331 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,332 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:06:47,335 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,336 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:06:47,337 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,337 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:06:47,337 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,337 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:06:47,338 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,338 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:06:47,338 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,338 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:06:47,339 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,339 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:06:47,339 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,340 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:06:47,341 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,341 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:06:47,342 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,342 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:06:47,345 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,346 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,346 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,346 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,347 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,347 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,347 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,348 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,348 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,348 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,348 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,349 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:06:47,349 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:06:47,349 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:06:47,350 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:06:47,350 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:06:47,350 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:06:47,351 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:06:47,351 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:06:47,351 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:06:47,476 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:06:49,297 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:06:49,303 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:06:49,304 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:06:53,585 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:06:53.585135
+2025-04-18 18:06:53,591 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:07:58,020 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:08:37,593 [INFO] app.utils.lesson_check:105 - Found 0 lessons to check for group_id=232
+2025-04-18 18:08:37,603 [ERROR] aiogram.dispatcher:219 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-04-18 18:08:37,603 [WARNING] aiogram.dispatcher:221 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7299087266)
+2025-04-18 18:08:37,606 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:11:14,736 [INFO] root:40 - Logging system initialized
+2025-04-18 18:11:14,741 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:11:14,950 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:11:15,399 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:11:15,400 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:11:15,404 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,404 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:11:15,405 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,405 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:11:15,405 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,405 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:11:15,406 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,406 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:11:15,406 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,406 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:11:15,407 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,407 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:11:15,407 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,407 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:11:15,408 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,408 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:11:15,408 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,409 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:11:15,409 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,409 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:11:15,410 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,410 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:11:15,410 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,410 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:11:15,412 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,413 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,413 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,413 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,414 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,414 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,414 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,414 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,414 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,415 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,415 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,415 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:11:15,415 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:11:15,416 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:11:15,416 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:11:15,416 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:11:15,416 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:11:15,417 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:11:15,417 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:11:15,417 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:11:15,538 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:11:47,001 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:11:47,005 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:11:47,007 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:11:47,444 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:11:47.444879
+2025-04-18 18:11:47,446 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:11:47,674 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:13:45,482 [INFO] root:40 - Logging system initialized
+2025-04-18 18:13:45,486 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:13:45,687 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:13:46,135 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:13:46,136 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:13:46,146 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,146 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:13:46,147 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,147 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:13:46,147 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,148 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:13:46,148 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,148 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:13:46,149 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,149 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:13:46,150 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,151 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:13:46,152 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,152 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:13:46,153 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,153 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:13:46,154 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,154 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:13:46,155 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,155 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:13:46,156 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,156 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:13:46,157 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,157 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:13:46,163 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,163 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,164 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,164 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,164 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,165 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,165 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,165 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,166 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,166 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,166 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,166 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:13:46,167 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:13:46,167 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:13:46,168 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:13:46,168 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:13:46,168 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:13:46,168 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:13:46,169 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:13:46,169 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:13:46,286 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:13:47,717 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:13:47,721 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:13:47,724 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:13:48,191 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:13:48.191189
+2025-04-18 18:13:48,192 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:13:48,415 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:15:28,573 [INFO] root:40 - Logging system initialized
+2025-04-18 18:15:28,576 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:15:28,812 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:15:29,179 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:15:29,180 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:15:29,183 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,184 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:15:29,186 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,186 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:15:29,186 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,187 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:15:29,187 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,187 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:15:29,188 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,188 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:15:29,189 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,189 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:15:29,190 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,190 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:15:29,191 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,191 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:15:29,191 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,191 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:15:29,191 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,192 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:15:29,192 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,192 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:15:29,192 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,193 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:15:29,195 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,195 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,195 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,196 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,196 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,196 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,196 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,197 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,197 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,197 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,198 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,198 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:15:29,198 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:15:29,198 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:15:29,199 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:15:29,199 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:15:29,199 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:15:29,199 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:15:29,199 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:15:29,200 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:15:29,333 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:15:32,426 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:15:32,431 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:15:32,435 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:15:32,882 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:15:32.882378
+2025-04-18 18:15:32,883 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:15:33,126 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:15:44,016 [WARNING] app.utils.lesson_check:51 - Lesson Web Technologies has no group_id
+2025-04-18 18:21:19,262 [INFO] root:40 - Logging system initialized
+2025-04-18 18:21:19,265 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:21:19,482 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:21:19,911 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:21:19,911 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:21:19,914 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,915 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:21:19,915 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,915 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:21:19,916 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,916 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:21:19,917 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,917 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:21:19,918 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,918 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:21:19,919 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,919 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:21:19,919 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,920 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:21:19,920 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,920 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:21:19,921 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,921 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:21:19,921 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,922 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:21:19,922 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,922 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:21:19,923 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,923 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:21:19,925 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,926 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,926 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,926 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,926 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,927 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,927 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,927 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,927 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,927 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,928 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,928 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:21:19,928 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:21:19,928 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:21:19,928 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:21:19,929 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:21:19,929 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:21:19,929 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:21:19,929 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:21:19,930 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:21:20,049 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:21:27,920 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:21:27,924 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:21:27,926 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:21:28,383 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:21:28.383675
+2025-04-18 18:21:28,385 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:21:28,619 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:21:59,025 [WARNING] app.utils.lesson_check:51 - Lesson Web Technologies has no group_id
+2025-04-18 18:23:35,837 [INFO] root:40 - Logging system initialized
+2025-04-18 18:23:35,840 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:23:36,034 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:23:36,407 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:23:36,409 [INFO] app.utils.lesson_check:159 - Setting up lesson check scheduler
+2025-04-18 18:23:36,416 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,417 [INFO] app.utils.lesson_check:169 - Added job for 9:35 (entry)
+2025-04-18 18:23:36,418 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,418 [INFO] app.utils.lesson_check:169 - Added job for 10:55 (exit)
+2025-04-18 18:23:36,419 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,419 [INFO] app.utils.lesson_check:169 - Added job for 11:5 (entry)
+2025-04-18 18:23:36,420 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,421 [INFO] app.utils.lesson_check:169 - Added job for 12:25 (exit)
+2025-04-18 18:23:36,421 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,421 [INFO] app.utils.lesson_check:169 - Added job for 12:35 (entry)
+2025-04-18 18:23:36,422 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,422 [INFO] app.utils.lesson_check:169 - Added job for 13:55 (exit)
+2025-04-18 18:23:36,422 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,423 [INFO] app.utils.lesson_check:169 - Added job for 13:5 (entry)
+2025-04-18 18:23:36,424 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,424 [INFO] app.utils.lesson_check:169 - Added job for 15:25 (exit)
+2025-04-18 18:23:36,425 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,425 [INFO] app.utils.lesson_check:169 - Added job for 15:35 (entry)
+2025-04-18 18:23:36,426 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,426 [INFO] app.utils.lesson_check:169 - Added job for 16:55 (exit)
+2025-04-18 18:23:36,427 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,427 [INFO] app.utils.lesson_check:169 - Added job for 17:5 (entry)
+2025-04-18 18:23:36,428 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,428 [INFO] app.utils.lesson_check:169 - Added job for 18:25 (exit)
+2025-04-18 18:23:36,432 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,432 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,433 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,433 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,433 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,433 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,434 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,434 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,434 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,435 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,435 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,435 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:23:36,435 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:23:36,435 [INFO] app.utils.lesson_check:172 - Lesson check scheduler started successfully
+2025-04-18 18:23:36,436 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:23:36,436 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:23:36,436 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:23:36,436 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:23:36,437 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:23:36,438 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:23:36,553 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:23:38,283 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:23:38,287 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:23:38,289 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:23:38,772 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:23:38.772729
+2025-04-18 18:23:38,774 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:23:39,012 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:24:21,237 [WARNING] app.utils.lesson_check:51 - Lesson Web Technologies has no group_id
+2025-04-18 18:24:40,762 [INFO] app.utils.lesson_check:105 - Found 0 lessons to check for group_id=232
+2025-04-18 18:24:40,846 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:24:53,107 [INFO] aiogram.event:172 - Update id=872171473 is handled. Duration 74923 ms by bot id=7299087266
+2025-04-18 18:24:53,116 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:24:53,118 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:24:53,122 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:24:53,362 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:24:53.361980
+2025-04-18 18:24:53,365 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:24:53,599 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:24:56,538 [WARNING] app.utils.lesson_check:51 - Lesson Web Technologies has no group_id
+2025-04-18 18:24:58,073 [INFO] app.utils.lesson_check:105 - Found 0 lessons to check for group_id=232
+2025-04-18 18:24:58,086 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:25:00,237 [INFO] aiogram.event:172 - Update id=872171474 is handled. Duration 7125 ms by bot id=7299087266
+2025-04-18 18:25:00,239 [INFO] apscheduler.executors.default:179 - Running job "check_lesson_marks (trigger: cron[day_of_week='mon-sat', hour='18', minute='25'], next run at: 2025-04-19 18:25:00 +05)" (scheduled at 2025-04-18 18:25:00+05:00)
+2025-04-18 18:25:00,240 [INFO] app.utils.lesson_check:83 - Starting lesson check at 2025-04-18 18:25:00.240305
+2025-04-18 18:25:00,243 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:25:00,470 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:25:43,212 [INFO] root:40 - Logging system initialized
+2025-04-18 18:25:43,215 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:25:43,438 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:25:43,877 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:25:43,878 [INFO] app.utils.lesson_check:158 - Setting up lesson check scheduler
+2025-04-18 18:25:43,881 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,882 [INFO] app.utils.lesson_check:168 - Added job for 9:35 (entry)
+2025-04-18 18:25:43,882 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,882 [INFO] app.utils.lesson_check:168 - Added job for 10:55 (exit)
+2025-04-18 18:25:43,882 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,882 [INFO] app.utils.lesson_check:168 - Added job for 11:5 (entry)
+2025-04-18 18:25:43,883 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,883 [INFO] app.utils.lesson_check:168 - Added job for 12:25 (exit)
+2025-04-18 18:25:43,883 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,883 [INFO] app.utils.lesson_check:168 - Added job for 12:35 (entry)
+2025-04-18 18:25:43,884 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,884 [INFO] app.utils.lesson_check:168 - Added job for 13:55 (exit)
+2025-04-18 18:25:43,884 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,884 [INFO] app.utils.lesson_check:168 - Added job for 13:5 (entry)
+2025-04-18 18:25:43,885 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,885 [INFO] app.utils.lesson_check:168 - Added job for 15:25 (exit)
+2025-04-18 18:25:43,885 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,885 [INFO] app.utils.lesson_check:168 - Added job for 15:35 (entry)
+2025-04-18 18:25:43,885 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,886 [INFO] app.utils.lesson_check:168 - Added job for 16:55 (exit)
+2025-04-18 18:25:43,886 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,886 [INFO] app.utils.lesson_check:168 - Added job for 17:5 (entry)
+2025-04-18 18:25:43,886 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,886 [INFO] app.utils.lesson_check:168 - Added job for 18:25 (exit)
+2025-04-18 18:25:43,888 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,889 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,889 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,889 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,889 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,891 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,891 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,891 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:25:43,891 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:25:43,891 [INFO] app.utils.lesson_check:171 - Lesson check scheduler started successfully
+2025-04-18 18:25:43,892 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:25:43,892 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:25:43,892 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:25:43,892 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:25:43,892 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:25:43,893 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:25:44,000 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:25:49,527 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:25:49,530 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:25:49,532 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:25:50,004 [INFO] app.utils.lesson_check:82 - Starting lesson check at 2025-04-18 18:25:50.004191
+2025-04-18 18:25:50,006 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:25:50,241 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:26:16,419 [INFO] root:97 - [Digest] Found 4 students in group_id=232 with daily_digest
+2025-04-18 18:47:08,770 [INFO] root:40 - Logging system initialized
+2025-04-18 18:47:08,771 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:47:08,985 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:47:09,409 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:47:09,410 [INFO] app.utils.lesson_check:158 - Setting up lesson check scheduler
+2025-04-18 18:47:09,419 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,420 [INFO] app.utils.lesson_check:168 - Added job for 9:35 (entry)
+2025-04-18 18:47:09,420 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,421 [INFO] app.utils.lesson_check:168 - Added job for 10:55 (exit)
+2025-04-18 18:47:09,422 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,422 [INFO] app.utils.lesson_check:168 - Added job for 11:5 (entry)
+2025-04-18 18:47:09,423 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,423 [INFO] app.utils.lesson_check:168 - Added job for 12:25 (exit)
+2025-04-18 18:47:09,423 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,424 [INFO] app.utils.lesson_check:168 - Added job for 12:35 (entry)
+2025-04-18 18:47:09,425 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,425 [INFO] app.utils.lesson_check:168 - Added job for 13:55 (exit)
+2025-04-18 18:47:09,426 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,426 [INFO] app.utils.lesson_check:168 - Added job for 13:5 (entry)
+2025-04-18 18:47:09,427 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,427 [INFO] app.utils.lesson_check:168 - Added job for 15:25 (exit)
+2025-04-18 18:47:09,428 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,429 [INFO] app.utils.lesson_check:168 - Added job for 15:35 (entry)
+2025-04-18 18:47:09,430 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,430 [INFO] app.utils.lesson_check:168 - Added job for 16:55 (exit)
+2025-04-18 18:47:09,431 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,432 [INFO] app.utils.lesson_check:168 - Added job for 17:5 (entry)
+2025-04-18 18:47:09,433 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,434 [INFO] app.utils.lesson_check:168 - Added job for 18:25 (exit)
+2025-04-18 18:47:09,436 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,437 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,437 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,438 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,438 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,439 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,439 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,440 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,440 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,440 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,440 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,440 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:47:09,441 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:47:09,441 [INFO] app.utils.lesson_check:171 - Lesson check scheduler started successfully
+2025-04-18 18:47:09,442 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:47:09,443 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:47:09,443 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:47:09,443 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:47:09,443 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:47:09,444 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:47:09,545 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:47:12,119 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:47:12,121 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:47:12,122 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:47:12,123 [INFO] app.handlers.main_menu:31 - User 845102332 (@dcwscr) opened inet schedule menu
+2025-04-18 18:47:12,633 [INFO] aiogram.event:172 - Update id=872171497 is handled. Duration 684 ms by bot id=7299087266
+2025-04-18 18:47:13,578 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:47:13,581 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:47:13,582 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:47:13,583 [INFO] app.handlers.schedule:80 - User 845102332 (@dcwscr) requested today's schedule
+2025-04-18 18:47:13,583 [INFO] app.handlers.schedule:29 - Getting schedule for user 845102332, mode=today, target_day=2025-04-17
+2025-04-18 18:47:13,584 [INFO] root:72 - [User] Found group_id=232 for telegram_id=845102332
+2025-04-18 18:47:13,587 [INFO] root:24 - [Cache] No schedule found for group_id=232, week_start=2025-04-14
+2025-04-18 18:47:13,588 [INFO] app.handlers.schedule:45 - Cache miss for group_id=232, fetching fresh data
+2025-04-18 18:47:13,591 [INFO] root:92 - [User] Credentials decrypted for telegram_id=845102332
+2025-04-18 18:47:14,155 [INFO] httpx:1740 - HTTP Request: POST https://inet.mdis.uz/oauth/tocken "HTTP/1.1 200 "
+2025-04-18 18:47:14,157 [INFO] app.utils.schedule:26 - Successfully obtained token for user b2305078
+2025-04-18 18:47:14,600 [INFO] httpx:1740 - HTTP Request: GET https://inet.mdis.uz/api/v1/education/student/view/schedules?from=2025-04-14&to=2025-04-20 "HTTP/1.1 200 "
+2025-04-18 18:47:14,604 [INFO] app.utils.schedule:64 - Successfully fetched schedule data from 2025-04-14 to 2025-04-20
+2025-04-18 18:47:14,615 [INFO] root:56 - [Cache] New schedule inserted for group_id=232, week_start=2025-04-14
+2025-04-18 18:47:14,646 [INFO] app.handlers.schedule:64 - Saved new schedule to cache for group_id=232
+2025-04-18 18:47:14,911 [INFO] aiogram.event:172 - Update id=872171498 is handled. Duration 1336 ms by bot id=7299087266
+2025-04-18 18:47:54,661 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-04-18 18:47:54,922 [INFO] __main__:46 - Shutting down bot...
+2025-04-18 18:47:54,925 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:47:54,932 [INFO] __main__:54 - Bot stopped by user (KeyboardInterrupt)
+2025-04-18 18:48:30,813 [INFO] root:40 - Logging system initialized
+2025-04-18 18:48:30,816 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 18:48:31,031 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 18:48:31,389 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 18:48:31,393 [INFO] app.utils.lesson_check:158 - Setting up lesson check scheduler
+2025-04-18 18:48:31,407 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,407 [INFO] app.utils.lesson_check:168 - Added job for 9:35 (entry)
+2025-04-18 18:48:31,408 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,408 [INFO] app.utils.lesson_check:168 - Added job for 10:55 (exit)
+2025-04-18 18:48:31,408 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,409 [INFO] app.utils.lesson_check:168 - Added job for 11:5 (entry)
+2025-04-18 18:48:31,409 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,409 [INFO] app.utils.lesson_check:168 - Added job for 12:25 (exit)
+2025-04-18 18:48:31,410 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,410 [INFO] app.utils.lesson_check:168 - Added job for 12:35 (entry)
+2025-04-18 18:48:31,410 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,411 [INFO] app.utils.lesson_check:168 - Added job for 13:55 (exit)
+2025-04-18 18:48:31,411 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,411 [INFO] app.utils.lesson_check:168 - Added job for 13:5 (entry)
+2025-04-18 18:48:31,412 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,412 [INFO] app.utils.lesson_check:168 - Added job for 15:25 (exit)
+2025-04-18 18:48:31,412 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,412 [INFO] app.utils.lesson_check:168 - Added job for 15:35 (entry)
+2025-04-18 18:48:31,413 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,413 [INFO] app.utils.lesson_check:168 - Added job for 16:55 (exit)
+2025-04-18 18:48:31,413 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,414 [INFO] app.utils.lesson_check:168 - Added job for 17:5 (entry)
+2025-04-18 18:48:31,414 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,414 [INFO] app.utils.lesson_check:168 - Added job for 18:25 (exit)
+2025-04-18 18:48:31,417 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,417 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,417 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,417 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,418 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,418 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,418 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,418 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,419 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,419 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,419 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,419 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 18:48:31,419 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:48:31,420 [INFO] app.utils.lesson_check:171 - Lesson check scheduler started successfully
+2025-04-18 18:48:31,420 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 18:48:31,421 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 18:48:31,421 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 18:48:31,421 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 18:48:31,421 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 18:48:31,422 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 18:48:31,557 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 18:48:35,831 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:48:35,835 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 18:48:35,837 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:48:36,309 [INFO] app.utils.lesson_check:82 - Starting lesson check at 2025-04-18 18:48:36.309333
+2025-04-18 18:48:36,310 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:48:36,533 [INFO] root:122 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 18:48:36,540 [INFO] root:97 - [Digest] Found 4 students in group_id=232 with daily_digest
+2025-04-18 18:50:04,018 [INFO] app.utils.lesson_check:104 - Found 0 lessons to check for group_id=232
+2025-04-18 18:50:09,227 [ERROR] aiogram.dispatcher:219 - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-04-18 18:50:09,228 [WARNING] aiogram.dispatcher:221 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7299087266)
+2025-04-18 18:50:10,130 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 18:50:26,233 [INFO] aiogram.event:172 - Update id=872171499 is handled. Duration 110516 ms by bot id=7299087266
+2025-04-18 18:50:27,456 [INFO] aiogram.dispatcher:233 - Connection established (tryings = 1, bot id = 7299087266)
+2025-04-18 19:03:37,540 [INFO] root:40 - Logging system initialized
+2025-04-18 19:03:37,543 [INFO] __main__:20 - Starting bot initialization...
+2025-04-18 19:03:37,753 [INFO] __main__:26 - Deleting webhook and setting up bot...
+2025-04-18 19:03:38,175 [INFO] __main__:29 - Setting up schedulers...
+2025-04-18 19:03:38,175 [INFO] app.utils.lesson_check:145 - Setting up lesson check scheduler
+2025-04-18 19:03:38,179 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,179 [INFO] app.utils.lesson_check:155 - Added job for 9:35 (entry)
+2025-04-18 19:03:38,179 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,180 [INFO] app.utils.lesson_check:155 - Added job for 10:55 (exit)
+2025-04-18 19:03:38,180 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,180 [INFO] app.utils.lesson_check:155 - Added job for 11:5 (entry)
+2025-04-18 19:03:38,180 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,180 [INFO] app.utils.lesson_check:155 - Added job for 12:25 (exit)
+2025-04-18 19:03:38,181 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,181 [INFO] app.utils.lesson_check:155 - Added job for 12:35 (entry)
+2025-04-18 19:03:38,181 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,181 [INFO] app.utils.lesson_check:155 - Added job for 13:55 (exit)
+2025-04-18 19:03:38,182 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,182 [INFO] app.utils.lesson_check:155 - Added job for 13:5 (entry)
+2025-04-18 19:03:38,182 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,182 [INFO] app.utils.lesson_check:155 - Added job for 15:25 (exit)
+2025-04-18 19:03:38,183 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,183 [INFO] app.utils.lesson_check:155 - Added job for 15:35 (entry)
+2025-04-18 19:03:38,183 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,183 [INFO] app.utils.lesson_check:155 - Added job for 16:55 (exit)
+2025-04-18 19:03:38,184 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,184 [INFO] app.utils.lesson_check:155 - Added job for 17:5 (entry)
+2025-04-18 19:03:38,185 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,185 [INFO] app.utils.lesson_check:155 - Added job for 18:25 (exit)
+2025-04-18 19:03:38,187 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,187 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,188 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,188 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,188 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,188 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,189 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,189 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,189 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,189 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,190 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,190 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-04-18 19:03:38,190 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 19:03:38,190 [INFO] app.utils.lesson_check:158 - Lesson check scheduler started successfully
+2025-04-18 19:03:38,191 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-04-18 19:03:38,191 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-04-18 19:03:38,191 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-04-18 19:03:38,192 [INFO] __main__:33 - Setting up routers and middleware...
+2025-04-18 19:03:38,192 [INFO] __main__:40 - Bot is ready to start polling...
+2025-04-18 19:03:38,193 [INFO] aiogram.dispatcher:527 - Start polling
+2025-04-18 19:03:38,299 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'CIS BOT'
+2025-04-18 19:03:44,909 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 19:03:44,913 [INFO] root:14 - [User] Fetching user for telegram_id=845102332
+2025-04-18 19:03:44,915 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 19:03:45,367 [INFO] app.utils.lesson_check:82 - Starting lesson check at 2025-04-18 19:03:45.367842
+2025-04-18 19:03:45,370 [INFO] root:25 - [User] Getting language for telegram_id=845102332 → ru
+2025-04-18 19:03:45,599 [INFO] root:123 - [Schedule] Loaded 2 lessons for 2025-04-18
+2025-04-18 19:03:45,604 [INFO] root:97 - [Digest] Found 4 students in group_id=232 with daily_digest
+2025-04-18 19:04:17,642 [INFO] app.utils.lesson_check:104 - Found 1 lessons to check for group_id=232
+2025-04-18 19:04:32,605 [INFO] root:25 - [User] Getting language for telegram_id=647802269 → en

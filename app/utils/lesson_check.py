@@ -15,11 +15,11 @@ notified_set: set[tuple[int, str, str]] = set()
 REMINDER_TIMES = [
     (time(9, 35), "entry"),
     (time(10, 55), "exit"),
-    (time(10, 55), "entry"),
+    (time(11, 5), "entry"),
     (time(12, 25), "exit"),
     (time(12, 35), "entry"),
     (time(13, 55), "exit"),
-    (time(13, 55), "entry"),
+    (time(13, 5), "entry"),
     (time(15, 25), "exit"),
     (time(15, 35), "entry"),
     (time(16, 55), "exit"),
@@ -34,19 +34,18 @@ def parse_time(t: str) -> time:
         logger.error(f"Failed to parse time {t}: {e}")
         return None
 
-async def get_lessons_to_check(schedule_data: list[dict], current_time: datetime) -> list[dict]:
+async def get_lessons_to_check(group_id: int, schedule_data: list[dict], current_time: datetime) -> list[dict]:
     result = []
     now = current_time.time()
-    today_str = current_time.date().isoformat()
+    today_str = (current_time.date() - timedelta(days=1)).isoformat()
 
     for lesson in schedule_data:
         if lesson.get("scheduleStatus") != "ACTIVE":
             continue
         
-        if lesson.get("scheduleDate") != today_str:
+        if lesson.get("scheduleDate", "")[:10] != today_str:
             continue
 
-        group_id = lesson.get("groupId")
         if group_id is None:
             logger.warning(f"Lesson {lesson.get('moduleName')} has no group_id")
             continue
@@ -56,7 +55,7 @@ async def get_lessons_to_check(schedule_data: list[dict], current_time: datetime
             logger.debug(f"No students with digest enabled for group_id={group_id}")
             continue
 
-        if not lesson.get("checkIn") and lesson.get("checkinEnd"):
+        if not lesson.get("checkIn"):
             checkin_end = parse_time(lesson["checkinEnd"])
             if checkin_end is None:
                 continue
@@ -65,7 +64,7 @@ async def get_lessons_to_check(schedule_data: list[dict], current_time: datetime
                 result.append({"lesson": lesson, "type": "entry", "students": students})
                 logger.debug(f"Added entry check for {lesson['moduleName']} at {checkin_end}")
 
-        if not lesson.get("checkOut") and lesson.get("checkoutEnd"):
+        if not lesson.get("checkOut"):
             checkout_end = parse_time(lesson["checkoutEnd"])
             if checkout_end is None:
                 continue
@@ -101,21 +100,8 @@ async def check_lesson_marks(bot: Bot):
             return
 
         for group_id, schedule_data in group_schedules.items():
-            lessons_to_check = await get_lessons_to_check(schedule_data, now)
+            lessons_to_check = await get_lessons_to_check(group_id, schedule_data, now)
             logger.info(f"Found {len(lessons_to_check)} lessons to check for group_id={group_id}")
-
-            # Test message with found lessons
-            try:
-                admin_lang = await get_user_language(845102332) or "en"
-                await bot.send_message(
-                    845102332,
-                    LEXICON_MSG["lesson_check_test_found"][admin_lang].format(
-                        len(lessons_to_check),
-                        group_id
-                    )
-                )
-            except Exception as e:
-                logger.error(f"Failed to send test message: {str(e)}", exc_info=True)
 
             for entry in lessons_to_check:
                 lesson = entry["lesson"]
@@ -129,15 +115,15 @@ async def check_lesson_marks(bot: Bot):
                         continue
 
                     # Get user's language preference
-                    user_lang = await get_user_language(user_id) or "en"
+                    lang = await get_user_language(user_id) or "en"
                     
                     if action_type == "entry":
-                        text = LEXICON_MSG["lesson_check_entry"][user_lang].format(
+                        text = LEXICON_MSG["lesson_check_entry"][lang].format(
                             lesson['moduleName'],
                             lesson['startTime'][:-3]
                         )
                     else:
-                        text = LEXICON_MSG["lesson_check_exit"][user_lang].format(
+                        text = LEXICON_MSG["lesson_check_exit"][lang].format(
                             lesson['moduleName'],
                             lesson['endTime'][:-3]
                         )

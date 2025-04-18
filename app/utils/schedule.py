@@ -172,7 +172,9 @@ def sanitize_schedule_data(data: list[dict]) -> list[dict]:
         "venueName",
         "lecturerName",
         "lessonTypeName",
-        "scheduleStatus"
+        "scheduleStatus",
+        "checkinEnd",
+        "checkoutEnd"
     ]
     return [
         {key: item[key] for key in needed_fields if key in item}

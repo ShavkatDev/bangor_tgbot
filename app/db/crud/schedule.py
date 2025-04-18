@@ -1,6 +1,6 @@
 from collections import defaultdict
 import json
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from typing import Optional
 import logging
 from sqlalchemy import select, update
@@ -111,7 +111,8 @@ async def get_all_group_schedules_today(target_date: date) -> dict[int, list[dic
             lessons = json.loads(row.data)
             for lesson in lessons:
                 raw_date = lesson.get("scheduleDate", "")[:10]
-                lesson_date = datetime.fromisoformat(raw_date).date()
+                #В INET стоит UTC:19:000
+                lesson_date = datetime.fromisoformat(raw_date).date() + timedelta(days=1)
                 if lesson_date == target_date:
                     grouped[row.group_id].append(lesson)
                     count += 1
