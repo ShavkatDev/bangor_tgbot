@@ -8,6 +8,35 @@ LEXICON_EVENTS = {
 }
 
 LEXICON_MSG = {
+    "bot_intro": {
+        "en": (
+            "<b>🎓 Welcome to the Student Assistant Bot!</b>\n\n"
+            "This bot helps you:\n"
+            "• 🗓 View your class schedule\n"
+            "• 🔔 Get smart reminders\n"
+            "• 📬 Manage personalized notifications\n"
+            "• 🛠 Contact support anytime\n\n"
+            "Everything is secure, fast, and in your control ✅"
+        ),
+        "ru": (
+            "<b>🎓 Добро пожаловать в Бота для студентов!</b>\n\n"
+            "Этот бот поможет вам:\n"
+            "• 🗓 Просматривать расписание занятий\n"
+            "• 🔔 Получать умные напоминания\n"
+            "• 📬 Настраивать персональные уведомления\n"
+            "• 🛠 Связаться с поддержкой в любое время\n\n"
+            "Всё безопасно, быстро и под вашим контролем ✅"
+        ),
+        "uz": (
+            "<b>🎓 Talabalar uchun botga xush kelibsiz!</b>\n\n"
+            "Bu bot sizga yordam beradi:\n"
+            "• 🗓 Dars jadvalini ko‘rish\n"
+            "• 🔔 Aqlli eslatmalar olish\n"
+            "• 📬 Shaxsiy bildirishnomalarni boshqarish\n"
+            "• 🛠 Har qanday vaqtda qo‘llab-quvvatlashga murojaat qilish\n\n"
+            "Barchasi xavfsiz, tez va siz nazorat qilasiz ✅"
+        )
+    },
     'greet': {
         'ru': "👋 Привет!",
         'uz': "👋 Salom!",

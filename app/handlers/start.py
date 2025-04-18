@@ -11,6 +11,11 @@ start_router = Router()
 
 @start_router.message(CommandStart())
 async def start_command(message: types.Message, lang: str, is_admin: bool):
+
+    await message.answer(
+        text=LEXICON_MSG["bot_intro"][lang]
+    )
+
     telegram_id = message.from_user.id
     username = message.from_user.username or "No username"
     logger.info(f"User {telegram_id} (@{username}) started the bot with language {lang}")
