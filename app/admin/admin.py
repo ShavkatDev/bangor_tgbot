@@ -2,9 +2,16 @@ import logging
 from aiogram import Router, F, types
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
+from aiogram.types import FSInputFile
 
 from app.db.crud.user import get_all_users
-from app.lexicon.lexicon import LEXICON_MSG
+from app.db.crud.stats import (
+    get_total_users,
+    get_new_users,
+    get_users_with_today_digest,
+    get_users_with_daily_digest,
+    get_users_by_language
+)
 from app.keyboards.admin_keyboard import admin_keyboard, confirm_broadcast_keyboard
 
 logger = logging.getLogger(__name__)
@@ -16,7 +23,7 @@ class BroadcastState(StatesGroup):
     waiting_for_confirmation = State()
 
 
-@admin_router.message(F.text == "Админ-панель")
+@admin_router.message(F.text == "👨🏻‍💻 Админ-панель")
 async def admin_panel(message: types.Message, is_admin: bool):
     if not is_admin:
         return
@@ -26,16 +33,77 @@ async def admin_panel(message: types.Message, is_admin: bool):
     await message.answer("Добро пожаловать в админ-панель", reply_markup=admin_keyboard)
 
 
-@admin_router.message(F.text == "Сделать рассылку")
-async def ask_for_broadcast_text(message: types.Message, state: FSMContext, is_admin: bool):
+@admin_router.callback_query(F.data == "admin_broadcast")
+async def ask_for_broadcast_text(callback: types.CallbackQuery, state: FSMContext, is_admin: bool):
     if not is_admin:
         return
-    telegram_id = message.from_user.id
+    await callback.answer()
+    telegram_id = callback.message.from_user.id
     logger.info(f"[Admin] Admin {telegram_id} initiated a broadcast")
 
-    await message.answer("Отправьте сообщение, которое хотите разослать всем пользователям.")
+    await callback.message.answer("Отправьте сообщение, которое хотите разослать всем пользователям.")
     await state.set_state(BroadcastState.waiting_for_message)
 
+@admin_router.callback_query(F.data == "admin_stats")
+async def ask_for_stats(callback: types.CallbackQuery, is_admin: bool):
+    if not is_admin:
+        return
+    await callback.answer()
+
+    telegram_id = callback.message.from_user.id
+    logger.info(f"[Admin] Admin {telegram_id} initiated a stats request")
+
+    try:
+        total_users = await get_total_users()
+        new_users_7d = await get_new_users(7)
+        new_users_1d = await get_new_users(1)
+        with_today_digest = await get_users_with_today_digest()
+        with_daily_digest = await get_users_with_daily_digest()
+        lang_distribution = await get_users_by_language()
+
+        lang_text = "\n".join([f"• {lang.upper()}: {count}" for lang, count in lang_distribution.items()])
+
+        text = (
+            "<b>📊 Статистика</b>\n\n"
+            f"👥 Всего пользователей: <b>{total_users}</b>\n"
+            f"🆕 Новых за 7 дней: <b>{new_users_7d}</b>\n"
+            f"🆕 Новых за 24ч: <b>{new_users_1d}</b>\n\n"
+            f"📬 С включённой ежедневной рассылкой: <b>{with_daily_digest}</b>\n"
+            f"📅 С включённой рассылкой расписания: <b>{with_today_digest}</b>\n\n"
+            f"🌐 Языки интерфейса:\n{lang_text}"
+        )
+
+        await callback.message.answer(text)
+
+    except Exception as e:
+        logger.error(f"[Admin] Failed to fetch stats for admin {telegram_id}: {str(e)}", exc_info=True)
+        await callback.message.answer("⚠️ Ошибка при получении статистики.")
+
+@admin_router.callback_query(F.data == "admin_logs")
+async def ask_for_logs(callback: types.CallbackQuery, is_admin: bool):
+    if not is_admin:
+        return
+
+    telegram_id = callback.from_user.id
+    logger.info(f"[Admin] Admin {telegram_id} requested log file")
+
+    try:
+        input_file = FSInputFile("logs/bot.log")
+        await callback.message.answer_document(document=input_file, caption="📂 Лог-файл")
+    except FileNotFoundError:
+        logger.warning(f"[Admin] Log file not found for admin {telegram_id}")
+        await callback.message.answer("⚠️ Лог-файл не найден.")
+    except Exception as e:
+        logger.error(f"[Admin] Failed to send log file to admin {telegram_id}: {str(e)}", exc_info=True)
+        await callback.message.answer("❌ Ошибка при отправке логов.")
+
+    await callback.answer()
+
+@admin_router.callback_query(F.data == "admin_settings")
+async def ask_for_stats(callback: types.CallbackQuery, is_admin: bool):
+    if not is_admin:
+        return
+    await callback.answer("В разработке...")
 
 @admin_router.message(BroadcastState.waiting_for_message)
 async def ask_to_confirm_broadcast(message: types.Message, state: FSMContext, is_admin: bool):

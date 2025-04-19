@@ -10,7 +10,7 @@ def main_menu_keyboard(lang: str, is_admin: bool = False) -> ReplyKeyboardMarkup
         [KeyboardButton(text=get_button("settings", lang)), KeyboardButton(text=get_button("support", lang))]
     ]
     if is_admin:
-        buttons.append([KeyboardButton(text="Админ-панель")])
+        buttons.append([KeyboardButton(text="👨🏻‍💻 Админ-панель")])
 
     return ReplyKeyboardMarkup(keyboard=buttons, resize_keyboard=True)
 

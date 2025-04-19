@@ -8,7 +8,7 @@ from app.handlers.schedule import schedule_router
 from app.handlers.settings import settings_router
 from app.handlers.support import support_router
 from app.handlers.privacy import privacy_router
-from app.admin.broadcats import admin_router
+from app.admin.admin import admin_router
 
 def setup_routers(dp: Dispatcher):
     dp.include_router(chat_router)
