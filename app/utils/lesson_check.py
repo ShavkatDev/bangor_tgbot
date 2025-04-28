@@ -82,19 +82,6 @@ async def check_lesson_marks(bot: Bot):
         today = date.today()
         logger.info(f"Starting lesson check at {now}")
 
-        # Test message for admin
-        try:
-            admin_lang = await get_user_language(845102332) or "en"
-            await bot.send_message(
-                845102332,
-                LEXICON_MSG["lesson_check_test_start"][admin_lang].format(
-                    now.strftime('%H:%M:%S'),
-                    today
-                )
-            )
-        except Exception as e:
-            logger.error(f"Failed to send test message: {str(e)}", exc_info=True)
-
         group_schedules = await get_all_group_schedules_today(today)
         if not group_schedules:
             logger.warning(f"No schedules found for {today}")

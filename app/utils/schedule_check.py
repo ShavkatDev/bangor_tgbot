@@ -25,7 +25,7 @@ async def send_today_schedule_digest(bot: Bot):
     for group_id, student_list in group_map.items():
         cached = await get_cached_schedule(group_id, monday)
 
-        if not cached or (datetime.utcnow() - cached.updated_at) > timedelta(hours=9):
+        if not cached or (datetime.utcnow() - cached.updated_at) > timedelta(hours=6):
             first_telegram_id = student_list[0][0]
             creds = await get_user_credentials(first_telegram_id)
             if not creds:
