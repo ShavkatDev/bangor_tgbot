@@ -8,6 +8,7 @@ from app.handlers.schedule import schedule_router
 from app.handlers.settings import settings_router
 from app.handlers.support import support_router
 from app.handlers.privacy import privacy_router
+from app.handlers.navigation import navigation_router
 from app.admin.admin import admin_router
 
 def setup_routers(dp: Dispatcher):
@@ -19,4 +20,5 @@ def setup_routers(dp: Dispatcher):
     dp.include_router(schedule_router)
     dp.include_router(settings_router)
     dp.include_router(support_router)
+    dp.include_router(navigation_router)
     dp.include_router(admin_router)

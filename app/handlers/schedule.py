@@ -5,7 +5,7 @@ from app.db.crud.schedule import get_cached_schedule, get_user_group_id, save_sc
 from app.db.crud.user import get_user_credentials
 from app.lexicon.lexicon import LEXICON_MSG
 from app.utils.text_from_lexicon import TextFromLexicon
-from app.keyboards.reply import inet_schedule_keyboard
+from app.keyboards.reply_keyboard import inet_schedule_keyboard
 from app.utils.schedule import fetch_attendance_data, format_attendance, get_token, fetch_schedule_data, format_schedule, get_week_start, sanitize_schedule_data
 from datetime import date, datetime, timedelta
 

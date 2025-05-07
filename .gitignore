@@ -4,3 +4,4 @@ schedule_cache
 alembic.ini
 __pycache__/
 *.pyc
+logs/

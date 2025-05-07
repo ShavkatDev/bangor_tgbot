@@ -5,7 +5,7 @@ from aiogram.fsm.context import FSMContext
 from app.config import settings
 from app.db.crud.support import get_open_ticket_by_question_message_id, save_ticket, close_ticket
 from app.lexicon.lexicon import LEXICON_MSG
-from app.keyboards.reply import main_menu_keyboard
+from app.keyboards.reply_keyboard import main_menu_keyboard
 from app.states import SupportState
 from app.utils.text_from_lexicon import TextFromLexicon
 

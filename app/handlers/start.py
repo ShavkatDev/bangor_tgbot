@@ -3,7 +3,7 @@ from aiogram import Router, types
 from aiogram.filters import CommandStart
 from app.db.crud.user import get_user_by_telegram_id
 
-from app.keyboards.reply import main_menu_keyboard
+from app.keyboards.reply_keyboard import main_menu_keyboard
 from app.lexicon.lexicon import LEXICON_MSG
 
 logger = logging.getLogger(__name__)

@@ -2,7 +2,7 @@ import logging
 from aiogram import Router
 from aiogram.filters import Command
 from aiogram.types import Message
-from app.keyboards.reply import main_menu_keyboard, inet_schedule_keyboard
+from app.keyboards.reply_keyboard import main_menu_keyboard, inet_schedule_keyboard
 from app.lexicon.lexicon import LEXICON_MSG
 from app.utils.text_from_lexicon import TextFromLexicon
 

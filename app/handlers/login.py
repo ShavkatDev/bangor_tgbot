@@ -6,7 +6,7 @@ from app.states import LoginState
 from app.utils.auth import verify_credentials
 from app.db.crud.user import is_user_registered, create_user_with_settings
 
-from app.keyboards.reply import main_menu_keyboard
+from app.keyboards.reply_keyboard import main_menu_keyboard
 from app.lexicon.lexicon import LEXICON_MSG
 from app.keyboards.privacy_keyboard import get_privacy_keyboard
 

@@ -368,6 +368,11 @@ LEXICON_MSG = {
         "uz": "📄 Foydalanish shartlari",
         "en": "📄 Terms of Service"
     },
+    'navigation_text': {
+        'ru': "🧭 Здесь вы найдете ссылки на учебные платформы вашего университета. Выберите нужный сайт ниже:",
+        'uz': "🧭 Bu yerda universitetingizning o‘quv platformalariga havolalarni topasiz. Quyida kerakli saytni tanlang:",
+        'en': "🧭 Here you can find links to your university's learning platforms. Choose the appropriate site below:"
+    },
     "error": {
         "ru": "❌ Произошла ошибка. Пожалуйста, попробуйте позже.",
         "uz": "❌ Xatolik yuz berdi. Iltimos, keyinroq urinib ko'ring.",
@@ -385,6 +390,11 @@ LEXICON_BUTTONS = {
         'ru': "⚙️ Настройки",
         'uz': "⚙️ Sozlamalar",
         'en': "⚙️ Settings"
+    },
+    'navigation': {
+        'ru': "🧭 Навигация",
+        'uz': "🧭 Navigatsiya",
+        'en': "🧭 Navigation"
     },
     'support': {
         'ru': "📞 Поддержка",
@@ -486,4 +496,5 @@ LEXICON_BUTTONS = {
         'uz': "📞 Yordamga yozish",
         'en': "📞 Contact support"
     }
+
 }

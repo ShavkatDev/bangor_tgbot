@@ -7,7 +7,8 @@ def get_button(key: str, lang: str = "en") -> str:
 def main_menu_keyboard(lang: str, is_admin: bool = False) -> ReplyKeyboardMarkup:
     buttons = [
         [KeyboardButton(text=get_button("inet_schedule", lang))],
-        [KeyboardButton(text=get_button("settings", lang)), KeyboardButton(text=get_button("support", lang))]
+        [KeyboardButton(text=get_button("settings", lang)), KeyboardButton(text=get_button("support", lang))],
+        [KeyboardButton(text=get_button("navigation", lang))]
     ]
     if is_admin:
         buttons.append([KeyboardButton(text="👨🏻‍💻 Админ-панель")])

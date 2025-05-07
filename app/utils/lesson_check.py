@@ -102,7 +102,6 @@ async def check_lesson_marks(bot: Bot):
                         logger.debug(f"Already notified user {user_id} for {lesson['moduleName']} {action_type}")
                         continue
 
-                    # Get user's language preference
                     lang = await get_user_language(user_id) or "en"
                     
                     if action_type == "entry":
