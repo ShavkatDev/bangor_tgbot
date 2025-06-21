@@ -138,19 +138,7 @@ async def ask_to_confirm_broadcast(
     await message.answer("Here’s how the broadcast will look:")
 
     try:
-        if message.photo:
-            await message.bot.send_photo(
-                chat_id=message.chat.id,
-                photo=message.photo[-1].file_id,
-                caption=message.caption or "",
-                parse_mode="HTML",
-            )
-        elif message.text:
-            await message.bot.send_message(
-                chat_id=message.chat.id, text=message.html_text, parse_mode="HTML"
-            )
-        else:
-            await message.answer("⚠️ This message type is not supported for preview.")
+        await message.copy_to(telegram_id)
     except Exception as e:
         logger.error(
             f"[Admin] Error sending preview to admin {telegram_id}: {str(e)}",
@@ -174,7 +162,6 @@ async def confirm_broadcast(
 
     data = await state.get_data()
     message_id = data.get("message_id")
-    broadcast_text = data.get("text")
 
     telegram_id = callback.from_user.id
     logger.info(f"[Admin] Admin {telegram_id} confirmed broadcast")
@@ -186,8 +173,10 @@ async def confirm_broadcast(
 
     for user in users:
         try:
-            await callback.bot.send_message(
-                chat_id=user, text=broadcast_text, parse_mode="HTML"
+            await callback.bot.copy_message(
+                chat_id=user,
+                from_chat_id=callback.from_user.id,
+                message_id=message_id
             )
             success += 1
         except Exception as ex:

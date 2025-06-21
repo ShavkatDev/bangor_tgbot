@@ -5161,3 +5161,717 @@ FROM schedule_cache]
 2025-05-07 10:55:31,008 [INFO] __main__:49 - Shutting down bot...
 2025-05-07 10:55:31,010 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
 2025-05-07 10:55:31,010 [INFO] __main__:57 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:19:51,920 [INFO] root:36 - Logging system initialized
+2025-06-22 01:19:51,923 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:19:52,166 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:19:52,533 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:19:52,533 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:19:52,542 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,542 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:19:52,542 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,543 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:19:52,543 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,543 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:19:52,544 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,544 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:19:52,544 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,544 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:19:52,545 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,545 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:19:52,545 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,546 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:19:52,546 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,546 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:19:52,546 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,547 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:19:52,547 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,547 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:19:52,548 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,548 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:19:52,549 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,549 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:19:52,550 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,550 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,551 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,551 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,551 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,551 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,552 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,552 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,553 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,553 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,553 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,554 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:19:52,554 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:19:52,554 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:19:52,554 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:19:52,554 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:19:52,555 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:19:52,555 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:19:52,555 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:19:52,555 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:19:52,654 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:19:59,531 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:19:59,534 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:19:59,536 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:19:59,536 [INFO] app.handlers.main_menu:54 - User 845102332 (@dcwscr) returned to main menu
+2025-06-22 01:19:59,985 [INFO] aiogram.event:172 - Update id=872175329 is handled. Duration 588 ms by bot id=7299087266
+2025-06-22 01:20:01,609 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:01,905 [INFO] app.handlers.start:20 - User 845102332 (@dcwscr) started the bot with language en
+2025-06-22 01:20:01,910 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:20:01,911 [INFO] app.handlers.start:28 - User 845102332 (@dcwscr) is registered, showing main menu
+2025-06-22 01:20:02,135 [INFO] aiogram.event:172 - Update id=872175330 is handled. Duration 528 ms by bot id=7299087266
+2025-06-22 01:20:04,465 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:04,466 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:20:04,468 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:04,468 [INFO] app.handlers.settings:30 - User 845102332 (@dcwscr) opened settings menu
+2025-06-22 01:20:04,709 [INFO] aiogram.event:172 - Update id=872175331 is handled. Duration 251 ms by bot id=7299087266
+2025-06-22 01:20:06,489 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:06,493 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:20:06,496 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:06,498 [INFO] app.handlers.settings:107 - User 845102332 (@dcwscr) requested account deletion
+2025-06-22 01:20:06,721 [INFO] aiogram.event:172 - Update id=872175332 is handled. Duration 235 ms by bot id=7299087266
+2025-06-22 01:20:07,654 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:07,655 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:08,085 [INFO] app.handlers.settings:134 - User 845102332 (@dcwscr) confirmed account deletion
+2025-06-22 01:20:08,107 [INFO] root:156 - [User] Deleted user and settings for telegram_id=845102332
+2025-06-22 01:20:08,330 [INFO] aiogram.event:172 - Update id=872175333 is handled. Duration 677 ms by bot id=7299087266
+2025-06-22 01:20:10,801 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:20:11,035 [INFO] app.handlers.start:20 - User 845102332 (@dcwscr) started the bot with language en
+2025-06-22 01:20:11,038 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:20:11,038 [INFO] app.handlers.start:36 - User 845102332 (@dcwscr) is not registered, showing login prompt
+2025-06-22 01:20:11,334 [INFO] aiogram.event:172 - Update id=872175334 is handled. Duration 535 ms by bot id=7299087266
+2025-06-22 01:20:12,931 [INFO] aiogram.event:172 - Update id=872175335 is not handled. Duration 1 ms by bot id=7299087266
+2025-06-22 01:22:17,473 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:22:17,725 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:22:17,726 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:22:17,731 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:22:20,803 [INFO] root:36 - Logging system initialized
+2025-06-22 01:22:20,804 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:22:21,035 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:22:21,347 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:22:21,347 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:22:21,350 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,350 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:22:21,350 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,350 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:22:21,351 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,351 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:22:21,351 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,351 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:22:21,351 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,352 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:22:21,352 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,352 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:22:21,353 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,353 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:22:21,353 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,353 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:22:21,354 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,354 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:22:21,354 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,354 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:22:21,354 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,354 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:22:21,355 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,355 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:22:21,356 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,356 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,356 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,356 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,357 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,357 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,357 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,358 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,358 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,358 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,359 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,359 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:22:21,360 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:22:21,360 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:22:21,361 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:22:21,361 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:22:21,361 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:22:21,362 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:22:21,362 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:22:21,362 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:22:21,470 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:22:22,335 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:22:22,983 [INFO] aiogram.event:172 - Update id=872175336 is handled. Duration 711 ms by bot id=7299087266
+2025-06-22 01:22:24,353 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:22:24,571 [INFO] app.handlers.login:22 - User 7299087266 (@singapore_unibot) started login process
+2025-06-22 01:22:25,001 [INFO] aiogram.event:172 - Update id=872175337 is handled. Duration 649 ms by bot id=7299087266
+2025-06-22 01:22:29,160 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:22:29,162 [INFO] app.handlers.login:48 - User 845102332 (@dcwscr) entered login
+2025-06-22 01:22:29,623 [INFO] aiogram.event:172 - Update id=872175338 is handled. Duration 466 ms by bot id=7299087266
+2025-06-22 01:22:32,065 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:22:32,066 [INFO] app.handlers.login:69 - User 845102332 (@dcwscr) entered password
+2025-06-22 01:22:33,327 [INFO] httpx:1740 - HTTP Request: POST https://inet.mdis.uz/oauth/tocken "HTTP/1.1 200 "
+2025-06-22 01:22:33,640 [INFO] httpx:1740 - HTTP Request: GET https://inet.mdis.uz/api/v1/education/view/students?selfId=59158 "HTTP/1.1 200 "
+2025-06-22 01:22:33,641 [INFO] app.utils.schedule:49 - Successfully fetched user data for inet_id 59158
+2025-06-22 01:22:33,645 [INFO] root:61 - [User] Check registration status for telegram_id=845102332
+2025-06-22 01:22:33,675 [INFO] root:92 - [User] Created user telegram_id=845102332, group_id=232
+2025-06-22 01:22:33,679 [INFO] app.handlers.login:127 - User 845102332 (@dcwscr) successfully registered with group_id=232
+2025-06-22 01:22:34,139 [INFO] aiogram.event:172 - Update id=872175339 is handled. Duration 2076 ms by bot id=7299087266
+2025-06-22 01:24:05,361 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:24:05,616 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:24:05,617 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:24:05,619 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:24:08,696 [INFO] root:36 - Logging system initialized
+2025-06-22 01:24:08,698 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:24:08,925 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:24:09,285 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:24:09,285 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:24:09,287 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,287 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:24:09,288 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,288 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:24:09,288 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,288 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:24:09,288 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,289 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:24:09,289 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,289 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:24:09,289 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,289 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:24:09,290 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,290 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:24:09,290 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,291 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:24:09,291 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,291 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:24:09,292 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,292 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:24:09,293 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,293 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:24:09,294 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,294 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:24:09,295 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,295 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,296 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,296 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,296 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,297 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,297 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,297 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,297 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,298 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,298 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,298 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:24:09,298 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:24:09,299 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:24:09,299 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:24:09,300 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:24:09,300 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:24:09,300 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:24:09,301 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:24:09,301 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:24:09,417 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:24:09,605 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:09,609 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:24:09,610 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:09,611 [INFO] app.handlers.settings:30 - User 845102332 (@dcwscr) opened settings menu
+2025-06-22 01:24:10,043 [INFO] aiogram.event:172 - Update id=872175340 is handled. Duration 506 ms by bot id=7299087266
+2025-06-22 01:24:11,183 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:11,185 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:24:11,186 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:11,187 [INFO] app.handlers.settings:107 - User 845102332 (@dcwscr) requested account deletion
+2025-06-22 01:24:11,407 [INFO] aiogram.event:172 - Update id=872175341 is handled. Duration 226 ms by bot id=7299087266
+2025-06-22 01:24:12,236 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:12,237 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:12,666 [INFO] app.handlers.settings:134 - User 845102332 (@dcwscr) confirmed account deletion
+2025-06-22 01:24:12,678 [INFO] root:156 - [User] Deleted user and settings for telegram_id=845102332
+2025-06-22 01:24:12,900 [INFO] aiogram.event:172 - Update id=872175342 is handled. Duration 665 ms by bot id=7299087266
+2025-06-22 01:24:14,998 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:15,220 [INFO] app.handlers.start:20 - User 845102332 (@dcwscr) started the bot with language en
+2025-06-22 01:24:15,222 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:24:15,223 [INFO] app.handlers.start:36 - User 845102332 (@dcwscr) is not registered, showing login prompt
+2025-06-22 01:24:15,442 [INFO] aiogram.event:172 - Update id=872175343 is handled. Duration 446 ms by bot id=7299087266
+2025-06-22 01:24:16,301 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:24:16,947 [INFO] aiogram.event:172 - Update id=872175344 is handled. Duration 647 ms by bot id=7299087266
+2025-06-22 01:24:18,742 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:24:19,004 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:24:19,005 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:24:19,006 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:31:48,182 [INFO] root:36 - Logging system initialized
+2025-06-22 01:31:48,183 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:31:48,394 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:31:48,759 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:31:48,759 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:31:48,763 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,763 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:31:48,764 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,764 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:31:48,764 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,764 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:31:48,764 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,765 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:31:48,766 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,766 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:31:48,767 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,767 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:31:48,768 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,769 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:31:48,770 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,771 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:31:48,771 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,772 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:31:48,773 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,773 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:31:48,774 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,775 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:31:48,778 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,779 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:31:48,782 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,782 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,783 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,784 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,785 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,785 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,786 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,787 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,787 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,788 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,788 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,789 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:31:48,789 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:31:48,790 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:31:48,791 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:31:48,791 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:31:48,791 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:31:48,791 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:31:48,792 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:31:48,792 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:31:48,894 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:31:50,376 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:31:50,791 [INFO] app.handlers.login:22 - User 7299087266 (@singapore_unibot) started login process
+2025-06-22 01:31:51,412 [INFO] aiogram.event:172 - Update id=872175345 is handled. Duration 1097 ms by bot id=7299087266
+2025-06-22 01:31:54,898 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:31:54,899 [INFO] app.handlers.login:48 - User 845102332 (@dcwscr) entered login
+2025-06-22 01:31:55,337 [INFO] aiogram.event:172 - Update id=872175346 is handled. Duration 442 ms by bot id=7299087266
+2025-06-22 01:31:56,962 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:31:56,963 [INFO] app.handlers.login:69 - User 845102332 (@dcwscr) entered password
+2025-06-22 01:31:58,215 [INFO] httpx:1740 - HTTP Request: POST https://inet.mdis.uz/oauth/tocken "HTTP/1.1 200 "
+2025-06-22 01:31:58,531 [INFO] httpx:1740 - HTTP Request: GET https://inet.mdis.uz/api/v1/education/view/students?selfId=59158 "HTTP/1.1 200 "
+2025-06-22 01:31:58,532 [INFO] app.utils.schedule:49 - Successfully fetched user data for inet_id 59158
+2025-06-22 01:31:58,534 [INFO] root:61 - [User] Check registration status for telegram_id=845102332
+2025-06-22 01:31:58,546 [INFO] root:92 - [User] Created user telegram_id=845102332, group_id=232
+2025-06-22 01:31:58,555 [INFO] app.handlers.login:127 - User 845102332 (@dcwscr) successfully registered with group_id=232
+2025-06-22 01:31:58,996 [INFO] aiogram.event:172 - Update id=872175347 is handled. Duration 2036 ms by bot id=7299087266
+2025-06-22 01:32:00,826 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:32:00,828 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:32:00,829 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:32:00,829 [INFO] app.admin.admin:31 - [Admin] Admin 845102332 opened admin panel
+2025-06-22 01:32:01,048 [INFO] aiogram.event:172 - Update id=872175348 is handled. Duration 224 ms by bot id=7299087266
+2025-06-22 01:32:02,895 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:32:03,107 [INFO] app.admin.admin:44 - [Admin] Admin 7299087266 initiated a broadcast
+2025-06-22 01:32:03,324 [INFO] aiogram.event:172 - Update id=872175349 is handled. Duration 432 ms by bot id=7299087266
+2025-06-22 01:32:06,867 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:32:06,868 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:32:06,869 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:32:06,870 [INFO] app.admin.admin:134 - [Admin] Admin 845102332 submitted a message for preview
+2025-06-22 01:32:07,530 [INFO] aiogram.event:172 - Update id=872175350 is handled. Duration 668 ms by bot id=7299087266
+2025-06-22 01:32:49,882 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:32:50,148 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:32:50,149 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:32:50,150 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:32:53,198 [INFO] root:36 - Logging system initialized
+2025-06-22 01:32:53,199 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:32:53,425 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:32:53,727 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:32:53,727 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:32:53,730 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,730 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:32:53,731 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,731 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:32:53,731 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,731 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:32:53,731 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,732 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:32:53,732 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,732 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:32:53,732 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,732 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:32:53,733 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,733 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:32:53,733 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,733 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:32:53,733 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,733 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:32:53,734 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,734 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:32:53,734 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,734 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:32:53,735 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,735 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:32:53,736 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,736 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,736 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,736 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,737 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,737 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,737 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,738 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,738 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,739 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,739 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,739 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:32:53,740 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:32:53,740 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:32:53,741 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:32:53,741 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:32:53,742 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:32:53,742 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:32:53,742 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:32:53,743 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:32:53,845 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:32:56,503 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:32:56,504 [INFO] app.admin.admin:180 - [Admin] Admin 845102332 confirmed broadcast
+2025-06-22 01:32:56,929 [INFO] root:12 - [User] Fetching all users
+2025-06-22 01:32:56,933 [WARNING] app.admin.admin:197 - [Admin] Failed to send message to 845102332: 1 validation error for SendMessage
+text
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.8/v/string_type
+2025-06-22 01:32:56,933 [INFO] app.admin.admin:199 - [Admin] Broadcast finished by admin 845102332: 0 sent, 1 failed
+2025-06-22 01:32:57,424 [INFO] aiogram.event:172 - Update id=872175351 is handled. Duration 1096 ms by bot id=7299087266
+2025-06-22 01:33:27,616 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:33:27,881 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:33:27,883 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:33:27,886 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:33:30,748 [INFO] root:36 - Logging system initialized
+2025-06-22 01:33:30,749 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:33:30,996 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:33:31,371 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:33:31,372 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:33:31,378 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,378 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:33:31,379 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,379 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:33:31,380 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,380 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:33:31,381 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,381 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:33:31,382 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,382 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:33:31,382 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,382 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:33:31,382 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,382 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:33:31,383 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,383 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:33:31,383 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,383 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:33:31,383 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,383 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:33:31,384 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,385 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:33:31,386 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,387 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:33:31,389 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,389 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,390 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,390 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,391 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,391 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,391 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,392 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,392 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,392 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,393 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,393 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:33:31,393 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:33:31,393 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:33:31,394 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:33:31,394 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:33:31,394 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:33:31,394 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:33:31,395 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:33:31,395 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:33:31,499 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:33:31,835 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:33:32,276 [INFO] app.handlers.start:20 - User 845102332 (@dcwscr) started the bot with language en
+2025-06-22 01:33:32,281 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:33:32,282 [INFO] app.handlers.start:28 - User 845102332 (@dcwscr) is registered, showing main menu
+2025-06-22 01:33:32,503 [INFO] aiogram.event:172 - Update id=872175352 is handled. Duration 729 ms by bot id=7299087266
+2025-06-22 01:33:33,884 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:33:33,886 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:33:33,888 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:33:33,888 [INFO] app.admin.admin:31 - [Admin] Admin 845102332 opened admin panel
+2025-06-22 01:33:34,109 [INFO] aiogram.event:172 - Update id=872175353 is handled. Duration 228 ms by bot id=7299087266
+2025-06-22 01:33:35,721 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:33:35,933 [INFO] app.admin.admin:44 - [Admin] Admin 7299087266 initiated a broadcast
+2025-06-22 01:33:36,158 [INFO] aiogram.event:172 - Update id=872175354 is handled. Duration 439 ms by bot id=7299087266
+2025-06-22 01:33:41,686 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:33:41,688 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:33:41,690 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:33:41,691 [INFO] app.admin.admin:134 - [Admin] Admin 845102332 submitted a message for preview
+2025-06-22 01:33:42,384 [INFO] aiogram.event:172 - Update id=872175355 is handled. Duration 702 ms by bot id=7299087266
+2025-06-22 01:33:43,568 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:33:43,569 [INFO] app.admin.admin:180 - [Admin] Admin 845102332 confirmed broadcast
+2025-06-22 01:33:43,798 [INFO] root:12 - [User] Fetching all users
+2025-06-22 01:33:44,026 [INFO] app.admin.admin:200 - [Admin] Broadcast finished by admin 845102332: 1 sent, 0 failed
+2025-06-22 01:33:44,459 [INFO] aiogram.event:172 - Update id=872175356 is handled. Duration 895 ms by bot id=7299087266
+2025-06-22 01:34:22,058 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:34:22,257 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:34:22,263 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:34:22,266 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:35:53,341 [INFO] root:36 - Logging system initialized
+2025-06-22 01:35:53,342 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:35:53,563 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:35:53,877 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:35:53,877 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:35:53,879 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,880 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:35:53,880 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,880 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:35:53,880 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,880 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:35:53,880 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,881 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:35:53,881 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,881 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:35:53,881 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,881 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:35:53,882 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,882 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:35:53,882 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,882 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:35:53,883 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,884 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:35:53,884 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,884 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:35:53,884 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,884 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:35:53,886 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,886 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:35:53,888 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,889 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,889 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,889 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,890 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,891 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,891 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,891 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,892 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:35:53,892 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:35:53,895 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:35:53,896 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:35:53,898 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:35:53,899 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:35:53,899 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:35:53,899 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:35:53,900 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:35:54,009 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:36:00,513 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:36:00,778 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:36:00,779 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:36:00,782 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:36:24,489 [INFO] root:36 - Logging system initialized
+2025-06-22 01:36:24,490 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:36:24,708 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:36:25,015 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:36:25,015 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:36:25,017 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,018 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:36:25,018 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,018 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:36:25,019 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,019 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:36:25,019 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,019 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:36:25,020 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,020 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:36:25,020 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,020 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:36:25,020 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,021 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:36:25,021 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,022 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:36:25,022 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,022 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:36:25,022 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,022 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:36:25,023 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,023 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:36:25,023 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,023 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:36:25,025 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,025 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,025 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,026 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,026 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,026 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,026 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,027 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,027 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,028 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,028 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,029 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:36:25,029 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:36:25,030 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:36:25,031 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:36:25,031 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:36:25,031 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:36:25,032 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:36:25,032 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:36:25,032 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:36:25,135 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:36:25,763 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:36:26,193 [INFO] app.handlers.start:20 - User 845102332 (@dcwscr) started the bot with language en
+2025-06-22 01:36:26,197 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:36:26,198 [INFO] app.handlers.start:28 - User 845102332 (@dcwscr) is registered, showing main menu
+2025-06-22 01:36:26,419 [INFO] aiogram.event:172 - Update id=872175357 is handled. Duration 716 ms by bot id=7299087266
+2025-06-22 01:36:27,724 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:36:27,726 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:36:27,727 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:36:27,728 [INFO] app.admin.admin:31 - [Admin] Admin 845102332 opened admin panel
+2025-06-22 01:36:27,945 [INFO] aiogram.event:172 - Update id=872175358 is handled. Duration 225 ms by bot id=7299087266
+2025-06-22 01:36:28,915 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:36:29,130 [INFO] app.admin.admin:44 - [Admin] Admin 7299087266 initiated a broadcast
+2025-06-22 01:36:29,347 [INFO] aiogram.event:172 - Update id=872175359 is handled. Duration 435 ms by bot id=7299087266
+2025-06-22 01:36:30,915 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:36:30,918 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:36:30,919 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:36:30,920 [INFO] app.admin.admin:134 - [Admin] Admin 845102332 submitted a message for preview
+2025-06-22 01:36:31,656 [INFO] aiogram.event:172 - Update id=872175360 is handled. Duration 749 ms by bot id=7299087266
+2025-06-22 01:36:52,748 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:36:52,748 [INFO] app.admin.admin:168 - [Admin] Admin 845102332 confirmed broadcast
+2025-06-22 01:36:53,179 [INFO] root:12 - [User] Fetching all users
+2025-06-22 01:36:53,411 [INFO] app.admin.admin:188 - [Admin] Broadcast finished by admin 845102332: 1 sent, 0 failed
+2025-06-22 01:36:53,842 [INFO] aiogram.event:172 - Update id=872175361 is handled. Duration 1098 ms by bot id=7299087266
+2025-06-22 01:36:56,252 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:36:56,518 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:36:56,520 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:36:56,522 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:37:06,847 [INFO] root:36 - Logging system initialized
+2025-06-22 01:37:06,849 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:37:07,121 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:37:07,445 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:37:07,445 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:37:07,450 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,450 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:37:07,451 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,451 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:37:07,452 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,452 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:37:07,452 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,453 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:37:07,453 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,453 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:37:07,454 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,454 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:37:07,455 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,455 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:37:07,455 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,456 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:37:07,456 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,456 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:37:07,457 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,457 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:37:07,458 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,458 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:37:07,458 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,459 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:37:07,460 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,461 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,461 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,462 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,462 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,463 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,463 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,463 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,464 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,464 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,464 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,464 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:37:07,465 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:37:07,465 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:37:07,465 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:37:07,466 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:37:07,466 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:37:07,466 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:37:07,466 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:37:07,467 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:37:07,574 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:37:09,385 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:37:09,824 [INFO] app.admin.admin:44 - [Admin] Admin 7299087266 initiated a broadcast
+2025-06-22 01:37:10,075 [INFO] aiogram.event:172 - Update id=872175362 is handled. Duration 771 ms by bot id=7299087266
+2025-06-22 01:37:28,841 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:37:28,845 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:37:28,847 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:37:28,848 [INFO] app.admin.admin:134 - [Admin] Admin 845102332 submitted a message for preview
+2025-06-22 01:37:29,806 [INFO] aiogram.event:172 - Update id=872175363 is handled. Duration 972 ms by bot id=7299087266
+2025-06-22 01:37:34,472 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:37:34,734 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:37:34,735 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:37:34,736 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:41:44,365 [INFO] root:36 - Logging system initialized
+2025-06-22 01:41:44,366 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:41:44,597 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:41:44,956 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:41:44,956 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:41:44,959 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,959 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:41:44,959 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,959 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:41:44,960 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,960 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:41:44,960 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,960 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:41:44,960 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,960 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:41:44,961 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,961 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:41:44,961 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,961 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:41:44,961 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,962 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:41:44,962 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,962 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:41:44,962 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,963 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:41:44,963 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,963 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:41:44,963 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,963 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:41:44,964 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,964 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,965 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,965 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,965 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,965 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,965 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,965 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,966 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,966 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,966 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,966 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:41:44,967 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:41:44,967 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:41:44,968 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:41:44,968 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:41:44,969 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:41:44,969 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:41:44,969 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:41:44,969 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:41:45,068 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:41:47,860 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:41:48,281 [INFO] app.admin.admin:44 - [Admin] Admin 7299087266 initiated a broadcast
+2025-06-22 01:41:48,605 [INFO] aiogram.event:172 - Update id=872175364 is handled. Duration 812 ms by bot id=7299087266
+2025-06-22 01:41:54,218 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:41:54,221 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:41:54,222 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:41:54,223 [INFO] app.admin.admin:134 - [Admin] Admin 845102332 submitted a message for preview
+2025-06-22 01:41:54,900 [INFO] aiogram.event:172 - Update id=872175365 is handled. Duration 689 ms by bot id=7299087266
+2025-06-22 01:41:57,335 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:41:57,335 [INFO] app.admin.admin:167 - [Admin] Admin 845102332 confirmed broadcast
+2025-06-22 01:41:57,567 [INFO] root:12 - [User] Fetching all users
+2025-06-22 01:41:57,792 [INFO] app.admin.admin:188 - [Admin] Broadcast finished by admin 845102332: 1 sent, 0 failed
+2025-06-22 01:41:58,237 [INFO] aiogram.event:172 - Update id=872175366 is handled. Duration 905 ms by bot id=7299087266
+2025-06-22 01:42:10,265 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:42:10,491 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:42:10,492 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:42:10,495 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
