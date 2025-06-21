@@ -1,12 +1,11 @@
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from app.utils.inline import simple_keyboard, eager
 
-def language_keyboard() -> InlineKeyboardMarkup:
-    return InlineKeyboardMarkup(
-        inline_keyboard=[
-            [
-                InlineKeyboardButton(text="🇷🇺 Русский", callback_data="set_lang_ru"),
-                InlineKeyboardButton(text="🇺🇿 O'zbekcha", callback_data="set_lang_uz"),
-                InlineKeyboardButton(text="🇬🇧 English", callback_data="set_lang_en"),
-            ]
-        ]
-    )
+
+@eager
+@simple_keyboard
+def language_keyboard():
+    return [
+        ["🇷🇺 Русский", "set_lang_ru"],
+        ["🇺🇿 O'zbekcha", "set_lang_uz"],
+        ["🇬🇧 English", "set_lang_en"]
+    ]

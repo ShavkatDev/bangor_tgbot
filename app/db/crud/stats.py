@@ -30,7 +30,9 @@ async def get_new_users(days: int = 7) -> int:
 async def get_users_with_today_digest() -> int:
     async with async_session_maker() as session:
         result = await session.execute(
-            select(func.count()).select_from(UserSettings).where(UserSettings.today_schedule_digest.is_(True))
+            select(func.count())
+            .select_from(UserSettings)
+            .where(UserSettings.today_schedule_digest.is_(True))
         )
         count = result.scalar_one()
         logger.info(f"[Stats] Users with today's digest: {count}")
@@ -40,7 +42,9 @@ async def get_users_with_today_digest() -> int:
 async def get_users_with_daily_digest() -> int:
     async with async_session_maker() as session:
         result = await session.execute(
-            select(func.count()).select_from(UserSettings).where(UserSettings.daily_digest.is_(True))
+            select(func.count())
+            .select_from(UserSettings)
+            .where(UserSettings.daily_digest.is_(True))
         )
         count = result.scalar_one()
         logger.info(f"[Stats] Users with daily digest: {count}")

@@ -11,6 +11,7 @@ from app.handlers.privacy import privacy_router
 from app.handlers.navigation import navigation_router
 from app.admin.admin import admin_router
 
+
 def setup_routers(dp: Dispatcher):
     dp.include_router(chat_router)
     dp.include_router(start_router)

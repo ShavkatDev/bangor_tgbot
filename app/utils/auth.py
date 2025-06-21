@@ -2,7 +2,10 @@ import httpx
 from typing import Tuple, Optional
 from app.config import TIMETABLE_HEADERS
 
-async def verify_credentials(login: str, password: str) -> Tuple[bool, Optional[str], Optional[int]]:
+
+async def verify_credentials(
+    login: str, password: str
+) -> Tuple[bool, Optional[str], Optional[int]]:
     token = None
     inet_id = None
 
@@ -14,9 +17,9 @@ async def verify_credentials(login: str, password: str) -> Tuple[bool, Optional[
                 data={
                     "username": login,
                     "password": password,
-                    "grant_type": "password"
+                    "grant_type": "password",
                 },
-                timeout=10
+                timeout=10,
             )
 
         if response.status_code == 200:

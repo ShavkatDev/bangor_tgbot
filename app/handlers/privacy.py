@@ -10,14 +10,16 @@ from app.handlers.login import login_command
 
 privacy_router = Router()
 
-@privacy_router.message(Command("login"))
-async def show_privacy_policy(message: Message, state: FSMContext):
-    user_id = message.from_user.id
+@privacy_router.message(F.data == "start_login")
+async def show_privacy_policy(callback: CallbackQuery, state: FSMContext):
+    await callback.answer()
     
-    await message.answer(
+    user_id = callback.message.from_user.id
+
+    await callback.message.answer(
         LEXICON_MSG["privacy_policy_required"]["en"],
-        reply_markup=get_privacy_keyboard("en")
-    )
+        reply_markup=get_privacy_keyboard("en"),
+    ) 
 
 @privacy_router.callback_query(F.data == "accept_privacy")
 async def accept_privacy(callback: CallbackQuery, state: FSMContext):

@@ -1,15 +1,25 @@
 from datetime import datetime, timedelta, date
 import logging
 from app.db.crud.user import get_user_credentials
-from app.db.crud.schedule import get_users_with_today_digest, get_cached_schedule, save_schedule_to_cache
+from app.db.crud.schedule import (
+    get_users_with_today_digest,
+    get_cached_schedule,
+    save_schedule_to_cache,
+)
 from app.lexicon.lexicon import LEXICON_MSG
-from app.utils.schedule import fetch_schedule_data, get_token, format_schedule, sanitize_schedule_data
+from app.utils.schedule import (
+    fetch_schedule_data,
+    get_token,
+    format_schedule,
+    sanitize_schedule_data,
+)
 
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from apscheduler.triggers.cron import CronTrigger
 
 from aiogram import Bot
 import json
+
 
 async def send_today_schedule_digest(bot: Bot):
     today = date.today() - timedelta(days=1)
@@ -43,8 +53,12 @@ async def send_today_schedule_digest(bot: Bot):
             cleaned = json.loads(cached.data)
 
         today_data = [
-            item for item in cleaned
-            if datetime.fromisoformat(item["scheduleDate"].replace('+0000', '+00:00')).date() == today
+            item
+            for item in cleaned
+            if datetime.fromisoformat(
+                item["scheduleDate"].replace("+0000", "+00:00")
+            ).date()
+            == today
         ]
         if not today_data:
             continue
@@ -53,10 +67,11 @@ async def send_today_schedule_digest(bot: Bot):
             try:
                 text = await format_schedule(today_data, lang)
                 logging.info(f"{telegram_id}, {text}")
-                if text in LEXICON_MSG['no_classes'].values():
+                if text in LEXICON_MSG["no_classes"].values():
                     await bot.send_message(telegram_id, text)
             except Exception:
                 continue
+
 
 def setup_digest_scheduler(bot: Bot):
     scheduler = AsyncIOScheduler(timezone="UTC")
@@ -65,9 +80,6 @@ def setup_digest_scheduler(bot: Bot):
         CronTrigger(hour=8, minute=50),
         args=[bot],
         id="daily_schedule_digest",
-        replace_existing=True
+        replace_existing=True,
     )
     scheduler.start()
-
-
-        

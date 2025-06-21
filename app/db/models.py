@@ -1,7 +1,20 @@
-from sqlalchemy import Column, Integer, String, Boolean, ForeignKey, TIMESTAMP, BigInteger, Date, Text, DateTime, func
+from sqlalchemy import (
+    Column,
+    Integer,
+    String,
+    Boolean,
+    ForeignKey,
+    TIMESTAMP,
+    BigInteger,
+    Date,
+    Text,
+    DateTime,
+    func,
+)
 from sqlalchemy.orm import relationship
 from app.db.database import Base
 import datetime
+
 
 class University(Base):
     __tablename__ = "university"
@@ -9,6 +22,7 @@ class University(Base):
     name = Column(String, nullable=False)
 
     users = relationship("User", back_populates="university")
+
 
 class User(Base):
     __tablename__ = "users"
@@ -25,16 +39,20 @@ class User(Base):
     university = relationship("University", back_populates="users")
     settings = relationship("UserSettings", back_populates="user", uselist=False)
 
+
 class UserSettings(Base):
     __tablename__ = "user_settings"
     id = Column(Integer, primary_key=True)
     user_id = Column(Integer, ForeignKey("users.id"), unique=True)
     daily_digest = Column(Boolean, default=True)
     today_schedule_digest = Column(Boolean, default=True)
-    language = Column(String, default='en')
-    updated_at = Column(TIMESTAMP, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow)
+    language = Column(String, default="en")
+    updated_at = Column(
+        TIMESTAMP, default=datetime.datetime.utcnow, onupdate=datetime.datetime.utcnow
+    )
 
     user = relationship("User", back_populates="settings")
+
 
 class ScheduleCache(Base):
     __tablename__ = "schedule_cache"
@@ -44,6 +62,7 @@ class ScheduleCache(Base):
     week_start = Column(Date, nullable=False, index=True)
     data = Column(Text, nullable=False)
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+
 
 class SupportRequest(Base):
     __tablename__ = "support_requests"

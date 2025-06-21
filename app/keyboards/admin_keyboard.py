@@ -1,13 +1,37 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+from app.utils.inline import eager, simple_keyboard
 
-admin_keyboard = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="📊 Статистика", callback_data="admin_stats")],
-    [InlineKeyboardButton(text="📬 Сделать рассылку", callback_data="admin_broadcast")],
-    [InlineKeyboardButton(text="📂 Логи", callback_data="admin_logs")],
-    [InlineKeyboardButton(text="🛠 Настройки", callback_data="admin_settings")],
-])
-
-confirm_broadcast_keyboard = InlineKeyboardMarkup(inline_keyboard=[
-    [InlineKeyboardButton(text="✅ Подтвердить", callback_data="confirm_broadcast")],
-    [InlineKeyboardButton(text="❌ Отменить", callback_data="cancel_broadcast")]
-])
+@eager
+@simple_keyboard
+def admin_keyboard():
+    return [
+        [
+            "📊 Статистика",
+            "admin_stats"
+        ],
+        [
+            "📬 Сделать рассылку",
+            "admin_broadcast"
+        ],
+        [
+            "📂 Логи",
+            "admin_logs"
+        ],
+        [
+            "🛠 Настройки",
+            "admin_settings"
+        ]
+    ]
+    
+@eager
+@simple_keyboard
+def confirm_broadcast_keyboard():
+    return [
+        [
+            "✅ Подтвердить",
+            "confirm_broadcast"
+        ],
+        [
+            "❌ Отменить",
+            "cancel_broadcast"
+        ]
+    ]
