@@ -1,6 +1,7 @@
 from app.utils.inline import eager
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
+
 @eager
 def nav_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(

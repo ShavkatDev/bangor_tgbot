@@ -7,5 +7,5 @@ def language_keyboard():
     return [
         ["🇷🇺 Русский", "set_lang_ru"],
         ["🇺🇿 O'zbekcha", "set_lang_uz"],
-        ["🇬🇧 English", "set_lang_en"]
+        ["🇬🇧 English", "set_lang_en"],
     ]

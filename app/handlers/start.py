@@ -36,7 +36,9 @@ async def start_command(message: types.Message, lang: str, is_admin: bool):
             logger.info(
                 f"User {telegram_id} (@{username}) is not registered, showing login prompt"
             )
-            await message.answer(text=LEXICON_MSG["greet_login"][lang], reply_markup=inline_login)
+            await message.answer(
+                text=LEXICON_MSG["greet_login"][lang], reply_markup=inline_login
+            )
     except Exception as e:
         logger.error(
             f"Error in start command for user {telegram_id}: {str(e)}", exc_info=True

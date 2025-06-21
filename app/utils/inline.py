@@ -6,13 +6,8 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
 def create_inline_keyboard(
-    buttons: Sequence[Union[
-        list[str, str],
-        dict
-    ]],
-    width: int = 1
+    buttons: Sequence[Union[list[str, str], dict]], width: int = 1
 ) -> InlineKeyboardMarkup:
-
     builder = InlineKeyboardBuilder()
 
     for button in buttons:
@@ -28,12 +23,16 @@ def create_inline_keyboard(
     return builder.as_markup()
 
 
-def simple_keyboard(func: Callable[..., Sequence[Union[list[str], dict]]]) -> Callable[..., InlineKeyboardMarkup]:
+def simple_keyboard(
+    func: Callable[..., Sequence[Union[list[str], dict]]],
+) -> Callable[..., InlineKeyboardMarkup]:
     @wraps(func)
     def wrapper(*args, **kwargs) -> InlineKeyboardMarkup:
         buttons = func(*args, **kwargs)
         return create_inline_keyboard(buttons)
+
     return wrapper
+
 
 def eager(func):
     return func()
