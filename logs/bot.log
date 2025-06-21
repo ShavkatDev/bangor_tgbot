@@ -5875,3 +5875,107 @@ text
 2025-06-22 01:42:10,491 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
 2025-06-22 01:42:10,492 [INFO] __main__:50 - Shutting down bot...
 2025-06-22 01:42:10,495 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:49:21,501 [INFO] root:36 - Logging system initialized
+2025-06-22 01:49:21,502 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:49:21,712 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:49:21,844 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:49:22,056 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)
+2025-06-22 01:49:30,480 [INFO] root:36 - Logging system initialized
+2025-06-22 01:49:30,481 [INFO] __main__:22 - Starting bot initialization...
+2025-06-22 01:49:30,714 [INFO] __main__:28 - Deleting webhook and setting up bot...
+2025-06-22 01:49:31,025 [INFO] __main__:31 - Setting up schedulers...
+2025-06-22 01:49:31,025 [INFO] app.utils.lesson_check:160 - Setting up lesson check scheduler
+2025-06-22 01:49:31,027 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,027 [INFO] app.utils.lesson_check:172 - Added job for 9:35 (entry)
+2025-06-22 01:49:31,028 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,028 [INFO] app.utils.lesson_check:172 - Added job for 10:55 (exit)
+2025-06-22 01:49:31,028 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,028 [INFO] app.utils.lesson_check:172 - Added job for 11:5 (entry)
+2025-06-22 01:49:31,028 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,028 [INFO] app.utils.lesson_check:172 - Added job for 12:25 (exit)
+2025-06-22 01:49:31,029 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,029 [INFO] app.utils.lesson_check:172 - Added job for 12:35 (entry)
+2025-06-22 01:49:31,029 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,029 [INFO] app.utils.lesson_check:172 - Added job for 13:55 (exit)
+2025-06-22 01:49:31,029 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,030 [INFO] app.utils.lesson_check:172 - Added job for 13:5 (entry)
+2025-06-22 01:49:31,030 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,030 [INFO] app.utils.lesson_check:172 - Added job for 15:25 (exit)
+2025-06-22 01:49:31,031 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,031 [INFO] app.utils.lesson_check:172 - Added job for 15:35 (entry)
+2025-06-22 01:49:31,032 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,033 [INFO] app.utils.lesson_check:172 - Added job for 16:55 (exit)
+2025-06-22 01:49:31,033 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,033 [INFO] app.utils.lesson_check:172 - Added job for 17:5 (entry)
+2025-06-22 01:49:31,034 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,034 [INFO] app.utils.lesson_check:172 - Added job for 18:25 (exit)
+2025-06-22 01:49:31,035 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,035 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,035 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,036 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,036 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,036 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,036 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,036 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,037 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,037 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,037 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,037 [INFO] apscheduler.scheduler:1090 - Added job "check_lesson_marks" to job store "default"
+2025-06-22 01:49:31,037 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:49:31,038 [INFO] app.utils.lesson_check:175 - Lesson check scheduler started successfully
+2025-06-22 01:49:31,038 [INFO] apscheduler.scheduler:507 - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-06-22 01:49:31,038 [INFO] apscheduler.scheduler:1090 - Added job "send_today_schedule_digest" to job store "default"
+2025-06-22 01:49:31,039 [INFO] apscheduler.scheduler:214 - Scheduler started
+2025-06-22 01:49:31,039 [INFO] __main__:35 - Setting up routers and middleware...
+2025-06-22 01:49:31,039 [INFO] __main__:44 - Bot is ready to start polling...
+2025-06-22 01:49:31,039 [INFO] aiogram.dispatcher:527 - Start polling
+2025-06-22 01:49:31,142 [INFO] aiogram.dispatcher:341 - Run polling for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:49:34,978 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:35,409 [INFO] app.handlers.start:20 - User 845102332 (@dcwscr) started the bot with language en
+2025-06-22 01:49:35,412 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:49:35,413 [INFO] app.handlers.start:28 - User 845102332 (@dcwscr) is registered, showing main menu
+2025-06-22 01:49:35,633 [INFO] aiogram.event:172 - Update id=872175367 is handled. Duration 712 ms by bot id=7299087266
+2025-06-22 01:49:36,514 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:36,515 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:49:36,517 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:36,517 [INFO] app.handlers.main_menu:35 - User 845102332 (@dcwscr) opened inet schedule menu
+2025-06-22 01:49:36,737 [INFO] aiogram.event:172 - Update id=872175368 is handled. Duration 227 ms by bot id=7299087266
+2025-06-22 01:49:38,454 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:38,456 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:49:38,459 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:38,459 [INFO] app.handlers.schedule:152 - User 845102332 (@dcwscr) requested attendance
+2025-06-22 01:49:38,468 [INFO] root:110 - [User] Credentials decrypted for telegram_id=845102332
+2025-06-22 01:49:39,012 [INFO] httpx:1740 - HTTP Request: POST https://inet.mdis.uz/oauth/tocken "HTTP/1.1 200 "
+2025-06-22 01:49:39,013 [INFO] app.utils.schedule:27 - Successfully obtained token for user b2305078
+2025-06-22 01:49:39,016 [INFO] root:48 - [User] Attendance data for telegram_id=845102332
+2025-06-22 01:49:39,357 [INFO] httpx:1740 - HTTP Request: GET https://inet.mdis.uz/api/v1/education/students/attendances?page=0&perPage=10&direction=ASC&sortBy=id&semesterId=242&studentId=59158 "HTTP/1.1 200 "
+2025-06-22 01:49:39,358 [INFO] app.utils.schedule:142 - Successfully fetched attendance data for user 845102332
+2025-06-22 01:49:39,604 [INFO] aiogram.event:172 - Update id=872175369 is handled. Duration 1157 ms by bot id=7299087266
+2025-06-22 01:49:44,428 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:44,429 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:49:44,431 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:44,431 [INFO] app.handlers.main_menu:54 - User 845102332 (@dcwscr) returned to main menu
+2025-06-22 01:49:44,646 [INFO] aiogram.event:172 - Update id=872175370 is handled. Duration 220 ms by bot id=7299087266
+2025-06-22 01:49:46,763 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:46,764 [INFO] root:21 - [User] Fetching user for telegram_id=845102332
+2025-06-22 01:49:46,765 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:46,765 [INFO] app.admin.admin:31 - [Admin] Admin 845102332 opened admin panel
+2025-06-22 01:49:46,981 [INFO] aiogram.event:172 - Update id=872175371 is handled. Duration 221 ms by bot id=7299087266
+2025-06-22 01:49:53,036 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:53,254 [INFO] aiogram.event:172 - Update id=872175372 is handled. Duration 220 ms by bot id=7299087266
+2025-06-22 01:49:55,421 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:49:55,423 [INFO] app.admin.admin:99 - [Admin] Admin 845102332 requested log file
+2025-06-22 01:49:56,598 [INFO] aiogram.event:172 - Update id=872175373 is handled. Duration 1193 ms by bot id=7299087266
+2025-06-22 01:50:01,464 [INFO] root:33 - [User] Getting language for telegram_id=845102332 → en
+2025-06-22 01:50:01,673 [INFO] app.admin.admin:59 - [Admin] Admin 7299087266 initiated a stats request
+2025-06-22 01:50:01,678 [INFO] app.db.crud.stats:15 - [Stats] Total users: 4
+2025-06-22 01:50:01,681 [INFO] app.db.crud.stats:26 - [Stats] New users in last 7 days: 1
+2025-06-22 01:50:01,682 [INFO] app.db.crud.stats:26 - [Stats] New users in last 1 days: 1
+2025-06-22 01:50:01,685 [INFO] app.db.crud.stats:38 - [Stats] Users with today's digest: 4
+2025-06-22 01:50:01,687 [INFO] app.db.crud.stats:50 - [Stats] Users with daily digest: 4
+2025-06-22 01:50:01,695 [INFO] app.db.crud.stats:60 - [Stats] User language distribution: {'ru': 1, 'en': 3}
+2025-06-22 01:50:01,916 [INFO] aiogram.event:172 - Update id=872175374 is handled. Duration 453 ms by bot id=7299087266
+2025-06-22 01:50:05,357 [INFO] aiogram.dispatcher:554 - Polling stopped
+2025-06-22 01:50:05,616 [INFO] __main__:50 - Shutting down bot...
+2025-06-22 01:50:05,617 [INFO] aiogram.dispatcher:359 - Polling stopped for bot @singapore_unibot id=7299087266 - 'MDIST BOT'
+2025-06-22 01:50:05,619 [INFO] __main__:59 - Bot stopped by user (KeyboardInterrupt)

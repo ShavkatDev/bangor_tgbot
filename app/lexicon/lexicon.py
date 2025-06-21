@@ -39,9 +39,9 @@ LEXICON_MSG = {
     },
     "greet": {"ru": "👋 Привет!", "uz": "👋 Salom!", "en": "👋 Hello!"},
     "greet_login": {
-        "ru": "👋 Привет! Чтобы продолжить, пожалуйста, авторизуйтесь командой /login",
-        "uz": "👋 Salom! Davom ettirish uchun iltimos, /login buyrug'i orqali ro'yxatdan o'ting",
-        "en": "👋 Hello! To continue, please log in using the /login command",
+        "ru": "👋 Привет! Чтобы продолжить, пожалуйста, авторизуйтесь",
+        "uz": "👋 Salom! Davom ettirish uchun iltimos ro'yxatdan o'ting",
+        "en": "👋 Hello! To continue, please login",
     },
     "enter_login": {
         "ru": "🔐 Введите ваш логин от INET:",
@@ -59,9 +59,9 @@ LEXICON_MSG = {
         "en": "⏳ Checking login and password...",
     },
     "invalid_credentials": {
-        "ru": "❌ Неверный логин или пароль. Попробуйте снова через /login",
-        "uz": "❌ Login yoki parol noto'g'ri. Qayta urinib ko'ring: /login",
-        "en": "❌ Invalid login or password. Please try again via /login",
+        "ru": "❌ Неверный логин или пароль. Попробуйте снова через /start",
+        "uz": "❌ Login yoki parol noto'g'ri. Qayta urinib ko'ring: /start",
+        "en": "❌ Invalid login or password. Please try again via /start",
     },
     "group_not_found": {
         "ru": "❌ Не удалось определить номер группы.",
@@ -99,9 +99,9 @@ LEXICON_MSG = {
         "en": "Choose a schedule:",
     },
     "registration_required": {
-        "ru": "❗️Чтобы пользоваться ботом, сначала авторизуйтесь через /login",
-        "uz": "❗️Botdan foydalanish uchun avval /login orqali ro'yxatdan o'ting",
-        "en": "❗️To use the bot, please log in first via /login",
+        "ru": "❗️Чтобы пользоваться ботом, сначала авторизуйтесь через /start",
+        "uz": "❗️Botdan foydalanish uchun avval /start orqali ro'yxatdan o'ting",
+        "en": "❗️To use the bot, please log in first via /start",
     },
     "no_absences": {
         "ru": "📭 Пропуски не найдены.",
